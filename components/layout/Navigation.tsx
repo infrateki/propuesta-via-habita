@@ -10,6 +10,7 @@ const NAV_ITEMS = [
   { href: "/propuesta", label: "Propuesta" },
   { href: "/configurador", label: "Configurador" },
   { href: "/comparativo", label: "Comparativo" },
+  { href: "/documento", label: "Documento" },
 ];
 
 export function Navigation() {

@@ -1,7 +1,7 @@
 # COMMS.md — Terminal Orchestration Board
 ## VIA-HABITA Proposal Site · via-habita-propuesta
 
-**Last updated:** 2026-04-27 01:10 · T5 SHIPPED — git init + GitHub push + Vercel production deploy
+**Last updated:** 2026-04-27 01:55 · T5 added /documento (PDF inline viewer) + nav entry; favicon trio shipped (32/180/192); PDF download CTA in nav + propuesta hero
 **Status:** 🟢 DEPLOYED
 
 **Production URLs:**
@@ -620,6 +620,9 @@ The proposal content in PROPOSAL-v4.md is the single source of truth. Key confir
 | Apr 27 | Stripe anticipo link live: buy.stripe.com/8x2aEX4Cf... | Serge | All payment CTAs |
 | Apr 27 | GitHub repo: github.com/infrateki/propuesta-via-habita | Serge | Version control |
 | Apr 27 | Deployed to Vercel | Serge | Production |
+| Apr 27 | Add /documento — inline PDF viewer | Serge | New route, nav order: Propuesta · Configurador · Comparativo · Documento |
+| Apr 27 | Favicon trio (32/180/192) from INFRATEK globe | Serge | Browser tab + iOS + Android home icons |
+| Apr 27 | PDF CTA in nav + propuesta hero | Serge | "Easy to see always" — persistent download |
 
 ---
 
