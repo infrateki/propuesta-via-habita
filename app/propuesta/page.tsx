@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FileDown } from "lucide-react";
 import { ProblemSection } from "@/components/proposal/ProblemSection";
 import { SolutionSection } from "@/components/proposal/SolutionSection";
 import { DeliverablesSection } from "@/components/proposal/DeliverablesSection";
@@ -52,6 +53,14 @@ export default function PropuestaPage() {
             >
               Configura tu plan →
             </Link>
+            <a
+              href="/proposal.pdf"
+              download="INFRATEK_Propuesta_VIA-HABITA_2026_FINAL.pdf"
+              className="px-6 py-3.5 label-spec text-[var(--color-copper)] hover:text-steel-100 border border-[var(--color-copper)]/40 hover:border-[var(--color-copper)] rounded-[var(--radius-spec)] transition-colors inline-flex items-center gap-2"
+            >
+              Descargar PDF
+              <FileDown size={14} strokeWidth={1.5} />
+            </a>
             <Link
               href="/comparativo"
               className="px-6 py-3.5 label-spec text-steel-300 hover:text-steel-100 transition-colors hairline rounded-[var(--radius-spec)]"

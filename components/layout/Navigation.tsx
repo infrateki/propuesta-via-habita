@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu, X, FileDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
@@ -53,6 +53,20 @@ export function Navigation() {
           </ul>
 
           <div className="flex items-center gap-2">
+            <a
+              href="/proposal.pdf"
+              download="INFRATEK_Propuesta_VIA-HABITA_2026_FINAL.pdf"
+              className={cn(
+                "label-spec px-3 py-2 text-steel-200 min-h-11 inline-flex items-center gap-2",
+                "hover:text-[var(--color-copper)]",
+                "transition-colors duration-[var(--duration-fast)]"
+              )}
+              aria-label="Descargar propuesta PDF"
+              title="Descargar propuesta PDF"
+            >
+              <FileDown size={16} strokeWidth={1.5} />
+              <span className="hidden sm:inline">PDF</span>
+            </a>
             <Link
               href="/configurador"
               className={cn(
@@ -111,6 +125,17 @@ export function Navigation() {
                 >
                   <span>Configurar →</span>
                 </Link>
+              </li>
+              <li>
+                <a
+                  href="/proposal.pdf"
+                  download="INFRATEK_Propuesta_VIA-HABITA_2026_FINAL.pdf"
+                  onClick={() => setOpen(false)}
+                  className="label-spec flex items-center justify-between min-h-12 px-4 my-2 text-steel-100 border border-[var(--color-hairline-strong)] hover:border-[var(--color-copper)] hover:text-[var(--color-copper)] transition-colors rounded-[var(--radius-spec)]"
+                >
+                  <span>Descargar propuesta PDF</span>
+                  <FileDown size={16} strokeWidth={1.5} />
+                </a>
               </li>
             </ul>
           </div>
