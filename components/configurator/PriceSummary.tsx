@@ -209,7 +209,8 @@ function SummaryCard({
           <Calendar size={14} />
         </a>
         <a
-          href="/api/proposal-pdf"
+          href="/proposal.pdf"
+          download="INFRATEK_Propuesta_VIA-HABITA_2026_FINAL.pdf"
           className="w-full min-h-11 px-5 py-3 flex items-center justify-between label-spec text-steel-300 hover:text-steel-100 hairline rounded-[var(--radius-spec)] transition-colors duration-[var(--duration-fast)]"
         >
           Descargar propuesta PDF
