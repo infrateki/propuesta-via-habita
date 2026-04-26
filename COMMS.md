@@ -1,8 +1,15 @@
 # COMMS.md — Terminal Orchestration Board
 ## VIA-HABITA Proposal Site · via-habita-propuesta
 
-**Last updated:** 2026-04-27 00:50 · T5 wired live Stripe Payment Link site-wide, fixed FloatingCTA WhatsApp number, deleted orphaned ComparisonTabs.tsx, copied proposal.md to public/, created vercel.json; build green
-**Status:** 🟢 READY TO DEPLOY
+**Last updated:** 2026-04-27 01:10 · T5 SHIPPED — git init + GitHub push + Vercel production deploy
+**Status:** 🟢 DEPLOYED
+
+**Production URLs:**
+- https://propuesta-via-habita.vercel.app (alias)
+- https://propuesta-via-habita-6lr0xr5nj-infratekis-projects.vercel.app (direct)
+- Custom domain `viahabita.infratek.ai` — pending DNS CNAME → cname.vercel-dns.com (dashboard step)
+
+**Repo:** https://github.com/infrateki/propuesta-via-habita (Vercel auto-deploys on push to main)
 
 ---
 
@@ -45,7 +52,7 @@ Each Claude Code terminal MUST:
 | P6 | Pricing engine accuracy test — verify calculations | T2 | ✅ DONE (Apr 26) | lib/pricing.ts, lib/constants.ts |
 | P7 | Scroll animations polish (framer-motion) | T5 | ✅ DONE v2 (Apr 27 00:30) | All 8 proposal sections + SectionShell standardized to 0.5s ease-out + 0.1s stagger; KPI bars trimmed to 0.7s/0.9s; Timeline bumped to 0.15s for sequential month feel |
 | P8 | Stripe test mode verification | T5 | ✅ DONE v2 (Apr 27 00:30) | + GET /api/checkout 302→WhatsApp when no keys (was 405); /gracias graceful w/ no/empty session_id; 4/4 line-item math PASS; build green |
-| P9 | Deploy to Vercel (viahabita.infratek.ai) | T5 | 🟢 READY (Apr 27 00:50) | vercel.json created (framework: nextjs, regions: [iad1]); awaiting `vercel deploy` |
+| P9 | Deploy to Vercel (viahabita.infratek.ai) | T5 | ✅ DEPLOYED (Apr 27 01:10) | propuesta-via-habita.vercel.app live · custom domain CNAME pending dashboard step |
 | P10 | PDF proposal file — place at public/proposal.pdf | T5 | ✅ DONE (Apr 27 00:50) · MD form | public/proposal.md (PROPOSAL-v4.md copy, 28KB). DownloadProposal default updated to /proposal.md. PDF render is post-launch |
 | P11 | Build feature comparison tab on /comparativo | T4 | 🟡 v1 DONE (Apr 26 23:25) · v2 PENDING T2 | v1 FeatureMatrix renders current data (5 platforms, 14 categories, 48 features, full/partial/none/roadmap). v2 spec (7 platforms, 10 categories, 156 features, 1–5 numeric scoring) waits for T2 to expand data/features.ts |
 | P12 | Add tab navigation to /comparativo: "Precios" + "Funcionalidades" | T4 | ✅ DONE v2 (Apr 26 23:55) | Inline tabs in app/comparativo/page.tsx (blue underline #0071E3, useState, AnimatePresence, sticky `top-14`). Page is now `"use client"`; ComparisonTabs.tsx orphaned |
@@ -610,6 +617,9 @@ The proposal content in PROPOSAL-v4.md is the single source of truth. Key confir
 | Apr 26 | Add feature comparison matrix to /comparativo | Serge | New FeatureMatrix.tsx component |
 | Apr 26 | Include WAYKI in feature comparison | Serge | data/features.ts, FeatureMatrix |
 | Apr 27 | Live Stripe Payment Link replaces /api/checkout flow | Serge | https://buy.stripe.com/8x2aEX4Cfb5f90EalH1RC04 — wired into PriceSummary, home hero, InvestmentSection, /gracias no-session fallback. /api/checkout retained as future fallback. Anticipo $4,500 confirmed |
+| Apr 27 | Stripe anticipo link live: buy.stripe.com/8x2aEX4Cf... | Serge | All payment CTAs |
+| Apr 27 | GitHub repo: github.com/infrateki/propuesta-via-habita | Serge | Version control |
+| Apr 27 | Deployed to Vercel | Serge | Production |
 
 ---
 
