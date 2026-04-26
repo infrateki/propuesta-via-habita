@@ -1,0 +1,333 @@
+@import "tailwindcss";
+
+/* ============================================
+   VIA-HABITA — Architectural Stainless Tokens
+   v4.0 Final Integrada
+   ============================================ */
+
+@theme {
+  /* Steel scale — 100 (highlight) → 800 (canvas) */
+  --color-steel-100: #E6E8EB;
+  --color-steel-200: #C5C8CC;
+  --color-steel-300: #8E9095;
+  --color-steel-400: #6B6E73;
+  --color-steel-500: #44474C;
+  --color-steel-600: #2A2D33;
+  --color-steel-700: #16181C;
+  --color-steel-800: #0B0C0F;
+
+  /* Accents — sparingly, one role each */
+  --color-copper:   #B08D57;   /* approval, signed state, spec stamp */
+  --color-electric: #4FB3FF;   /* live data, active config */
+  --color-warning:  #C2553D;   /* competitor cost, danger */
+  --color-emerald:  #5A8C72;   /* savings, ROI, positive deltas */
+
+  /* Semantic */
+  --color-background: var(--color-steel-800);
+  --color-foreground: var(--color-steel-100);
+  --color-muted: var(--color-steel-400);
+  --color-hairline: rgba(255, 255, 255, 0.08);
+  --color-hairline-strong: rgba(255, 255, 255, 0.14);
+
+  /* Typography */
+  --font-display: var(--font-satoshi), "Satoshi", system-ui, sans-serif;
+  --font-sans: var(--font-satoshi), "Satoshi", system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), "JetBrains Mono", ui-monospace, monospace;
+
+  /* Motion — weighted, no bounce */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+  --duration-fast: 250ms;
+  --duration-base: 600ms;
+  --duration-slow: 900ms;
+
+  /* Radii — minimal, architectural */
+  --radius-spec: 2px;       /* spec sheet corners */
+  --radius-panel: 4px;      /* glass panels */
+  --radius-card: 8px;       /* primary cards */
+}
+
+:root {
+  background: var(--color-steel-800);
+  color: var(--color-foreground);
+  color-scheme: dark;
+}
+
+* {
+  border-color: var(--color-hairline);
+}
+
+html, body {
+  background: var(--color-steel-800);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  /* Subtle ambient noise for the steel canvas */
+  background-image:
+    radial-gradient(ellipse at top, rgba(79, 179, 255, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom, rgba(176, 141, 87, 0.03) 0%, transparent 60%);
+  background-attachment: fixed;
+}
+
+/* ============================================
+   MATERIAL — Brushed Steel
+   ============================================ */
+.material-steel {
+  background:
+    linear-gradient(105deg,
+      var(--color-steel-600) 0%,
+      var(--color-steel-500) 25%,
+      var(--color-steel-600) 50%,
+      var(--color-steel-500) 75%,
+      var(--color-steel-600) 100%);
+  position: relative;
+}
+
+.material-steel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.material-steel-light {
+  background:
+    linear-gradient(105deg,
+      var(--color-steel-300) 0%,
+      var(--color-steel-200) 25%,
+      var(--color-steel-300) 50%,
+      var(--color-steel-200) 75%,
+      var(--color-steel-300) 100%);
+}
+
+/* ============================================
+   MATERIAL — Glass Panel
+   ============================================ */
+.material-glass {
+  background: rgba(20, 22, 26, 0.55);
+  backdrop-filter: blur(24px) saturate(140%);
+  -webkit-backdrop-filter: blur(24px) saturate(140%);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-panel);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.material-glass-strong {
+  background: rgba(11, 12, 15, 0.78);
+  backdrop-filter: blur(32px) saturate(160%);
+  -webkit-backdrop-filter: blur(32px) saturate(160%);
+  border: 1px solid var(--color-hairline-strong);
+  border-radius: var(--radius-card);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* ============================================
+   HAIRLINE RULES — spec-sheet feel
+   ============================================ */
+.hairline-t { border-top: 1px solid var(--color-hairline); }
+.hairline-b { border-bottom: 1px solid var(--color-hairline); }
+.hairline-l { border-left: 1px solid var(--color-hairline); }
+.hairline-r { border-right: 1px solid var(--color-hairline); }
+.hairline { border: 1px solid var(--color-hairline); }
+
+.hairline-strong-t { border-top: 1px solid var(--color-hairline-strong); }
+.hairline-strong-b { border-bottom: 1px solid var(--color-hairline-strong); }
+
+/* ============================================
+   CHROME EDGE — gradient border for active states
+   ============================================ */
+.chrome-edge {
+  position: relative;
+  border-radius: var(--radius-card);
+}
+
+.chrome-edge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0.03) 50%,
+    rgba(255, 255, 255, 0.18) 100%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* ============================================
+   TYPOGRAPHY — display + spec mono
+   ============================================ */
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+
+.font-spec {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" 1, "ss01" 1;
+  letter-spacing: 0;
+}
+
+.label-spec {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem; /* 11px */
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-steel-300);
+}
+
+.text-display-xl { font-size: clamp(3rem, 6vw, 4.5rem); line-height: 0.95; letter-spacing: -0.03em; font-weight: 500; }
+.text-display-lg { font-size: clamp(2.25rem, 4vw, 3rem); line-height: 1.05; letter-spacing: -0.02em; font-weight: 500; }
+.text-display-md { font-size: clamp(1.75rem, 3vw, 2.25rem); line-height: 1.1; letter-spacing: -0.02em; font-weight: 500; }
+
+.text-spec-price {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============================================
+   FOCUS — copper underline
+   ============================================ */
+:focus-visible {
+  outline: none;
+  box-shadow: 0 1px 0 0 var(--color-copper);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: none;
+  box-shadow: 0 2px 0 -1px var(--color-copper);
+}
+
+/* ============================================
+   SCROLLBAR — thin, steel
+   ============================================ */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--color-steel-600);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-steel-500); }
+
+/* ============================================
+   LENIS smooth scroll
+   ============================================ */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+/* ============================================
+   CONFIG SLIDER — range input, dark theme
+   44px touch target via input height; visible track stays 4px.
+   ============================================ */
+.config-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.config-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    var(--color-electric) 0%,
+    var(--color-electric) var(--config-slider-fill, 0%),
+    var(--color-steel-600) var(--config-slider-fill, 0%),
+    var(--color-steel-600) 100%
+  );
+  border-radius: 2px;
+  border: none;
+}
+
+.config-slider::-moz-range-track {
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    var(--color-electric) 0%,
+    var(--color-electric) var(--config-slider-fill, 0%),
+    var(--color-steel-600) var(--config-slider-fill, 0%),
+    var(--color-steel-600) 100%
+  );
+  border-radius: 2px;
+  border: none;
+}
+
+.config-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  margin-top: -9px; /* center 22px thumb on 4px track */
+  border-radius: 50%;
+  background: var(--color-steel-100);
+  cursor: grab;
+  border: 2px solid var(--color-electric);
+  box-shadow: 0 0 0 4px rgba(79, 179, 255, 0.08);
+  transition: transform var(--duration-fast) var(--ease-out-expo),
+              box-shadow var(--duration-fast) var(--ease-out-expo);
+}
+
+.config-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 6px rgba(79, 179, 255, 0.14);
+}
+
+.config-slider::-webkit-slider-thumb:active {
+  cursor: grabbing;
+}
+
+.config-slider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--color-steel-100);
+  cursor: grab;
+  border: 2px solid var(--color-electric);
+  box-shadow: 0 0 0 4px rgba(79, 179, 255, 0.08);
+}
+
+/* ============================================
+   REDUCED MOTION — disable inertia, transforms
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

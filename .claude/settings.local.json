@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(pnpm --version)",
+      "Bash(bun --version)",
+      "Bash(gh auth *)",
+      "Bash(vercel --version)",
+      "Bash(vercel whoami *)",
+      "Bash(vercel project *)",
+      "Bash(vercel teams *)",
+      "Bash(npm install *)",
+      "Bash(npm view *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(curl *)",
+      "Bash(node --experimental-strip-types --no-warnings scripts/verify-checkout.mjs)",
+      "Bash(npx next *)",
+      "Bash(grep -c \"^  {$\" data/features.ts)",
+      "Bash(node -e \"const m = require\\('./data/features.ts'\\); console.log\\('Cant load .ts directly'\\);\")",
+      "Bash(grep -rEn \"#[0-9a-fA-F]{3,8}\\\\b\" /c/Infratek/repos/via-habita-propuesta/components /c/Infratek/repos/via-habita-propuesta/app --include=\"*.tsx\" --include=\"*.ts\")",
+      "Bash(awk '/^export const FEATURES/,/^\\\\];/' data/features.ts)",
+      "Bash(grep -c \"^  {$\")",
+      "Bash(git init *)",
+      "Bash(git branch *)",
+      "Bash(git ls-remote *)",
+      "Bash(echo \"---EXIT:$?\")",
+      "Bash(git remote *)",
+      "Bash(git add *)"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "viahabita",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.0",
+    "@visx/group": "^3.12.0",
+    "@visx/hierarchy": "^3.12.0",
+    "@visx/responsive": "^3.12.0",
+    "@visx/scale": "^3.12.0",
+    "@visx/text": "^3.12.0",
+    "@visx/tooltip": "^3.12.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.25.0",
+    "lenis": "^1.1.20",
+    "lucide-react": "^0.552.0",
+    "next": "^16.1.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "stripe": "^22.1.0",
+    "tailwind-merge": "^3.3.1",
+    "three": "^0.169.0",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.169.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
