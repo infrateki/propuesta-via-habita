@@ -228,7 +228,7 @@ Al terminar la Fase 1, la decisión de continuar a Fase 2 se basa en estos crite
 | Consultores integrados | ≥ 2 consultores entregando bajo estándar BIM |
 | Equipo capacitado | ≥ 4 personas usando modelo en obra |
 | Plataforma operativa | VIA-HABITA activo con control de versiones funcionando |
-| Aprobación directorio | Pablo da GO explícito |
+| GO de Pablo | Pablo da GO explícito para Fase 2 |
 
 > Si alguno de estos criterios no se cumple, el informe de cierre documenta las causas y INFRATEK propone ajustes antes de Fase 2. **No se cobra la Fase 2 si los criterios mínimos no se alcanzan.**
 
@@ -251,8 +251,8 @@ Al terminar la Fase 1, la decisión de continuar a Fase 2 se basa en estos crite
 | Entregar todos los documentos con logo de Habita | Marcela dedicada full-time como BIM Champion |
 | Soporte remoto semanal + 3 sesiones/semana | Participar activamente en sesiones semanales |
 | Respuesta a consultas en ≤ 24 horas hábiles | Gestionar con consultores la entrega de modelos |
-| Reporte de estado semanal a Pablo | Comunicar avances al directorio |
-| Dejar capacidad instalada que no dependa de INFRATEK | Pablo actúa como Sponsor ante el directorio |
+| Reporte de estado semanal a Pablo | Mantener visibilidad continua del avance |
+| Dejar capacidad instalada que no dependa de INFRATEK | Pablo actúa como Sponsor del proyecto |
 | Codesarrollar VIA-HABITA con propiedad compartida | Proveer feedback activo sobre la plataforma |
 
 ---
@@ -523,8 +523,8 @@ Empezar con Nivel Básico durante los primeros 6 meses. Escalar según uso real.
 | # | Acción | Responsable | Fecha |
 |---|---|---|---|
 | 1 | Seleccionar proyecto piloto (Faldeos vs. Macarena) | Pablo Otero | Esta semana |
-| 2 | Presentación al directorio | Pablo Otero | Próxima semana |
-| 3 | Aprobación + transferencia anticipo USD $4,500 | Directorio | Antes 10 mayo |
+| 2 | Revisión interna y decisión de avanzar | Pablo Otero | Próxima semana |
+| 3 | Aprobación + transferencia anticipo USD $4,500 | Pablo Otero | Antes 10 mayo |
 | 4 | Firma del acuerdo de servicios | Habita + INFRATEK | 10–15 mayo |
 | 5 | Marcela arranca como BIM Champion full-time | Habita | Lunes 28 abril |
 | 6 | Inicio de la Fase 1 | Sergio + equipo | Semana del 18 mayo |

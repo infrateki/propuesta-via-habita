@@ -23,7 +23,7 @@ export default function HomePage() {
               <p className="text-lg text-steel-300 max-w-2xl leading-relaxed">
                 Plataforma propia. Usuarios ilimitados. Sin vendor lock-in.
                 Implementación BIM en 4 meses, alineada con la auditoría operacional
-                y los hallazgos del directorio.
+                y el Diagnóstico BIM 2.0.
               </p>
 
               <div className="flex flex-wrap items-center gap-3 pt-4">

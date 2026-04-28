@@ -44,7 +44,7 @@ export function CostChart() {
             Visualización · Costo anual USD
           </p>
           <h3 className="font-display text-steel-100 text-display-md max-w-2xl">
-            Lo que paga el directorio,
+            Lo que paga Habita,
             <br />
             <span className="text-steel-300">para el mismo alcance.</span>
           </h3>

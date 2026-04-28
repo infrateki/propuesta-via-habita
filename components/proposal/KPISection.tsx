@@ -16,9 +16,9 @@ export function KPISection() {
       eyebrow="KPIs · Habita hoy → Mes 4"
       title={
         <>
-          Métricas que el directorio
+          Métricas auditables
           <br />
-          <span className="text-steel-300">puede auditar al cierre.</span>
+          <span className="text-steel-300">al cierre del proyecto.</span>
         </>
       }
       lede="Siete indicadores con baseline y meta. Se miden con el mismo instrumento del Diagnóstico BIM 2.0 y se reportan en el informe E-09."

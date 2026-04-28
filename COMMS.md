@@ -1,7 +1,7 @@
 # COMMS.md — Terminal Orchestration Board
 ## VIA-HABITA Proposal Site · via-habita-propuesta
 
-**Last updated:** 2026-04-27 01:55 · T5 added /documento (PDF inline viewer) + nav entry; favicon trio shipped (32/180/192); PDF download CTA in nav + propuesta hero
+**Last updated:** 2026-04-28 · Pre-meeting tone polish: removed "directorio" framing site-wide (Pablo is the decision-maker), reworded P-01 problem, dropped "para siempre"/"no promesas"/"roles abstractos", humbled team section
 **Status:** 🟢 DEPLOYED
 
 **Production URLs:**
@@ -557,6 +557,60 @@ REMAINING WARNINGS / KNOWN ISSUES (all non-blocking):
     needed for the live Payment Link path (Stripe sends the receipt
     automatically). The /api/webhook handler is dormant until real keys
     land.
+```
+
+### Pre-meeting polish — 2026-04-28
+```
+Tone + content fixes ahead of Pablo meeting today. Goal: read like a direct
+professional conversation, not a pitch deck.
+
+CHANGES:
+├── data/proposal.ts
+│     • P-01 title "Proyectos al 90 % que no calzan" →
+│           "Diseños que no calzan entre disciplinas"
+│     • P-01 impact reworded; dropped "que el directorio ya conoce"
+│     • Pablo's dedication: dropped "vínculo con directorio" → "como sponsor del proyecto"
+│     • G-06 "Aprobación directorio" → "GO de Pablo" (Pablo IS the decision)
+├── components/proposal/ProblemSection.tsx
+│     • lede: dropped "que el directorio ya conoce"
+├── components/proposal/TeamSection.tsx
+│     • title: "no roles abstractos" → "dedicación clara"
+│     • lede: humbled — "Equipo de partida ... La conformación final
+│           se ajustará con el organigrama del proyecto cuando lo compartas."
+├── components/proposal/TimelineSection.tsx
+│     • subtitle: "Hitos verificables, no promesas" → "Hitos verificables"
+├── components/proposal/DeliverablesSection.tsx
+│     • subtitle: "se queda — para siempre" → "se queda con Habita"
+├── components/proposal/KPISection.tsx
+│     • title: "Métricas que el directorio puede auditar al cierre"
+│           → "Métricas auditables al cierre del proyecto"
+├── components/proposal/GateSection.tsx
+│     • callout: "elección informada del directorio" → "decisión informada de Habita"
+├── components/comparison/CostChart.tsx
+│     • header: "Lo que paga el directorio" → "Lo que paga Habita"
+├── app/comparativo/page.tsx
+│     • hero: "decisión informada del directorio" → "decisión informada para Habita"
+├── app/propuesta/page.tsx
+│     • hero copy: "para el directorio de Grupo Inmobiliario Habita"
+│           → "para Grupo Inmobiliario Habita"
+├── app/page.tsx
+│     • hero copy: "los hallazgos del directorio" → "el Diagnóstico BIM 2.0"
+├── public/proposal.md (downloadable copy)
+│     • G-06 row, "Comunicar avances al directorio" row, "Sponsor ante el
+│           directorio" row, próximos pasos #2/#3 — all reworked to point
+│           at Pablo as the decision-maker
+└── PROPOSAL-v4.md (kept in sync with public/proposal.md)
+      • Same three table edits as above
+
+VERIFY:
+├── grep on .tsx/.ts for directorio|para siempre|no promesas|roles abstractos
+│     → No matches found
+├── npx tsc --noEmit → clean
+└── npm run build → ✓ 13 routes, TypeScript clean
+
+REMAINING (intentionally NOT touched):
+  · COMMS.md historical log entries (mentioning "directorio" as past context)
+  · docs/PRE_DIRECTORIO_CHECKLIST.md / docs/CONTENT_GAPS.md (internal planning)
 ```
 
 ### ORCHESTRATOR — Claude Chat

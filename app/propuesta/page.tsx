@@ -35,8 +35,8 @@ export default function PropuestaPage() {
 
           <p className="text-lg text-steel-300 max-w-2xl leading-relaxed mt-8">
             Cuatro meses. Nueve entregables con marca Habita. Usuarios
-            ilimitados desde el día uno. Una propuesta integrada para el
-            directorio de Grupo Inmobiliario Habita.
+            ilimitados desde el día uno. Una propuesta integrada para
+            Grupo Inmobiliario Habita.
           </p>
 
           <div className="mt-10 grid sm:grid-cols-4 gap-px bg-[var(--color-hairline)] hairline rounded-[var(--radius-card)] overflow-hidden max-w-3xl">

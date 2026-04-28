@@ -37,7 +37,7 @@ export default function ComparativoPage() {
           <h1 className="text-display-lg text-steel-100 font-display max-w-3xl">
             Precios y funcionalidades ·
             <br />
-            <span className="text-steel-300">decisión informada del directorio.</span>
+            <span className="text-steel-300">decisión informada para Habita.</span>
           </h1>
           <p className="text-steel-300 mt-6 max-w-2xl text-base leading-relaxed">
             Dos vistas paralelas: cuánto cuesta cada plataforma para 50

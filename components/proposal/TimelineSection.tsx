@@ -17,7 +17,7 @@ export function TimelineSection() {
         <>
           Mayo a Agosto 2026.
           <br />
-          <span className="text-steel-300">Hitos verificables, no promesas.</span>
+          <span className="text-steel-300">Hitos verificables.</span>
         </>
       }
       lede="Cada mes cierra con un entregable concreto que se aprueba antes del siguiente pago. Cuatro meses, cuatro hitos, cero ambigüedad."

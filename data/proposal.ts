@@ -15,9 +15,9 @@ export type Problem = {
 export const PROBLEMS: Problem[] = [
   {
     id: "p1",
-    title: "Proyectos al 90 % que no calzan",
+    title: "Diseños que no calzan entre disciplinas",
     impact:
-      "Coordinación rota detectada en obra, no en diseño. Re-trabajo, paralizaciones y pérdidas evitables que el directorio ya conoce.",
+      "Interferencias detectadas demasiado tarde en obra, no en diseño. Re-trabajo, paralizaciones y pérdidas evitables.",
     metric: "≥ $1M anual en pérdidas evitables",
   },
   {
@@ -222,7 +222,7 @@ export const TEAM: TeamMember[] = [
     initials: "PO",
     role: "Sponsor + Lead",
     org: "HABITA",
-    dedication: "Aprobación de hitos, validación arquitectónica, vínculo con directorio.",
+    dedication: "Aprobación de hitos y validación arquitectónica como sponsor del proyecto.",
   },
   {
     id: "sergio",
@@ -431,7 +431,7 @@ export const GATE_CRITERIA: GateCriterion[] = [
   },
   {
     id: "g6",
-    criterion: "Aprobación directorio",
-    goCondition: "Pablo da GO explícito al directorio",
+    criterion: "GO de Pablo",
+    goCondition: "Pablo da GO explícito para iniciar Fase 2",
   },
 ];

@@ -17,10 +17,10 @@ export function TeamSection() {
         <>
           Personas con nombre,
           <br />
-          <span className="text-steel-300">no roles abstractos.</span>
+          <span className="text-steel-300">dedicación clara.</span>
         </>
       }
-      lede="El equipo conjunto Habita × INFRATEK que ejecuta la Fase 1. Más 3 personas de soporte técnico continuo de INFRATEK."
+      lede="Equipo de partida para ejecutar la Fase 1. La conformación final se ajustará con el organigrama del proyecto cuando lo compartas. Más 3 personas de soporte técnico continuo de INFRATEK."
     >
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[var(--color-hairline)] hairline rounded-[var(--radius-card)] overflow-hidden">
         {TEAM.map((m, i) => (

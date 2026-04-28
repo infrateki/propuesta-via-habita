@@ -85,7 +85,7 @@ export function GateSection() {
           </p>
           <p className="text-sm text-steel-400 leading-relaxed">
             INFRATEK absorbe el costo de ajuste. La decisión de continuar es
-            libre — no es dependencia, es elección informada del directorio.
+            libre — no es dependencia, es decisión informada de Habita.
           </p>
         </div>
       </motion.aside>

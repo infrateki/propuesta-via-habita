@@ -17,7 +17,7 @@ export function DeliverablesSection() {
         <>
           Lo que Habita
           <br />
-          <span className="text-steel-300">se queda — para siempre.</span>
+          <span className="text-steel-300">se queda con Habita.</span>
         </>
       }
       lede="Documentos formales, modelo federado y plataforma operativa. Cada entregable se aprueba antes del pago del hito correspondiente."
