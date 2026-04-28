@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "proposal:render": "node scripts/render-proposal.mjs",
+    "proposal:docx": "node scripts/render-proposal-docx.mjs",
+    "proposal:all": "node scripts/render-proposal.mjs && node scripts/render-proposal-docx.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
@@ -37,6 +40,8 @@
     "@types/three": "^0.169.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.1",
+    "html-to-docx": "^1.8.0",
+    "marked": "^18.0.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

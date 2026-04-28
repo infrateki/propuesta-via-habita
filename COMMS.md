@@ -1,7 +1,7 @@
 # COMMS.md — Terminal Orchestration Board
 ## VIA-HABITA Proposal Site · via-habita-propuesta
 
-**Last updated:** 2026-04-28 · Autodesk Forma Build pricing refresh ($1,400/user, 5.8× ratio, $70K @ 50 users) + new "Costos Autodesk" tab on /comparativo with full AEC catalog and Habita scenario calculator. Earlier today: tone polish (removed "directorio" framing, dropped "para siempre"/"no promesas"/"roles abstractos", humbled team section)
+**Last updated:** 2026-04-28 · v5.0 cut: PROPOSAL-v5.md (consolidates today's tone polish + Forma Build pricing refresh) + regenerated PDF/DOCX deliverables + render scripts. Site version label bumped to v5.0 · 28 ABR 2026 across hero, propuesta, documento, footer.
 **Status:** 🟢 DEPLOYED
 
 **Production URLs:**
@@ -678,6 +678,7 @@ The proposal content in PROPOSAL-v4.md is the single source of truth. Key confir
 | Apr 27 | Favicon trio (32/180/192) from INFRATEK globe | Serge | Browser tab + iOS + Android home icons |
 | Apr 27 | PDF CTA in nav + propuesta hero | Serge | "Easy to see always" — persistent download |
 | Apr 28 | Autodesk pricing updated: Forma Build $1,400/user, 5.8× ratio, new Costos Autodesk tab added | Serge | data/platforms.ts ($70K @ 50 users), data/features.ts (rebrand to "Autodesk Forma Build"), lib/pricing.ts ($1,400 anchor), data/autodesk-costs.ts (NEW — full AEC catalog), components/comparison/AutodeskCosts.tsx (NEW — third tab in /comparativo). Source: autodesk.com/products/forma-build/buy (April 2026) |
+| Apr 28 | v5.0 cut for Pablo's next review meeting | Serge | NEW: `PROPOSAL-v5.md` (changelog block at top notes Forma Build pricing + tone revisions); `public/proposal.md` synced to v5; `public/proposal.pdf` regenerated; `INFRATEK_Propuesta_VIA-HABITA_2026_v5.pdf` + `INFRATEK_Propuesta_VIA-HABITA_2026_v5.docx` at repo root for emailing. Render pipeline: `scripts/render-proposal.mjs` (markdown→styled HTML→Chrome-headless print-to-PDF) + `scripts/render-proposal-docx.mjs` (HTML→DOCX via html-to-docx). npm scripts `proposal:render`, `proposal:docx`, `proposal:all`. Site version labels bumped (app/page.tsx, app/propuesta/page.tsx, app/documento/page.tsx, components/layout/Footer.tsx). PROPOSAL-v4.md retained as historical record. |
 
 ---
 

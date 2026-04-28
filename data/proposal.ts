@@ -1,7 +1,7 @@
 /**
  * data/proposal.ts
  * Canonical content for /propuesta — extracted from
- * INFRATEK-HABITA-PROP-2026-FINAL v4.0 (PROPOSAL-v4.md).
+ * INFRATEK-HABITA-PROP-2026-FINAL v5.0 (PROPOSAL-v5.md).
  * All copy in Spanish.
  */
 
