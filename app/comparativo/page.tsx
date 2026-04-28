@@ -7,17 +7,19 @@ import {
   AnimatePresence,
   useReducedMotion,
 } from "framer-motion";
-import { ArrowUpRight, DollarSign, ListChecks } from "lucide-react";
+import { ArrowUpRight, DollarSign, ListChecks, Building2 } from "lucide-react";
 import { ComparisonTable } from "@/components/comparison/ComparisonTable";
 import { CostChart } from "@/components/comparison/CostChart";
 import { FeatureMatrix } from "@/components/comparison/FeatureMatrix";
+import { AutodeskCosts } from "@/components/comparison/AutodeskCosts";
 import { cn } from "@/lib/utils";
 
-type TabId = "precios" | "funcionalidades";
+type TabId = "precios" | "funcionalidades" | "autodesk";
 
 const TABS: { id: TabId; label: string; icon: typeof DollarSign }[] = [
   { id: "precios", label: "Precios", icon: DollarSign },
   { id: "funcionalidades", label: "Funcionalidades", icon: ListChecks },
+  { id: "autodesk", label: "Costos Autodesk", icon: Building2 },
 ];
 
 export default function ComparativoPage() {
@@ -109,7 +111,13 @@ export default function ComparativoPage() {
           exit={reduce ? undefined : { opacity: 0, y: -8 }}
           transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
         >
-          {active === "precios" ? <PreciosPanel /> : <FuncionalidadesPanel />}
+          {active === "precios" ? (
+            <PreciosPanel />
+          ) : active === "funcionalidades" ? (
+            <FuncionalidadesPanel />
+          ) : (
+            <AutodeskPanel />
+          )}
         </motion.div>
       </AnimatePresence>
     </>
@@ -144,14 +152,14 @@ function PreciosPanel() {
               </p>
               <p className="font-display text-steel-100 leading-tight text-display-lg">
                 VIA-HABITA es{" "}
-                <span className="text-[#0071E3] text-spec-price">6.8×</span>{" "}
-                más económico que Autodesk Build.
+                <span className="text-[#0071E3] text-spec-price">5.8×</span>{" "}
+                más económico que Autodesk Forma Build.
               </p>
               <p className="text-steel-300 max-w-2xl leading-relaxed">
-                $12.000 vs $81.250 anuales para el mismo alcance funcional, con
+                $12.000 vs $70.000 anuales para el mismo alcance funcional, con
                 usuarios ilimitados incluidos y propiedad total del código.
-                Sobre 3 años, la diferencia equivale al costo completo de la
-                Fase 1 — repetida más de 16 veces.
+                Sobre 3 años, la diferencia equivale a varias veces el costo
+                completo de la Fase 1.
               </p>
             </div>
 
@@ -191,6 +199,20 @@ function FuncionalidadesPanel() {
     <section>
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 lg:py-20">
         <FeatureMatrix />
+      </div>
+    </section>
+  );
+}
+
+/* -------------------------------------------------------------------------- */
+/* Tab 3 — Costos Autodesk                                                     */
+/* -------------------------------------------------------------------------- */
+
+function AutodeskPanel() {
+  return (
+    <section>
+      <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 lg:py-20">
+        <AutodeskCosts />
       </div>
     </section>
   );

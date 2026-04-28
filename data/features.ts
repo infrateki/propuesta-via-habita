@@ -84,10 +84,10 @@ export const PLATFORMS: Platform[] = [
   },
   {
     id: "autodesk",
-    name: "Autodesk Forma",
+    name: "Autodesk Forma Build",
     shortName: "ADSK",
     color: "#6B7280",
-    pricingNote: "$1,625/usuario/año · ex-ACC/Build",
+    pricingNote: "$1,400/usuario/año · ex-PlanGrid, ex-BIM 360, ex-ACC",
   },
   {
     id: "trimble",

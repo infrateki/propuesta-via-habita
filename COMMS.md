@@ -1,7 +1,7 @@
 # COMMS.md — Terminal Orchestration Board
 ## VIA-HABITA Proposal Site · via-habita-propuesta
 
-**Last updated:** 2026-04-28 · Pre-meeting tone polish: removed "directorio" framing site-wide (Pablo is the decision-maker), reworded P-01 problem, dropped "para siempre"/"no promesas"/"roles abstractos", humbled team section
+**Last updated:** 2026-04-28 · Autodesk Forma Build pricing refresh ($1,400/user, 5.8× ratio, $70K @ 50 users) + new "Costos Autodesk" tab on /comparativo with full AEC catalog and Habita scenario calculator. Earlier today: tone polish (removed "directorio" framing, dropped "para siempre"/"no promesas"/"roles abstractos", humbled team section)
 **Status:** 🟢 DEPLOYED
 
 **Production URLs:**
@@ -677,6 +677,7 @@ The proposal content in PROPOSAL-v4.md is the single source of truth. Key confir
 | Apr 27 | Add /documento — inline PDF viewer | Serge | New route, nav order: Propuesta · Configurador · Comparativo · Documento |
 | Apr 27 | Favicon trio (32/180/192) from INFRATEK globe | Serge | Browser tab + iOS + Android home icons |
 | Apr 27 | PDF CTA in nav + propuesta hero | Serge | "Easy to see always" — persistent download |
+| Apr 28 | Autodesk pricing updated: Forma Build $1,400/user, 5.8× ratio, new Costos Autodesk tab added | Serge | data/platforms.ts ($70K @ 50 users), data/features.ts (rebrand to "Autodesk Forma Build"), lib/pricing.ts ($1,400 anchor), data/autodesk-costs.ts (NEW — full AEC catalog), components/comparison/AutodeskCosts.tsx (NEW — third tab in /comparativo). Source: autodesk.com/products/forma-build/buy (April 2026) |
 
 ---
 

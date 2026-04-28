@@ -276,13 +276,13 @@ export const PLATFORMS: Platform[] = [
   },
   {
     id: "autodesk-build",
-    name: "Autodesk Build / Forma",
+    name: "Autodesk Forma Build",
     vendor: "Autodesk",
     pricingModel: "per-user",
-    pricePerUser: 1_625,
-    cost1User: 1_625,
-    cost5Users: 8_125,
-    cost50Users: 81_250,
+    pricePerUser: 1_400,
+    cost1User: 1_400,
+    cost5Users: 7_000,
+    cost50Users: 70_000,
     unlimitedUsers: false,
     externalsFree: false,
     features: F({
@@ -294,9 +294,9 @@ export const PLATFORMS: Platform[] = [
       submittals: true,
       gantt: true,
     }),
-    sourceUrl: "https://construction.autodesk.com/pricing/",
+    sourceUrl: "https://www.autodesk.com/products/forma-build/buy",
     notes:
-      "Estándar de mercado. Costo per-seat lineal — penaliza equipos grandes y externos. Vendor lock-in fuerte.",
+      "Ex-PlanGrid, ex-BIM 360, ex-ACC. Requiere licencias separadas de Revit/AutoCAD para diseño. Costo per-seat lineal — penaliza equipos grandes y externos.",
   },
   {
     id: "oracle-aconex",

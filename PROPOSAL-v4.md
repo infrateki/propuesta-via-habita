@@ -269,7 +269,7 @@ VIA-HABITA es la plataforma CDE (Common Data Environment) que reemplaza progresi
 
 ### Por qué una plataforma a medida y no Autodesk
 
-PlanGrid está discontinuado por Autodesk. La migración forzada a Autodesk Build implica costos de $1,625/usuario/año — con 50 stakeholders, eso es $81,250/año. VIA-HABITA ofrece usuarios ilimitados por $2,000/proyecto/año, construido 100% sobre código abierto, sin vendor lock-in, con propiedad total del código y los datos.
+PlanGrid está discontinuado por Autodesk. La migración forzada a Autodesk Forma Build implica costos de $1,400/usuario/año — con 50 stakeholders, eso es $70,000/año. VIA-HABITA ofrece usuarios ilimitados por $2,000/proyecto/año, construido 100% sobre código abierto, sin vendor lock-in, con propiedad total del código y los datos.
 
 ### Funcionalidades incluidas
 
@@ -386,7 +386,7 @@ Habita opera con 1 cuenta compartida de PlanGrid. El costo real no es $1,000/añ
 | Plataforma | Modelo | Costo anual (50 usuarios) | Usuarios ilimitados | Externos incluidos |
 |---|---|---|---|---|
 | **VIA-HABITA** | **Por proyecto** | **$12,000** | **✅ SÍ** | **✅ SÍ** |
-| Autodesk Build/Forma | Por usuario | $81,250 | ❌ | ❌ |
+| Autodesk Forma Build | Por usuario | $70,000 | ❌ | ❌ |
 | Procore | Por volumen | $15,000–$25,000 | ✅ | ✅ |
 | Trimble Connect | Por usuario | $7,800 | ❌ | Parcial |
 | Fieldwire (Hilti) | Por usuario | $23,400 | ❌ | ❌ |
@@ -398,9 +398,9 @@ Habita opera con 1 cuenta compartida de PlanGrid. El costo real no es $1,000/añ
 | BIMcollab | Por usuario | ~$4,500 | ❌ | ✅ |
 | PlanGrid+Notion (actual) | Combinado | $29,400 | ❌ | ❌ |
 
-**VIA-HABITA es 6.8× más económico que Autodesk Build** para el mismo alcance, con usuarios ilimitados incluidos y propiedad total del código.
+**VIA-HABITA es 5.8× más económico que Autodesk Forma Build** para el mismo alcance, con usuarios ilimitados incluidos y propiedad total del código.
 
-> *"Habita paga hoy ~$1,000/año por UN sistema roto donde UNA persona ve los planos. Si Autodesk fuerza la migración a Build (PlanGrid está discontinuado), el costo mínimo funcional con 5 cuentas por obra sería $8,125/año — y con 50 stakeholders reales, $81,250/año. VIA-HABITA ofrece usuarios ilimitados por $12,000/año."*
+> *"Habita paga hoy ~$1,000/año por UN sistema roto donde UNA persona ve los planos. Si Autodesk fuerza la migración a Forma Build (PlanGrid está discontinuado), el costo mínimo funcional con 5 cuentas por obra sería $7,000/año — y con 50 stakeholders reales, $70,000/año. VIA-HABITA ofrece usuarios ilimitados por $12,000/año."*
 
 ---
 
@@ -463,7 +463,7 @@ Habita opera con 1 cuenta compartida de PlanGrid. El costo real no es $1,000/añ
 | App móvil nativa (iOS + Android) | $10,000–$20,000 | Fase 3 |
 | Reportería BI (Power BI / Looker) | $5,000–$10,000 | Fase 2+ |
 | Dashboard multi-proyecto (MCP) | $5,000–$8,000 | 2027 |
-| Integración Autodesk Build/Forma | $4,000–$8,000 | Bajo demanda |
+| Integración Autodesk Forma Build | $4,000–$8,000 | Bajo demanda |
 
 > **Filosofía: no construir nada hasta que se necesite.**
 

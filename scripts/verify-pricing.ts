@@ -28,8 +28,8 @@ const b6 = calculatePricing({
 });
 console.log("   Platform Y1 (6 proj × $2,000):", formatCurrency(b6.platformAnnual), "(spec: $12,000)");
 console.log("   match:", b6.platformAnnual === 12_000 ? "✓" : "✗");
-console.log("   vs Autodesk:", formatCurrency(b6.autodeskEquivalentYear1), "(spec: $81,250)");
-console.log("   match:", b6.autodeskEquivalentYear1 === 81_250 ? "✓" : "✗");
+console.log("   vs Autodesk:", formatCurrency(b6.autodeskEquivalentYear1), "(spec: $70,000)");
+console.log("   match:", b6.autodeskEquivalentYear1 === 70_000 ? "✓" : "✗");
 
 console.log("\n[3] ENTERPRISE THRESHOLD — 10+ projects gets 20% off");
 const b10 = calculatePricing({
@@ -59,7 +59,7 @@ console.log(`   Sonnet: in $${sonnet.inputCostPer1M}, out $${sonnet.outputCostPe
 console.log(`   Opus:   ${opus.name}  in $${opus.inputCostPer1M}, out $${opus.outputCostPer1M}  (spec: Claude Opus 4.6, $15.00, $75.00)`);
 
 console.log("\n[5] formatCurrency helper");
-console.log("   formatCurrency(81250):", formatCurrency(81250), "(spec: '$81,250')");
+console.log("   formatCurrency(70000):", formatCurrency(70000), "(spec: '$70,000')");
 console.log("   formatCurrency(12500):", formatCurrency(12500));
 console.log("   formatCurrency(0):    ", formatCurrency(0));
 
@@ -67,7 +67,7 @@ console.log("\n[6] PLATFORMS array");
 console.log("   count:", PLATFORMS.length, "(spec: 12+)");
 console.log("   VIA-HABITA cost50Users:", formatCurrency(VIA_HABITA.cost50Users), "(spec: $12,000)");
 console.log("   VIA-HABITA highlight:  ", VIA_HABITA.highlight, "(spec: true)");
-console.log("   Autodesk cost50Users:  ", formatCurrency(AUTODESK_BUILD.cost50Users), "(spec: $81,250)");
+console.log("   Autodesk cost50Users:  ", formatCurrency(AUTODESK_BUILD.cost50Users), "(spec: $70,000)");
 
 console.log("\n[7] KNOWLEDGE GRAPH config");
 const bKG = calculatePricing({ ...DEFAULT_CONFIGURATION, knowledgeGraph: true });

@@ -158,7 +158,7 @@ function SummaryCard({
       {price.savings > 0 && (
         <div className="rounded-[var(--radius-spec)] border border-[var(--color-emerald)]/40 bg-[var(--color-emerald)]/[0.08] px-4 py-3">
           <p className="label-spec text-[var(--color-emerald)]">
-            Ahorro vs Autodesk Build
+            Ahorro vs Autodesk Forma Build
           </p>
           <div className="flex items-baseline justify-between gap-2 mt-1">
             <AnimatePresence mode="popLayout">

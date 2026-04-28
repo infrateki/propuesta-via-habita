@@ -52,7 +52,7 @@ export const PROBLEMS: Problem[] = [
     id: "p6",
     title: "PlanGrid DISCONTINUADO",
     impact:
-      "Autodesk fuerza migración a Build: $1.625 / usuario / año. Para 50 stakeholders son $81.250 al año por la misma función.",
+      "Autodesk fuerza migración a Forma Build: $1.400 / usuario / año. Para 50 stakeholders son $70.000 al año por la misma función.",
     metric: "Plazo: vencimiento Autodesk",
   },
 ];

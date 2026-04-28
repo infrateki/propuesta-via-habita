@@ -73,8 +73,8 @@ export interface PricingBreakdown {
   totalYear1: number;              // totalOneTime + totalAnnualRecurring
   totalMonthlyEquivalent: number;  // totalYear1 / 12 (informativo)
 
-  // ----- Comparación con Autodesk Build -----
-  autodeskEquivalentYear1: number; // ~$1,625/user × 50 users
+  // ----- Comparación con Autodesk Forma Build -----
+  autodeskEquivalentYear1: number; // ~$1,400/user × 50 users
   savings: number;                 // autodesk - viaHabita
   savingsPercent: number;          // savings / autodesk * 100
 }
@@ -114,10 +114,11 @@ const GPU_PRICE_BY_OPTION: Record<GpuOption, number> = {
 };
 
 // ============================================================================
-// Comparison anchor: Autodesk Build per-user pricing
+// Comparison anchor: Autodesk Forma Build per-user pricing
 // ============================================================================
-/** Autodesk Build/Forma at ~$1,625/user/year × 50 users (researched). */
-const AUTODESK_PER_USER_ANNUAL = 1_625;
+/** Autodesk Forma Build "Per User" tier at $1,400/user/year × 50 users
+ *  (autodesk.com/products/forma-build/buy — April 2026). */
+const AUTODESK_PER_USER_ANNUAL = 1_400;
 const AUTODESK_USERS_BENCHMARK = 50;
 
 // ============================================================================
@@ -179,7 +180,7 @@ export function calculatePricing(config: Configuration): PricingBreakdown {
   const totalYear1 = totalOneTime + totalAnnualRecurring;
   const totalMonthlyEquivalent = totalYear1 / 12;
 
-  // --- Comparison vs Autodesk Build (50 users benchmark) ---
+  // --- Comparison vs Autodesk Forma Build (50 users benchmark) ---
   const autodeskEquivalentYear1 = AUTODESK_PER_USER_ANNUAL * AUTODESK_USERS_BENCHMARK;
   const savings = autodeskEquivalentYear1 - totalYear1;
   const savingsPercent =
