@@ -47,7 +47,9 @@
       "Bash(node scripts/render-proposal.mjs)",
       "Bash(node scripts/render-proposal-docx.mjs)",
       "mcp__claude_ai_Vercel__deploy_to_vercel",
-      "Bash(vercel deploy *)"
+      "Bash(vercel deploy *)",
+      "Bash(node scripts/render-proposal.mjs PROPOSAL-v9.md)",
+      "Bash(node scripts/render-proposal-docx.mjs INFRATEK_Propuesta_VIA-HABITA_2026_v9.docx)"
     ]
   }
 }

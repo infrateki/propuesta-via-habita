@@ -1,15 +1,18 @@
 /**
  * scripts/render-proposal.mjs
  *
- * Renders PROPOSAL-vN.md (default v5) into:
+ * Renders PROPOSAL-vN.md (default = the latest version on disk) into:
  *   - public/proposal.html  (styled, printable HTML)
  *   - public/proposal.pdf   (driven by headless Chrome --print-to-pdf)
+ *
+ * The INFRATEK logo at app/icon.png is embedded as a base64 data URL in
+ * the cover header so the PDF is self-contained.
  *
  * No package installs required. Uses `marked` (already in node_modules)
  * and shells out to Chrome.
  *
- *   node scripts/render-proposal.mjs              # v5 by default
- *   node scripts/render-proposal.mjs PROPOSAL-v5.md
+ *   node scripts/render-proposal.mjs              # default source
+ *   node scripts/render-proposal.mjs PROPOSAL-v9.md
  */
 
 import { readFile, writeFile } from "node:fs/promises";
@@ -19,10 +22,11 @@ import { resolve, basename } from "node:path";
 import { marked } from "marked";
 
 const ROOT = resolve(import.meta.dirname, "..");
-const sourceArg = process.argv[2] ?? "PROPOSAL-v5.md";
+const sourceArg = process.argv[2] ?? "PROPOSAL-v9.md";
 const SOURCE = resolve(ROOT, sourceArg);
 const HTML_OUT = resolve(ROOT, "public", "proposal.html");
 const PDF_OUT = resolve(ROOT, "public", "proposal.pdf");
+const LOGO_PATH = resolve(ROOT, "app", "icon.png");
 
 const CHROME_CANDIDATES = [
   "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
@@ -43,6 +47,26 @@ marked.setOptions({ gfm: true, breaks: false });
 const body = marked.parse(md);
 
 const docTitle = `Propuesta Integrada — INFRATEK × HABITA · ${basename(SOURCE, ".md").replace("PROPOSAL-", "")}`;
+
+// Embed the INFRATEK logo as a base64 data URL so the PDF is self-contained
+// (Chrome --print-to-pdf does not always follow file:// references for images
+// reliably across versions).
+let logoDataUrl = "";
+if (existsSync(LOGO_PATH)) {
+  const buf = await readFile(LOGO_PATH);
+  logoDataUrl = `data:image/png;base64,${buf.toString("base64")}`;
+}
+
+const cover = logoDataUrl
+  ? `<header class="cover">
+       <img class="cover-logo" src="${logoDataUrl}" alt="INFRATEK" />
+       <div class="cover-meta">
+         <span>INFRATEK LLC</span>
+         <span>·</span>
+         <span>${basename(SOURCE, ".md").toUpperCase()}</span>
+       </div>
+     </header>`
+  : "";
 
 const html = `<!doctype html>
 <html lang="es">
@@ -180,6 +204,29 @@ const html = `<!doctype html>
   /* Specific class hooks */
   .pageBreak { page-break-before: always; }
 
+  /* Cover header */
+  .cover {
+    display: flex;
+    align-items: center;
+    gap: 5mm;
+    padding-bottom: 4mm;
+    margin-bottom: 8mm;
+    border-bottom: 1px solid var(--rule);
+  }
+  .cover-logo {
+    height: 14mm;
+    width: auto;
+    display: block;
+  }
+  .cover-meta {
+    display: flex;
+    gap: 2mm;
+    font-size: 8.5pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
   /* Print-tweaks */
   @media print {
     a { color: var(--ink); }
@@ -190,6 +237,7 @@ const html = `<!doctype html>
 </head>
 <body>
 <main class="doc">
+${cover}
 ${body}
 </main>
 </body>

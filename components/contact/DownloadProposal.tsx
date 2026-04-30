@@ -13,7 +13,7 @@ type Props = {
 
 export function DownloadProposal({
   href = "/proposal.pdf",
-  filename = "INFRATEK_Propuesta_VIA-HABITA_2026_v8.pdf",
+  filename = "INFRATEK_Propuesta_VIA-HABITA_2026_v9.pdf",
   label = "Descargar propuesta completa",
   variant = "button",
   className,
