@@ -1,7 +1,7 @@
 /**
  * data/proposal.ts
  * Canonical content for /propuesta — extracted from
- * INFRATEK-HABITA-2026-v10 (PROPOSAL-v10.md).
+ * INFRATEK-HABITA-2026-v11 (PROPOSAL-v11.md).
  * All copy in Spanish.
  */
 
@@ -432,7 +432,7 @@ export const GATE_CRITERIA: GateCriterion[] = [
   },
   {
     id: "g6",
-    criterion: "GO de Pablo",
-    goCondition: "Pablo da GO explícito para iniciar Fase 2",
+    criterion: "GO del sponsor",
+    goCondition: "El sponsor da GO explícito para iniciar Fase 2",
   },
 ];

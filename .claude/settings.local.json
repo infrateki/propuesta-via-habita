@@ -53,7 +53,9 @@
       "Bash(node scripts/extract-v8.mjs)",
       "Read(//tmp/**)",
       "Bash(node scripts/render-proposal.mjs PROPOSAL-v10.md)",
-      "Bash(node scripts/render-proposal-docx.mjs INFRATEK_Propuesta_VIA-HABITA_2026_v10.docx)"
+      "Bash(node scripts/render-proposal-docx.mjs INFRATEK_Propuesta_VIA-HABITA_2026_v10.docx)",
+      "Bash(node scripts/render-proposal.mjs PROPOSAL-v11.md)",
+      "Bash(node scripts/render-proposal-docx.mjs INFRATEK_Propuesta_VIA-HABITA_2026_v11.docx)"
     ]
   }
 }

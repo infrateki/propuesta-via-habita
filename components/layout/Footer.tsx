@@ -38,7 +38,7 @@ export function Footer() {
             <p className="label-spec">Documento</p>
             <ul className="space-y-1.5 text-sm text-steel-300 font-spec">
               <li>INFRATEK·HABITA·PROP·2026·FINAL</li>
-              <li>v10.0 Final Integrada</li>
+              <li>v11.0 Final Integrada</li>
               <li>Válido hasta 31 May 2026</li>
             </ul>
           </div>

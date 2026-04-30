@@ -41,8 +41,8 @@ export function VisionSection() {
       lede="Esto no es alcance contratado de Fase 1 — es la dirección que justifica construir la base bien."
     >
       <div className="grid lg:grid-cols-12 gap-8 items-start">
-        {/* Pablo quote anchor */}
-        <motion.figure
+        {/* Thesis anchor */}
+        <motion.div
           initial={reduce ? false : { opacity: 0, y: 12 }}
           whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10% 0px" }}
@@ -54,15 +54,16 @@ export function VisionSection() {
             strokeWidth={1.5}
           />
           <div className="space-y-3">
-            <blockquote className="font-display text-steel-100 text-lg lg:text-xl leading-snug">
-              &ldquo;Esa es la idea… todos los planos de construcción, todos los
-              planos de cliente, todo es lo mismo.&rdquo;
-            </blockquote>
-            <figcaption className="label-spec text-steel-400">
-              — Pablo Otero · 29 abril 2026
-            </figcaption>
+            <p className="font-display text-steel-100 text-lg lg:text-xl leading-snug">
+              Todos los planos de construcción, todos los planos de cliente:
+              una sola fuente de verdad a lo largo del ciclo de vida del
+              proyecto.
+            </p>
+            <p className="label-spec text-steel-400">
+              Tesis de la plataforma
+            </p>
           </div>
-        </motion.figure>
+        </motion.div>
 
         {/* Compact horizons list */}
         <ul className="lg:col-span-7 hairline rounded-[var(--radius-card)] bg-[var(--color-steel-800)] divide-y divide-[var(--color-hairline)]">

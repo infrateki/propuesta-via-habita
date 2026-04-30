@@ -22,7 +22,7 @@ import { resolve, basename } from "node:path";
 import { marked } from "marked";
 
 const ROOT = resolve(import.meta.dirname, "..");
-const sourceArg = process.argv[2] ?? "PROPOSAL-v10.md";
+const sourceArg = process.argv[2] ?? "PROPOSAL-v11.md";
 const SOURCE = resolve(ROOT, sourceArg);
 const HTML_OUT = resolve(ROOT, "public", "proposal.html");
 const PDF_OUT = resolve(ROOT, "public", "proposal.pdf");

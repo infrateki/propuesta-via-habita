@@ -136,15 +136,15 @@ function CurrentScenarioSection() {
           </div>
           <div className="space-y-2">
             <p className="label-spec text-[var(--color-warning)]">
-              La pregunta obvia
+              La pregunta natural es
             </p>
             <p className="font-display text-steel-100 text-xl lg:text-2xl leading-snug">
-              ¿Por $2.000 menos al año, no vale la pena irse con Autodesk?
+              ¿Por $2.000 menos al año, no conviene irse con Autodesk?
             </p>
             <p className="text-steel-400 text-sm leading-relaxed">
-              La respuesta corta: si la pregunta fuera solo de precio, sí.
+              La respuesta corta: si la pregunta fuera sólo de precio, sí.
               Pero el precio supone que 10 usuarios es el escenario correcto —
-              y ese supuesto es exactamente el que rompió PlanGrid.
+              y ese supuesto es el que limitó la experiencia con PlanGrid.
             </p>
           </div>
         </div>

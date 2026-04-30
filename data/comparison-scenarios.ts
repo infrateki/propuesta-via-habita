@@ -84,37 +84,37 @@ export const SCENARIO_CURRENT: ScenarioCard = {
 export const SCENARIO_WHY_10_FAILS = {
   number: "03" as const,
   eyebrow: "El problema con 10 usuarios",
-  title: "10 usuarios es repetir el fracaso de PlanGrid.",
+  title: "Mantener 10 usuarios repite la experiencia actual con PlanGrid.",
   reasons: [
     {
-      headline: "90% de obra nunca ve un plano digital",
+      headline: "90 % de obra trabaja con planos impresos",
       detail:
-        "El equipo de terreno trabaja con planos impresos o sin planos. La plataforma, por más que exista, no llega al lugar donde se construye.",
+        "El equipo de terreno no recibe planos digitales. La plataforma, por más que exista, no llega al lugar donde se construye.",
     },
     {
-      headline: "6 meses sin que nadie abra PlanGrid",
+      headline: "6 meses sin actividad en PlanGrid",
       detail:
-        "Caso real registrado en proyectos activos. Si nadie usa la herramienta, nadie está siendo coordinado por ella.",
+        "Caso real registrado en proyectos activos. Si nadie consulta la herramienta, no está coordinando el trabajo.",
     },
     {
-      headline: "El trazador nunca recibe acceso",
+      headline: "El trazador no recibe acceso",
       detail:
-        "El trazador es el último eslabón: la persona que marca el piso para que se construya. Si él trabaja con papel, todo lo digital aguas arriba se rompe en el último metro.",
+        "El trazador es el último eslabón: la persona que marca el piso para que se construya. Si trabaja con papel, todo lo digital aguas arriba se rompe en el último metro.",
     },
     {
-      headline: "Cuentas compartidas = trazabilidad falsa",
+      headline: "Cuentas compartidas = sin trazabilidad individual",
       detail:
-        "El RFI dice \"lo envió Pablo\" pero en realidad lo envió Juanito. No hay registro real de quién hizo qué. La auditoría operacional es ficticia.",
+        "Un RFI registra al titular de la cuenta aunque haya pasado por varias manos. No hay registro real de quién hizo qué; la auditoría operacional pierde valor.",
     },
     {
-      headline: "Autodesk está cortando cuentas compartidas",
+      headline: "Restricciones progresivas a cuentas compartidas",
       detail:
-        "Política nueva del vendor — quedarse en este modelo significa correr el riesgo de quedar sin acceso de un día para otro.",
+        "Autodesk está aplicando restricciones progresivas a cuentas compartidas. Mantener este modelo expone a la operación a interrupciones de acceso.",
     },
     {
-      headline: "Castillo en el aire",
+      headline: "Mismo modelo, herramienta diferente",
       detail:
-        "Mantener 10 usuarios es invertir en un sistema que ya demostró que no llega a las personas que toman las decisiones día a día.",
+        "Mantener 10 usuarios significa mantener el modelo actual con una herramienta diferente — el problema de alcance no se resuelve cambiando de proveedor sin cambiar el número de personas con acceso.",
     },
   ],
 };
