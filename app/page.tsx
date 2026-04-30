@@ -63,7 +63,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECCIÓN 2 — placeholder */}
+      {/* SECCIÓN 2 — teaser que dirige a /propuesta */}
       <section className="hairline-t">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-24">
           <div className="flex items-center gap-3 mb-8">
@@ -74,9 +74,18 @@ export default function HomePage() {
           <h2 className="text-display-md text-steel-100 max-w-3xl">
             Sin un sistema único, cada proyecto reinventa el control.
           </h2>
-          <p className="text-steel-400 mt-6 max-w-2xl text-sm font-spec">
-            // sección en construcción · contenido extraído de v4.0 en Phase 3
+          <p className="text-steel-300 mt-6 max-w-2xl text-base leading-relaxed">
+            Seis hallazgos del Diagnóstico BIM 2.0 (oct–dic 2025). El más
+            visible: 1 cuenta PlanGrid compartida para ~100 personas que tocan
+            cada proyecto, y el trazador — quien marca el piso para construir —
+            nunca recibe acceso digital.
           </p>
+          <Link
+            href="/propuesta#problema"
+            className="inline-flex items-center gap-2 label-spec text-[var(--color-copper)] hover:text-steel-100 transition-colors mt-6"
+          >
+            Ver los seis hallazgos →
+          </Link>
         </div>
       </section>
     </>
