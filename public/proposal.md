@@ -13,8 +13,6 @@ Implementación BIM de 4 meses + codesarrollo de plataforma VIA-HABITA. 9 entreg
 
 Valores referenciales: USD $12,500 ≈ CLP $11.750.000 ≈ 310 UF (1 USD ≈ 940 CLP, 1 UF ≈ 38.000 CLP, abril 2026).
 
-> **Cambios en v11 (30 Abr 2026):** ajustes editoriales sobre la v10. El comparativo, los tres escenarios (10 → diagnóstico → 100 usuarios), los 6 perfiles, el §14 Horizonte estratégico, los precios y las fechas confirmadas se mantienen intactos. Esta revisión neutraliza referencias personales y suaviza el lenguaje en las secciones de diagnóstico y argumento.
-
 ---
 
 # PARTE I — IMPLEMENTACIÓN BIM

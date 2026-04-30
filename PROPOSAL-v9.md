@@ -9,14 +9,6 @@
 **Fecha:** 29 de Abril, 2026
 **Validez:** 31 de Mayo, 2026
 
-> **Cambios en v9.0 (29 Abr 2026):** integra la retroalimentación de Pablo del 29 de abril.
-> · El comparativo se reformula como narrativa de tres escenarios (10 usuarios → diagnóstico → 100 usuarios reales), reemplazando la lista de 50 usuarios de versiones anteriores.
-> · 6 perfiles de usuario en lugar de 5 (Admin OT · Gerencia · Desarrollo/Proyectistas · Calidad · Supervisor/Jefe terreno · Trazador/Operario).
-> · Nuevo §18 — Horizonte estratégico (postventa digital, ciclo de vida completo, entregas oficiales DOM/bomberos).
-> · Próximos pasos actualizados con las fechas confirmadas: 4–8 mayo working sessions, 12–13 mayo presentación a Héctor / dirección, 15 mayo cierre objetivo, 1 junio kickoff.
-> · El argumento central se reformula alrededor del alcance: usuarios ilimitados significa que el trazador recibe el modelo BIM directamente, sin perderse en la cadena de impresiones.
-> · Meta de capacitación: +10 personas (incluye trazadores), antes ≥ 4.
-
 ---
 
 ## Resumen en una línea
