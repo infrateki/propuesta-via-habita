@@ -208,7 +208,7 @@ export const VIA_HABITA_EXCLUSIVES: { title: string; description: string }[] = [
   {
     title: "6 perfiles a medida de Habita",
     description:
-      "Admin · Coordinador BIM · Arquitecto · Consultor externo · Visor obra · Trazador. Permisos diseñados con tu equipo.",
+      "Admin OT · Gerencia · Desarrollo/Proyectistas · Calidad · Supervisor/Jefe terreno · Trazador/Operario. Permisos diseñados con tu equipo.",
   },
 ];
 

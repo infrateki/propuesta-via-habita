@@ -8,6 +8,7 @@ import { TimelineSection } from "@/components/proposal/TimelineSection";
 import { KPISection } from "@/components/proposal/KPISection";
 import { InvestmentSection } from "@/components/proposal/InvestmentSection";
 import { GateSection } from "@/components/proposal/GateSection";
+import { VisionSection } from "@/components/proposal/VisionSection";
 
 export const metadata = {
   title: "Propuesta — VIA-HABITA · INFRATEK × HABITA",
@@ -79,11 +80,12 @@ export default function PropuestaPage() {
       <KPISection />
       <InvestmentSection />
       <GateSection />
+      <VisionSection />
 
       {/* CLOSER */}
       <section className="hairline-t">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-24 text-center space-y-8">
-          <p className="label-spec text-[var(--color-copper)]">§09 · Próximo paso</p>
+          <p className="label-spec text-[var(--color-copper)]">§10 · Próximo paso</p>
           <h2 className="text-display-md font-display text-steel-100 max-w-3xl mx-auto">
             La Fase 1 es la única que no se puede saltear.
           </h2>

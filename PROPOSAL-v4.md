@@ -78,7 +78,7 @@ Habita tiene una posición única en la industria: diseña, construye y es la in
 | **B** | **BIM Execution Plan (BEP) v1.0** | Documento oficial de Habita (con su logo, firmado por su equipo) que define cómo se trabaja en BIM. Base para todo lo que sigue. |
 | **C** | **Proyecto piloto coordinado** | Un proyecto seleccionado con modelo federado (arquitectura + estructura + sanitario), interferencias detectadas antes de construcción, equipo interno capacitado. |
 | **D** | **Activación de consultores externos** | RSM e Iweise coordinados bajo el nuevo estándar. Sin contratar capacidad nueva — activando lo que ya existe. |
-| **E** | **Capacitación equipo piloto** | Mínimo 4 personas capacitadas en visualización y navegación de modelos BIM. Obra puede ver su proyecto en 3D. |
+| **E** | **Capacitación equipo piloto** | +10 personas capacitadas (incluye trazadores) en visualización y navegación de modelos BIM. La cadena llega hasta el último eslabón: obra ve su proyecto en 3D antes de marcar el piso. |
 | **F** | **Plataforma VIA-HABITA configurada** | Entorno común de datos operativo: visores 2D/3D, gestión de RFIs, panel de proyectistas, cartas Gantt, control de versiones, acceso de externos sin fricción. |
 | **G** | **Manual de replicación** | Instrucciones paso a paso para aplicar el mismo proceso en cualquier proyecto siguiente. Sin depender de INFRATEK. |
 | **H** | **Agente Habi** | Asistente IA entrenado con datos y procesos de Habita. Acceso solo Admin (Pablo y Marcela). |
@@ -175,7 +175,7 @@ Al terminar el Mes 4, Habita recibirá estos documentos. **Todos llevan el logo 
 | Semana | Actividad | Entregable |
 |---|---|---|
 | 1–4 | Sesiones semanales de coordinación | Interferencias críticas resueltas antes de obra |
-| 2–3 | Capacitación equipo obra (jefes OT, jefes de terreno) | ≥ 4 personas navegando modelos en terreno |
+| 2–3 | Capacitación equipo obra (jefes OT, jefes de terreno, trazadores) | +10 personas navegando modelos en terreno |
 | 4 | Activación panel de evaluación de proyectistas | E-06 operativo en VIA-HABITA |
 | 4 | Pre-cierre: revisión de métricas | Informe preliminar de resultados |
 
@@ -203,7 +203,7 @@ Al terminar el Mes 4, Habita recibirá estos documentos. **Todos llevan el logo 
 | RFIs en proyecto piloto | ~85 est. | **< 50 (↓ 40%)** | Conteo en VIA-HABITA vs proyectos comparables |
 | Interferencias detectadas pre-construcción | ~0% | **> 30%** | Registro en modelo federado vs RFIs de obra posteriores |
 | Consultores entregando modelos BIM bajo estándar | 0 de 2 | **≥ 2 de 2** | Verificación de archivos recibidos en CDE |
-| Personas de obra capacitadas | 0 | **≥ 4** | Lista de asistencia + evaluación práctica |
+| Personas de obra capacitadas (incluye trazadores) | 0 | **+10** | Lista de asistencia + evaluación práctica |
 | Madurez BIM Habita | 1.8 / 5.0 | **2.5 / 5.0** | Re-evaluación con mismo instrumento del diagnóstico |
 | Documentos BIM base existentes | 0 | **9 entregables aprobados** | Checklist E-01 a E-09 |
 | Proyectistas evaluados con KPIs | 0% | **100%** | Panel activo en VIA-HABITA |
@@ -226,7 +226,7 @@ Al terminar la Fase 1, la decisión de continuar a Fase 2 se basa en estos crite
 | Reducción de RFIs | RFIs piloto < 50 (↓ ≥ 40% vs baseline) |
 | Documentación completada | ≥ 8 de 9 entregables aprobados por Pablo |
 | Consultores integrados | ≥ 2 consultores entregando bajo estándar BIM |
-| Equipo capacitado | ≥ 4 personas usando modelo en obra |
+| Equipo capacitado | +10 personas usando modelo en obra (incluye trazadores) |
 | Plataforma operativa | VIA-HABITA activo con control de versiones funcionando |
 | GO de Pablo | Pablo da GO explícito para Fase 2 |
 
@@ -283,7 +283,7 @@ PlanGrid está discontinuado por Autodesk. La migración forzada a Autodesk Form
 | Minutas y correspondencia | Registro estructurado con trazabilidad | Notion + WhatsApp |
 | Estructura de archivos ISO 19650 | Espacios WIP/SHARED/PUBLISHED/ARCHIVE | Carpetas dispersas |
 | Agente Habi | Asistente IA conversacional (acceso Admin) | No existía |
-| 5 perfiles de usuario | Admin, Coordinador BIM, Arquitecto, Consultor externo, Visor obra | 1 cuenta PlanGrid compartida |
+| 6 perfiles de usuario | Admin OT · Gerencia · Desarrollo/Proyectistas · Calidad · Supervisor/Jefe terreno · Trazador/Operario | 1 cuenta PlanGrid compartida |
 
 > **La plataforma se va a sentir familiar.** La idea es replicar la lógica del Notion actual + las funciones que ya conocen de PlanGrid. Minimizar el trauma del cambio. Aprender una herramienta nueva no es el objetivo; el objetivo es que el equipo pueda enfocarse en hacer su trabajo mejor.
 
@@ -347,7 +347,7 @@ Cada pago se libera únicamente después de que el entregable ha sido presentado
 | **Precio** | USD $2,000 por proyecto activo / año |
 | **Usuarios** | **ILIMITADOS** — internos, externos, consultores, subcontratistas |
 | **Almacenamiento** | Ilimitado |
-| **Perfiles incluidos** | Admin, Coordinador BIM, Arquitecto, Consultor externo, Visor obra |
+| **Perfiles incluidos** | Admin OT · Gerencia · Desarrollo/Proyectistas · Calidad · Supervisor/Jefe terreno · Trazador/Operario |
 | **Agente Habi** | Incluido (acceso Admin) |
 | **Soporte** | 24/7 para incidentes críticos, < 4 horas respuesta |
 | **Uptime SLA** | 97% comprometido |
@@ -518,21 +518,44 @@ Empezar con Nivel Básico durante los primeros 6 meses. Escalar según uso real.
 
 ---
 
-## 18. Próximos pasos
+## 18. Horizonte estratégico — Visión a largo plazo
 
-| # | Acción | Responsable | Fecha |
-|---|---|---|---|
-| 1 | Seleccionar proyecto piloto (Faldeos vs. Macarena) | Pablo Otero | Esta semana |
-| 2 | Revisión interna y decisión de avanzar | Pablo Otero | Próxima semana |
-| 3 | Aprobación + transferencia anticipo USD $4,500 | Pablo Otero | Antes 10 mayo |
-| 4 | Firma del acuerdo de servicios | Habita + INFRATEK | 10–15 mayo |
-| 5 | Marcela arranca como BIM Champion full-time | Habita | Lunes 28 abril |
-| 6 | Inicio de la Fase 1 | Sergio + equipo | Semana del 18 mayo |
-| 7 | Contratar visita presencial kickoff (opcional) | Pablo | Antes de inicio |
+Esta sección no es compromiso de Fase 1. Es la dirección que justifica construir la base bien.
+
+| Horizonte | Qué implica |
+|---|---|
+| **Todos los proyectos, no sólo 6** | VIA-HABITA escala a la cartera completa de Habita. Cada proyecto activo dentro de la misma plataforma, con la misma metodología y sin licencias por usuario. |
+| **Ciclo de vida completo** | Diseño → construcción → venta → postventa, en una sola línea de trazabilidad. La información del proyecto sigue al departamento después de la entrega. |
+| **Postventa digital** | Digital twin del departamento entregado: el cliente y la administración consultan información estructurada en lugar de buscar en correos. |
+| **Entregas oficiales** | Recepción municipal (DOM), informes a bomberos, traspaso a la administración de la comunidad — todo coordinado desde el mismo modelo. |
+
+> *"Esa es la idea… todos los planos de construcción, todos los planos de cliente, todo es lo mismo."*
+> — Pablo Otero · 29 abril 2026
+
+**Acotación:** este horizonte es la dirección, no el alcance contratado. Cada extensión (postventa, digital twins, integraciones DOM/bomberos) se evalúa al cierre de Fase 1 con base en lo aprendido.
 
 ---
 
-## 19. Aceptación
+## 19. Próximos pasos
+
+| Fecha | Hito | Responsable |
+|---|---|---|
+| 4–8 mayo | Working sessions Sergio + Pablo | Pablo + Sergio |
+| 8 mayo | Héctor regresa de vacaciones | Habita |
+| 11 mayo | Sync con Pablo + Marcela + nuevo lead OT | Pablo + Marcela + lead OT |
+| 12–13 mayo | Presentación a Héctor / dirección | Pablo + Sergio |
+| 15 mayo | Cierre objetivo (firma + anticipo USD $4,500) | Habita + INFRATEK |
+| 1 junio | Kickoff del proyecto | Sergio + equipo |
+
+**Notas de equipo:**
+
+- Marcela transiciona al rol de coordinadora de proyecto. Su reemplazo en oficina técnica arranca el lunes.
+- Pilot project (Faldeos vs. proyecto en 2D) se confirma en las working sessions del 4–8 mayo.
+- La visita presencial de kickoff se contrata como add-on opcional.
+
+---
+
+## 20. Aceptación
 
 Para dar inicio a la Fase 1:
 

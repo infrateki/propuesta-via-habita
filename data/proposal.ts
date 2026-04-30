@@ -29,10 +29,10 @@ export const PROBLEMS: Problem[] = [
   },
   {
     id: "p3",
-    title: "1 cuenta PlanGrid compartida",
+    title: "El trazador trabaja con planos en papel",
     impact:
-      "Una persona ve los planos. El resto trabaja con copias impresas o sin información. Riesgo operacional y legal sostenido.",
-    metric: "1 de ~50 stakeholders",
+      "El trazador — la persona que marca el piso para que se construya — recibe planos impresos que un supervisor leyó por él. Cuando el modelo cambia, el trazador no se entera. La cadena se rompe en el último metro: 1 cuenta digital compartida para ~100 personas que tocan el proyecto.",
+    metric: "1 de ~100 stakeholders",
   },
   {
     id: "p4",
@@ -164,8 +164,9 @@ export const MODULES: Module[] = [
   },
   {
     id: "m9",
-    name: "5 perfiles de usuario",
-    description: "Admin · Coordinador BIM · Arquitecto · Externo · Visor obra.",
+    name: "6 perfiles de usuario",
+    description:
+      "Admin OT · Gerencia · Desarrollo / Proyectistas · Calidad · Supervisor / Jefe terreno · Trazador / Operario.",
     replaces: "1 cuenta compartida",
     icon: "Users",
   },
@@ -344,11 +345,11 @@ export const KPIS: KPI[] = [
   },
   {
     id: "capacitados",
-    metric: "Personas de obra capacitadas",
+    metric: "Personas de obra capacitadas (incluye trazadores)",
     before: "0",
-    after: "≥ 4",
+    after: "+10",
     beforePct: 0,
-    afterPct: 80,
+    afterPct: 100,
     unit: "personas",
   },
   {
@@ -422,7 +423,7 @@ export const GATE_CRITERIA: GateCriterion[] = [
   {
     id: "g4",
     criterion: "Equipo capacitado",
-    goCondition: "≥ 4 personas usando modelo en obra",
+    goCondition: "+10 personas usando modelo en obra (incluye trazadores)",
   },
   {
     id: "g5",
