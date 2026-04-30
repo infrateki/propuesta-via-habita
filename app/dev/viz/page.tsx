@@ -1,5 +1,5 @@
 // Local-only "Storybook" for visualization primitives.
-// Built in Phase 1 — Receipt, ScopeTree, CBSChart, DeliverableMatrix, SteelForm.
+// Built in Phase 1: Receipt, ScopeTree, CBSChart, DeliverableMatrix, SteelForm.
 
 export default function DevVizPage() {
   return (

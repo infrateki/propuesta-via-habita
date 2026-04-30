@@ -51,7 +51,7 @@ export function ComparativoNarrative() {
 }
 
 /* ========================================================================== */
-/* Section 01 — Diagnóstico                                                    */
+/* Section 01: Diagnóstico                                                     */
 /* ========================================================================== */
 
 function DiagnosticSection() {
@@ -105,7 +105,7 @@ function DiagnosticSection() {
 }
 
 /* ========================================================================== */
-/* Section 02 — Escenario actual (Autodesk wins on price)                      */
+/* Section 02: Escenario actual (Autodesk wins on price)                       */
 /* ========================================================================== */
 
 function CurrentScenarioSection() {
@@ -143,7 +143,7 @@ function CurrentScenarioSection() {
             </p>
             <p className="text-steel-400 text-sm leading-relaxed">
               La respuesta corta: si la pregunta fuera sólo de precio, sí.
-              Pero el precio supone que 10 usuarios es el escenario correcto —
+              Pero el precio supone que 10 usuarios es el escenario correcto,
               y ese supuesto es el que limitó la experiencia con PlanGrid.
             </p>
           </div>
@@ -154,7 +154,7 @@ function CurrentScenarioSection() {
 }
 
 /* ========================================================================== */
-/* Section 03 — Por qué 10 no funciona                                         */
+/* Section 03: Por qué 10 no funciona                                          */
 /* ========================================================================== */
 
 function WhyTenFailsSection() {
@@ -200,7 +200,7 @@ function WhyTenFailsSection() {
 }
 
 /* ========================================================================== */
-/* Section 04 — Escenario real 100 usuarios (VIA wins decisively)              */
+/* Section 04: Escenario real 100 usuarios (VIA wins decisively)               */
 /* ========================================================================== */
 
 function RealScenarioSection() {
@@ -296,18 +296,18 @@ function RealScenarioSection() {
                 <span className="text-[var(--color-electric)] text-spec-price">
                   10%
                 </span>{" "}
-                de Autodesk Forma Build —{" "}
+                de Autodesk Forma Build,{" "}
                 <span className="text-[var(--color-electric)] text-spec-price">
                   {r.toFixed(1)}×
                 </span>{" "}
-                más económico — con usuarios ilimitados.
+                más económico, con usuarios ilimitados.
               </p>
               <p className="text-steel-400 text-sm leading-relaxed">
                 La diferencia anual financia la totalidad de la Fase 1{" "}
                 {Math.floor(
                   (SCENARIO_REAL.costs![0].autodesk - SCENARIO_REAL.costs![0].viaHabita) / 12_500,
                 )}{" "}
-                veces — cada año.
+                veces, cada año.
               </p>
             </div>
           </div>
@@ -318,7 +318,7 @@ function RealScenarioSection() {
 }
 
 /* ========================================================================== */
-/* Section 05 — Ventajas exclusivas                                            */
+/* Section 05: Ventajas exclusivas                                             */
 /* ========================================================================== */
 
 function ExclusivesSection() {
@@ -335,7 +335,7 @@ function ExclusivesSection() {
       <p className="text-steel-300 leading-relaxed max-w-3xl mb-8">
         Más allá del costo, hay módulos pensados para el flujo específico
         de Habita que no están en el catálogo estándar de un producto SaaS
-        genérico. Estos no se miden en precio — se miden en información que
+        genérico. Estos no se miden en precio, se miden en información que
         antes no existía.
       </p>
 
@@ -463,7 +463,7 @@ function SectionFrame({
 }
 
 /* -------------------------------------------------------------------------- */
-/* ScenarioCostGrid — side-by-side cards, VIA vs Autodesk                      */
+/* ScenarioCostGrid: side-by-side cards, VIA vs Autodesk                       */
 /* -------------------------------------------------------------------------- */
 
 function ScenarioCostGrid({ scenario }: { scenario: ScenarioCard }) {
@@ -618,7 +618,7 @@ function CostColumn({
 }
 
 /* -------------------------------------------------------------------------- */
-/* AnimatedNumber — counts up to value when in view                            */
+/* AnimatedNumber: counts up to value when in view                             */
 /* -------------------------------------------------------------------------- */
 
 function AnimatedNumber({

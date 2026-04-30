@@ -40,7 +40,7 @@ export function buildLineItems(config: Configuration): LineItem[] {
       price_data: {
         currency: "usd",
         product_data: {
-          name: "Anticipo — Implementación VIA-HABITA",
+          name: "Anticipo · Implementación VIA-HABITA",
           description:
             "Inicio de implementación de la plataforma CDE a medida para Grupo Inmobiliario Habita.",
         },

@@ -38,7 +38,7 @@ export function VisionSection() {
           <span className="text-steel-300">Lo que se construye encima es de Habita.</span>
         </>
       }
-      lede="Esto no es alcance contratado de Fase 1 — es la dirección que justifica construir la base bien."
+      lede="Esto no es alcance contratado de Fase 1. Es la dirección que justifica construir la base bien."
     >
       <div className="grid lg:grid-cols-12 gap-8 items-start">
         {/* Thesis anchor */}

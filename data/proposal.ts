@@ -1,6 +1,6 @@
 /**
  * data/proposal.ts
- * Canonical content for /propuesta — extracted from
+ * Canonical content for /propuesta, extracted from
  * INFRATEK-HABITA-2026-v11 (PROPOSAL-v11.md).
  * All copy in Spanish.
  */
@@ -24,15 +24,15 @@ export const PROBLEMS: Problem[] = [
     id: "p2",
     title: "RFIs sin trazabilidad",
     impact:
-      "Cada proyecto entre 20 y 105 RFIs registrados a mano, sin vínculo al plano ni al modelo. El 56 % son prevenibles con metodología.",
+      "Cada proyecto entre 20 y 105 RFIs registrados a mano, sin vínculo al plano ni al modelo. Más de la mitad son prevenibles con metodología.",
     metric: "20–105 RFIs / proyecto",
   },
   {
     id: "p3",
     title: "El trazador trabaja con planos en papel",
     impact:
-      "El trazador — la persona que marca el piso para que se construya — recibe planos impresos que un supervisor leyó por él. Cuando el modelo cambia, el trazador no se entera. La cadena se rompe en el último metro: 1 cuenta digital compartida para ~100 personas que tocan el proyecto.",
-    metric: "1 de ~100 stakeholders",
+      "El trazador, la persona que marca el piso para que se construya, recibe planos impresos que un supervisor leyó por él. Cuando el modelo cambia, el trazador no se entera. La cadena se rompe en el último metro: una sola cuenta digital compartida por proyecto.",
+    metric: "1 cuenta por proyecto",
   },
   {
     id: "p4",
@@ -117,7 +117,7 @@ export const MODULES: Module[] = [
     id: "m2",
     name: "Visor 3D",
     description: "IFC con selección de elementos, propiedades y árbol de modelo.",
-    replaces: "—",
+    replaces: "",
     icon: "Box",
   },
   {
@@ -131,7 +131,7 @@ export const MODULES: Module[] = [
     id: "m4",
     name: "Panel de proyectistas",
     description: "KPIs pentagonales por consultor externo.",
-    replaces: "—",
+    replaces: "",
     icon: "BarChart3",
   },
   {
@@ -159,7 +159,7 @@ export const MODULES: Module[] = [
     id: "m8",
     name: "Agente Habi",
     description: "Asistente IA conversacional. Acceso Admin (Pablo y Marcela).",
-    replaces: "—",
+    replaces: "",
     icon: "Bot",
   },
   {
@@ -182,7 +182,7 @@ export type Deliverable = {
 export const DELIVERABLES: Deliverable[] = [
   { code: "E-01", name: "BIM Execution Plan (BEP) v1.0", format: "PDF + Word editable", approver: "Pablo Otero" },
   { code: "E-02", name: "Manual de nomenclatura y estructura de carpetas", format: "PDF", approver: "Pablo Otero" },
-  { code: "E-03", name: "Criterios de Modelado BIM — Arquitectura y Estructura", format: "PDF", approver: "Macarena Andrade" },
+  { code: "E-03", name: "Criterios de Modelado BIM: Arquitectura y Estructura", format: "PDF", approver: "Macarena Andrade" },
   { code: "E-04", name: "Protocolo de coordinación semanal", format: "PDF", approver: "Pablo Otero" },
   { code: "E-05", name: "Modelo federado del proyecto piloto", format: "Archivo nativo + visor web", approver: "Macarena Andrade" },
   { code: "E-06", name: "Registro de interferencias detectadas y resueltas", format: "Plataforma VIA-HABITA", approver: "Marcela Leyton" },
@@ -207,7 +207,7 @@ export const TEAM: TeamMember[] = [
     initials: "ML",
     role: "BIM Champion / BIM Manager",
     org: "HABITA",
-    dedication: "Full-time desde lunes — líder operacional del proyecto.",
+    dedication: "Full-time desde lunes, líder operacional del proyecto.",
   },
   {
     id: "macarena",
@@ -383,18 +383,18 @@ export const KPIS: KPI[] = [
 
 export const INVESTMENT = {
   baseAmount: 12_500,
-  baseLabel: "USD $12.500 — Fase 1 completa, 100 % virtual",
+  baseLabel: "USD $12.500. Fase 1 completa, 100 % virtual",
   recurringAmount: 2_000,
-  recurringLabel: "USD $2.000 / proyecto / año — usuarios ilimitados",
+  recurringLabel: "USD $2.000 / proyecto / año, usuarios ilimitados",
   visitAmount: 2_000,
   visitLabel: "USD $2.000 / visita opcional a La Serena (3 días, todo incluido)",
   enterpriseNote: "Plan Enterprise: 10+ proyectos = $1.600 / proyecto (20 % de descuento).",
   totalDeliveredValue: 21_000,
   paymentSchedule: [
-    { code: "H0", label: "Anticipo — firma de acuerdo", when: "Antes de iniciar", amount: 4_500 },
-    { code: "H1", label: "Setup — BEP + plataforma operativa", when: "Fin Mes 1", amount: 3_000 },
-    { code: "H2", label: "Modelos — federado v1 + protocolo + Notion migrado", when: "Fin Mes 2", amount: 2_500 },
-    { code: "H3", label: "Cierre — manual + KPIs + hand-off", when: "Fin Mes 4", amount: 2_500 },
+    { code: "H0", label: "Anticipo: firma de acuerdo", when: "Antes de iniciar", amount: 4_500 },
+    { code: "H1", label: "Setup: BEP + plataforma operativa", when: "Fin Mes 1", amount: 3_000 },
+    { code: "H2", label: "Modelos: federado v1 + protocolo + Notion migrado", when: "Fin Mes 2", amount: 2_500 },
+    { code: "H3", label: "Cierre: manual + KPIs + hand-off", when: "Fin Mes 4", amount: 2_500 },
   ],
 };
 

@@ -15,9 +15,9 @@ export function DeliverablesSection() {
       eyebrow="9 entregables"
       title={
         <>
-          Lo que Habita
+          Lo que se queda
           <br />
-          <span className="text-steel-300">se queda con Habita.</span>
+          <span className="text-steel-300">con Habita.</span>
         </>
       }
       lede="Documentos formales, modelo federado y plataforma operativa. Cada entregable se aprueba antes del pago del hito correspondiente."
@@ -68,7 +68,7 @@ export function DeliverablesSection() {
         ))}
       </ol>
 
-      {/* Callout — todos llevan el logo de Habita */}
+      {/* Callout (todos llevan el logo de Habita) */}
       <motion.aside
         initial={reduce ? false : { opacity: 0, y: 12 }}
         whileInView={reduce ? undefined : { opacity: 1, y: 0 }}

@@ -2,7 +2,7 @@
  * data/comparison-scenarios.ts
  *
  * Three-scenario narrative replacing the legacy 50-user comparison.
- * Source: Pablo Otero feedback (29 Abr 2026) — the diagnosis is that
+ * Source: Pablo Otero feedback (29 Abr 2026); the diagnosis is that
  * sticking with 10 users is what made PlanGrid fail at Habita; the real
  * scale is ~100 users when you count every actor that needs digital
  * access (development, externals, quality, management, jobsites).
@@ -33,7 +33,7 @@ export interface ScenarioCard {
 }
 
 // ============================================================================
-// Scenario 1 — diagnostic anchor (no comparison, just framing)
+// Scenario 1: diagnostic anchor (no comparison, just framing)
 // ============================================================================
 export const SCENARIO_DIAGNOSTIC = {
   number: "01" as const,
@@ -43,7 +43,7 @@ export const SCENARIO_DIAGNOSTIC = {
   stats: [
     { value: "+50", label: "horas de diagnóstico" },
     { value: "+20", label: "participantes entrevistados" },
-    { value: "56%", label: "de RFIs prevenibles con metodología" },
+    { value: "+50%", label: "de RFIs prevenibles con metodología" },
     { value: "1", label: "cuenta PlanGrid compartida" },
     { value: "90%", label: "de obra usa planos en papel" },
   ],
@@ -55,7 +55,7 @@ export const SCENARIO_DIAGNOSTIC = {
 };
 
 // ============================================================================
-// Scenario 2 — current state (10 users) — Autodesk wins on price (intentional provocation)
+// Scenario 2: current state (10 users); Autodesk wins on price (intentional provocation)
 // ============================================================================
 export const SCENARIO_CURRENT: ScenarioCard = {
   number: "02",
@@ -79,7 +79,7 @@ export const SCENARIO_CURRENT: ScenarioCard = {
 };
 
 // ============================================================================
-// Scenario 3 — diagnosis (no costs, just argument)
+// Scenario 3: diagnosis (no costs, just argument)
 // ============================================================================
 export const SCENARIO_WHY_10_FAILS = {
   number: "03" as const,
@@ -114,13 +114,13 @@ export const SCENARIO_WHY_10_FAILS = {
     {
       headline: "Mismo modelo, herramienta diferente",
       detail:
-        "Mantener 10 usuarios significa mantener el modelo actual con una herramienta diferente — el problema de alcance no se resuelve cambiando de proveedor sin cambiar el número de personas con acceso.",
+        "Mantener 10 usuarios significa mantener el modelo actual con una herramienta diferente. El problema de alcance no se resuelve cambiando de proveedor sin cambiar el número de personas con acceso.",
     },
   ],
 };
 
 // ============================================================================
-// Scenario 4 — real scale (100 users) — VIA-HABITA wins decisively
+// Scenario 4: real scale (100 users); VIA-HABITA wins decisively
 // ============================================================================
 export const HABITA_TEAM_BREAKDOWN: { area: string; people: number; detail?: string }[] = [
   {
@@ -165,7 +165,7 @@ export const SCENARIO_REAL: ScenarioCard = {
       label: "Costo anual",
       viaHabita: 12_000,
       autodesk: 140_000,
-      viaHabitaDetail: "6 proyectos × $2.000 — usuarios ilimitados incluidos",
+      viaHabitaDetail: "6 proyectos × $2.000, usuarios ilimitados incluidos",
       autodeskDetail: "100 usuarios × $1.400/usuario/año",
     },
     {
@@ -177,7 +177,7 @@ export const SCENARIO_REAL: ScenarioCard = {
 };
 
 // ============================================================================
-// Scenario 5 — exclusive advantages
+// Scenario 5: exclusive advantages
 // ============================================================================
 export const VIA_HABITA_EXCLUSIVES: { title: string; description: string }[] = [
   {
@@ -198,7 +198,7 @@ export const VIA_HABITA_EXCLUSIVES: { title: string; description: string }[] = [
   {
     title: "Tablero de control de costo del desarrollo",
     description:
-      "Visibilidad financiera del proyecto integrada con el avance técnico — no en una planilla aparte.",
+      "Visibilidad financiera del proyecto integrada con el avance técnico, no en una planilla aparte.",
   },
   {
     title: "Evaluación por fecha de entrega y calidad",

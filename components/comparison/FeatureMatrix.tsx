@@ -53,8 +53,8 @@ const SUPPORT_LABEL: Record<FeatureSupport, string> = {
  * Interactive feature comparison matrix for /comparativo "Funcionalidades" tab.
  *
  * Layout:
- *   1. Summary row — one card per platform (counts + weighted score bar)
- *   2. Toolbar — global counts + Expand/Collapse all
+ *   1. Summary row: one card per platform (counts + weighted score bar)
+ *   2. Toolbar: global counts + Expand/Collapse all
  *   3. Single sticky-header table with collapsible category sections
  *
  * Mobile: the wrapper enables horizontal scroll; the platform header row
@@ -122,7 +122,7 @@ export function FeatureMatrix() {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Summary grid — per-platform counts + weighted score                         */
+/* Summary grid: per-platform counts + weighted score                          */
 /* -------------------------------------------------------------------------- */
 
 function SummaryGrid() {
@@ -386,7 +386,7 @@ function CategorySection({
 
   return (
     <>
-      {/* Category header row — clickable, spans all columns */}
+      {/* Category header row (clickable, spans all columns) */}
       <tr className="hairline-strong-t">
         <th
           colSpan={1 + PLATFORMS.length}
@@ -482,7 +482,7 @@ function CategorySection({
                     ) : null}
                     <SupportIcon
                       level={feature.support[p.id] ?? "none"}
-                      title={`${p.name} — ${
+                      title={`${p.name}: ${
                         SUPPORT_LABEL[feature.support[p.id] ?? "none"]
                       }`}
                     />
@@ -693,6 +693,6 @@ function ToolbarButton({
   );
 }
 
-// Suppress "Platform unused" if a future refactor drops the type — the type
+// Suppress "Platform unused" if a future refactor drops the type; the type
 // is exported by data/features so consumers can adopt the same interface.
 export type { Platform };

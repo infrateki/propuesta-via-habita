@@ -44,9 +44,9 @@ export function SolutionSection() {
           <span className="font-display tracking-tight">HABITA</span>
         </>
       }
-      lede="Plataforma CDE codesarrollada — usuarios ilimitados, propiedad total del código, sin vendor lock-in. Construida sobre la metodología VDC de Stanford."
+      lede="Plataforma CDE codesarrollada: usuarios ilimitados, propiedad total del código, sin vendor lock-in. Construida sobre la metodología VDC de Stanford."
     >
-      {/* PILLARS — VDC Stanford */}
+      {/* PILLARS (VDC Stanford) */}
       <div className="grid lg:grid-cols-3 gap-px bg-[var(--color-hairline)] hairline rounded-[var(--radius-card)] overflow-hidden mb-20">
         {PILLARS.map((pillar, i) => (
           <motion.div
@@ -84,7 +84,7 @@ export function SolutionSection() {
         ))}
       </div>
 
-      {/* FEATURE GRID — 9 modules */}
+      {/* FEATURE GRID (9 modules) */}
       <div className="space-y-6">
         <div className="flex items-center gap-3">
           <span className="label-spec text-steel-400">9 módulos</span>
@@ -128,7 +128,7 @@ export function SolutionSection() {
                   <p className="text-sm text-steel-400 leading-relaxed">
                     {m.description}
                   </p>
-                  {m.replaces !== "—" ? (
+                  {m.replaces !== "" ? (
                     <p className="label-spec text-steel-500 pt-1">
                       → reemplaza {m.replaces}
                     </p>

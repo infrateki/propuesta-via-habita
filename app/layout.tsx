@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "VIA-HABITA — Propuesta Integrada · INFRATEK × HABITA",
+  title: "VIA-HABITA · Propuesta Integrada · INFRATEK × HABITA",
   description:
     "Plataforma CDE a medida para Grupo Inmobiliario Habita. Implementación BIM, agente IA, sin vendor lock-in. Configura tu plan.",
   robots: { index: false, follow: false },

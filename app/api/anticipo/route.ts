@@ -15,7 +15,7 @@ export const runtime = "nodejs";
  * - Diseño y configuración de VIA-HABITA a medida (incluido)
  * - 5 meses de uso de plataforma sin suscripción (incluido)
  *
- * Redirects directly to Stripe Checkout — no POST body needed.
+ * Redirects directly to Stripe Checkout (no POST body needed).
  */
 export async function GET() {
   if (!isStripeConfigured()) {
@@ -45,7 +45,7 @@ export async function GET() {
             currency: "usd",
             unit_amount: 450000, // $4,500.00 in cents
             product_data: {
-              name: "Anticipo H0 — Implementación VIA-HABITA",
+              name: "Anticipo H0 · Implementación VIA-HABITA",
               description:
                 "Inicio de Fase 1: implementación BIM (4 meses) + diseño y configuración de plataforma VIA-HABITA a medida (incluido). Suscripción de plataforma comienza en Mes 6.",
             },
@@ -59,7 +59,7 @@ export async function GET() {
         hito: "H0",
         amount_usd: "4500",
         source: "via-habita-propuesta",
-        description: "Anticipo — Firma acuerdo e inicio Fase 1",
+        description: "Anticipo · Firma acuerdo e inicio Fase 1",
       },
       allow_promotion_codes: false,
       billing_address_collection: "required",

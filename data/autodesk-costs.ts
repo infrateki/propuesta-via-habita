@@ -1,6 +1,6 @@
 /**
  * data/autodesk-costs.ts
- * Catálogo del ecosistema Autodesk AEC — precios públicos USD/año.
+ * Catálogo de productos Autodesk AEC. Precios públicos USD/año.
  * Fuente: autodesk.com/products (abril 2026).
  *
  * Usado por la pestaña "Costos Autodesk" en /comparativo para mostrar
@@ -26,7 +26,7 @@ export interface AutodeskProduct {
   description: string;
   /** ¿Es relevante para el escenario operacional de Habita? */
   relevantToHabita: boolean;
-  /** Por qué Habita lo necesita o no — texto en español, conciso. */
+  /** Por qué Habita lo necesita o no (texto en español, conciso). */
   habitaNote: string;
 }
 
@@ -39,7 +39,7 @@ export const AUTODESK_PRODUCTS: AutodeskProduct[] = [
     pricePerYear: 2_095,
     pricePerMonth: null,
     unit: "user",
-    description: "CAD 2D/3D estándar — dibujo técnico y documentación.",
+    description: "CAD 2D/3D estándar para dibujo técnico y documentación.",
     relevantToHabita: false,
     habitaNote:
       "Los consultores externos (RSM, Iweise) ya tienen sus propias licencias. Habita no necesita comprar.",
@@ -51,7 +51,7 @@ export const AUTODESK_PRODUCTS: AutodeskProduct[] = [
     pricePerYear: 540,
     pricePerMonth: null,
     unit: "user",
-    description: "Versión 2D-only de AutoCAD — más económica que la full.",
+    description: "Versión 2D-only de AutoCAD, más económica que la full.",
     relevantToHabita: false,
     habitaNote: "Misma lógica: lo manejan los proyectistas externos.",
   },
@@ -62,7 +62,7 @@ export const AUTODESK_PRODUCTS: AutodeskProduct[] = [
     pricePerYear: 3_005,
     pricePerMonth: null,
     unit: "user",
-    description: "Modelado BIM paramétrico — estándar de mercado en arquitectura y estructura.",
+    description: "Modelado BIM paramétrico, estándar de mercado en arquitectura y estructura.",
     relevantToHabita: false,
     habitaNote:
       "RSM e Iweise ya operan en Revit con sus propias licencias. Habita coordina, no modela.",
@@ -74,7 +74,7 @@ export const AUTODESK_PRODUCTS: AutodeskProduct[] = [
     pricePerYear: 560,
     pricePerMonth: null,
     unit: "user",
-    description: "Versión reducida de Revit — modelado básico, sin colaboración worksharing.",
+    description: "Versión reducida de Revit: modelado básico, sin colaboración worksharing.",
     relevantToHabita: false,
     habitaNote: "No aplica al rol de coordinación de Habita.",
   },
@@ -85,7 +85,7 @@ export const AUTODESK_PRODUCTS: AutodeskProduct[] = [
     pricePerYear: 2_870,
     pricePerMonth: null,
     unit: "user",
-    description: "Diseño civil — terrenos, obras viales, redes sanitarias.",
+    description: "Diseño civil: terrenos, obras viales, redes sanitarias.",
     relevantToHabita: false,
     habitaNote: "Especialidad civil; lo maneja la consultora correspondiente.",
   },
@@ -108,9 +108,9 @@ export const AUTODESK_PRODUCTS: AutodeskProduct[] = [
     pricePerYear: 2_010,
     pricePerMonth: null,
     unit: "user",
-    description: "Modelado y render de alta calidad — visualización para marketing.",
+    description: "Modelado y render de alta calidad para visualización de marketing.",
     relevantToHabita: false,
-    habitaNote: "Render de marketing — fuera del scope operacional del proyecto.",
+    habitaNote: "Render de marketing, fuera del scope operacional del proyecto.",
   },
 
   // -------- Bundles --------
@@ -136,7 +136,7 @@ export const AUTODESK_PRODUCTS: AutodeskProduct[] = [
     pricePerYear: 804,
     pricePerMonth: 67,
     unit: "user",
-    description: "Tier básico — solo herramientas de campo (planos, fotos, RFIs simples).",
+    description: "Tier básico: solo herramientas de campo (planos, fotos, RFIs simples).",
     relevantToHabita: false,
     habitaNote:
       "Tier limitado; no cubre el flujo de coordinación + submittals que Habita necesita.",
@@ -149,7 +149,7 @@ export const AUTODESK_PRODUCTS: AutodeskProduct[] = [
     pricePerMonth: 117,
     unit: "user",
     description:
-      "Tier completo — RFIs, submittals, modelos federados, clash, gestión documental. Sucesor directo de PlanGrid + BIM 360 + ACC.",
+      "Tier completo: RFIs, submittals, modelos federados, clash, gestión documental. Sucesor directo de PlanGrid + BIM 360 + ACC.",
     relevantToHabita: true,
     habitaNote:
       "Este es el tier real de comparación. 50 stakeholders × $1,400 = $70,000/año. VIA-HABITA reemplaza esto a $12,000/año con usuarios ilimitados.",
@@ -161,7 +161,7 @@ export const AUTODESK_PRODUCTS: AutodeskProduct[] = [
     pricePerYear: null,
     pricePerMonth: null,
     unit: "enterprise",
-    description: "Usuarios ilimitados a nivel enterprise — pricing solo bajo cotización.",
+    description: "Usuarios ilimitados a nivel enterprise; pricing solo bajo cotización.",
     relevantToHabita: false,
     habitaNote:
       "Sin precio público; proceso de venta largo. Habita es demasiado pequeña para conseguir condiciones razonables.",
@@ -169,7 +169,7 @@ export const AUTODESK_PRODUCTS: AutodeskProduct[] = [
 ];
 
 // ============================================================================
-// Escenario Habita — costo real de migrar a Autodesk full stack
+// Escenario Habita: costo real de migrar a Autodesk full stack
 // ============================================================================
 
 export interface ScenarioLine {
@@ -194,7 +194,7 @@ export const HABITA_AUTODESK_SCENARIO: ScenarioLine[] = [
     id: "design-team",
     label: "Equipo de diseño (5 personas)",
     detail:
-      "AEC Collection × 5 — escenario hipotético si Habita armara equipo de diseño interno (hoy se externaliza a RSM/Iweise).",
+      "AEC Collection × 5: escenario hipotético si Habita armara equipo de diseño interno (hoy se externaliza a RSM/Iweise).",
     productId: "aec-collection",
     unitPrice: productPrice("aec-collection"),
     quantity: 5,
@@ -203,7 +203,7 @@ export const HABITA_AUTODESK_SCENARIO: ScenarioLine[] = [
   {
     id: "bim-coordination",
     label: "Coordinación BIM (2 personas)",
-    detail: "Navisworks Simulate × 2 — Marcela + apoyo para coordinación de modelos federados.",
+    detail: "Navisworks Simulate × 2 para Marcela + apoyo en la coordinación de modelos federados.",
     productId: "navisworks-simulate",
     unitPrice: productPrice("navisworks-simulate"),
     quantity: 2,
@@ -213,7 +213,7 @@ export const HABITA_AUTODESK_SCENARIO: ScenarioLine[] = [
     id: "construction-management",
     label: "Gestión de construcción (50 stakeholders)",
     detail:
-      "Forma Build Per User × 50 — el reemplazo directo de PlanGrid + BIM 360 + ACC para todo el equipo extendido (interno + obra + consultores).",
+      "Forma Build Per User × 50: el reemplazo directo de PlanGrid + BIM 360 + ACC para todo el equipo extendido (interno + obra + consultores).",
     productId: "forma-build-per-user",
     unitPrice: productPrice("forma-build-per-user"),
     quantity: 50,
@@ -226,7 +226,7 @@ export const HABITA_AUTODESK_TOTAL = HABITA_AUTODESK_SCENARIO.reduce(
   0,
 );
 
-/** VIA-HABITA — 6 proyectos × $2.000 (consultores externos siguen con sus propias licencias Revit/AutoCAD). */
+/** VIA-HABITA: 6 proyectos × $2.000 (consultores externos siguen con sus propias licencias Revit/AutoCAD). */
 export const VIA_HABITA_TOTAL = 12_000;
 
 export const HABITA_SAVINGS = HABITA_AUTODESK_TOTAL - VIA_HABITA_TOTAL;

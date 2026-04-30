@@ -27,7 +27,7 @@ export function InvestmentSection() {
       lede="Cuatro hitos de pago contra entregables verificables. Sin pagos por adelantado más allá del anticipo. Suscripción posterior con usuarios ilimitados."
     >
       <div className="grid lg:grid-cols-12 gap-px bg-[var(--color-hairline)] hairline rounded-[var(--radius-card)] overflow-hidden">
-        {/* HEADLINE — Fase 1 */}
+        {/* HEADLINE (Fase 1) */}
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 12 }}
           whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
@@ -89,7 +89,7 @@ export function InvestmentSection() {
             rel="noopener noreferrer"
             className="mt-6 material-glass-strong chrome-edge px-6 py-4 label-spec text-steel-100 hover:text-[var(--color-electric)] transition-colors flex items-center justify-between gap-3 group"
           >
-            <span>Reservar — USD $4,500</span>
+            <span>Reservar · USD $4,500</span>
             <ArrowUpRight
               className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               strokeWidth={1.5}
@@ -97,7 +97,7 @@ export function InvestmentSection() {
           </a>
         </motion.div>
 
-        {/* RECURRING — suscripción */}
+        {/* RECURRING (suscripción) */}
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 12 }}
           whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ export function InvestmentSection() {
               <span className="text-steel-400 text-2xl"> / proyecto / año</span>
             </p>
             <p className="text-sm text-steel-400 leading-relaxed">
-              Usuarios ilimitados — internos, externos, consultores,
+              Usuarios ilimitados: internos, externos, consultores,
               subcontratistas. Almacenamiento ilimitado. Agente Habi incluido.
             </p>
           </div>

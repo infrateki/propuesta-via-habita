@@ -1,5 +1,5 @@
 /**
- * VIA-HABITA — Feature comparison matrix.
+ * VIA-HABITA. Feature comparison matrix.
  * 156 features × 7 platforms × 10 categories.
  *
  * Source of truth: docs/FEATURE_MATRIX_156.md (DO NOT MODIFY).
@@ -22,7 +22,7 @@
  */
 
 // ============================================================================
-// Types — preserved from prior version
+// Types (preserved from prior version)
 // ============================================================================
 
 export type FeatureSupport = "full" | "partial" | "none" | "roadmap";
@@ -58,7 +58,7 @@ export interface Feature {
   score?: Record<string, number>;
   /** Which BIMcollab tier (legacy field, no longer populated). */
   bimcollabTier?: "basic" | "advanced" | "enterprise";
-  /** VIA-HABITA = 5 AND max(others) ≤ 3 — auto-computed by feat(). */
+  /** VIA-HABITA = 5 AND max(others) ≤ 3, auto-computed by feat(). */
   differentiator?: boolean;
 }
 
@@ -70,7 +70,7 @@ export interface CategoryInfo {
 }
 
 // ============================================================================
-// Platforms — 7 entries
+// Platforms (7 entries)
 // ============================================================================
 
 export const PLATFORMS: Platform[] = [
@@ -108,7 +108,7 @@ export const PLATFORMS: Platform[] = [
     name: "Dalux",
     shortName: "DALX",
     color: "#6B7280",
-    pricingNote: "Híbrido — $25–$60K/año · externos incluidos",
+    pricingNote: "Híbrido: $25–$60K/año · externos incluidos",
   },
   {
     id: "catenda",
@@ -138,7 +138,7 @@ const PLATFORM_ORDER = [
 ] as const;
 
 // ============================================================================
-// Categories — 10 entries, weights sum to 100
+// Categories (10 entries, weights sum to 100)
 // ============================================================================
 
 export const CATEGORIES: CategoryInfo[] = [
@@ -247,7 +247,7 @@ function feat(
 }
 
 // ============================================================================
-// FEATURES — 156 entries, scores from FEATURE_MATRIX_156.md
+// FEATURES (156 entries, scores from FEATURE_MATRIX_156.md)
 // Tuple: [viahabita, autodesk, trimble, procore, dalux, catenda, wayki]
 // ============================================================================
 
@@ -430,7 +430,7 @@ export const FEATURES: Feature[] = [
 ];
 
 // ============================================================================
-// Helpers — signatures preserved
+// Helpers (signatures preserved)
 // ============================================================================
 
 /** Count features by support level for a given platform. */

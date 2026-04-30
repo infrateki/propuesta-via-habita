@@ -46,7 +46,7 @@ export function AutodeskCosts() {
       {/* INTRO */}
       <header className="space-y-4 max-w-3xl">
         <p className="label-spec text-[var(--color-copper)]">
-          Ecosistema Autodesk · precios públicos abril 2026
+          Productos Autodesk · precios públicos abril 2026
         </p>
         <h2 className="font-display text-display-md text-steel-100 leading-tight">
           Lo que cuesta armar el stack completo
@@ -60,7 +60,7 @@ export function AutodeskCosts() {
         </p>
       </header>
 
-      {/* ESCENARIO HABITA — calculadora */}
+      {/* ESCENARIO HABITA (calculadora) */}
       <ScenarioCalculator reduce={!!reduce} />
 
       {/* CATÁLOGO POR CATEGORÍA */}
@@ -70,7 +70,7 @@ export function AutodeskCosts() {
             Catálogo · {AUTODESK_PRODUCTS.length} productos
           </p>
           <h3 className="font-display text-2xl text-steel-100">
-            Precios públicos del ecosistema AEC
+            Precios públicos del catálogo AEC
           </h3>
         </div>
 
@@ -111,7 +111,7 @@ export function AutodeskCosts() {
         })}
       </div>
 
-      {/* NARRATIVA — contexto */}
+      {/* NARRATIVA (contexto) */}
       <Narrative />
     </div>
   );
@@ -230,7 +230,7 @@ function ScenarioCalculator({ reduce }: { reduce: boolean }) {
         </h3>
         <p className="text-steel-400 text-sm leading-relaxed max-w-2xl">
           Suma de licencias necesarias para operar el flujo BIM completo de
-          Habita en el ecosistema Autodesk, comparada con el costo de
+          Habita en el stack completo de Autodesk, comparada con el costo de
           VIA-HABITA para el mismo alcance.
         </p>
       </header>
@@ -374,7 +374,7 @@ function ScenarioCalculator({ reduce }: { reduce: boolean }) {
             {formatUSD(HABITA_SAVINGS * 3)}
           </p>
           <p className="text-xs text-steel-500">
-            Diferencia acumulada — financia múltiples Fases 1
+            Diferencia acumulada que financia múltiples Fases 1
           </p>
         </div>
       </motion.div>
@@ -407,14 +407,14 @@ function Narrative() {
       tone: "ok",
       title: "Las licencias de diseño no son un gasto nuevo",
       body:
-        "Los consultores de Habita (RSM, Iweise) ya operan con sus propias licencias Revit/AutoCAD. Habita no necesita comprar herramientas de diseño — necesita la capa de coordinación.",
+        "Los consultores de Habita (RSM, Iweise) ya operan con sus propias licencias Revit/AutoCAD. Habita no necesita comprar herramientas de diseño; necesita la capa de coordinación.",
     },
     {
       icon: CheckCircle2,
       tone: "ok",
       title: "Lo que Habita realmente necesita",
       body:
-        "La capa de gestión de construcción (RFIs, submittals, modelo federado, clash, KPIs). Esto es exactamente lo que VIA-HABITA entrega — a una fracción del costo, con propiedad del código y UI en español.",
+        "La capa de gestión de construcción (RFIs, submittals, modelo federado, clash, KPIs). Esto es exactamente lo que VIA-HABITA entrega, a una fracción del costo, con propiedad del código y UI en español.",
     },
     {
       icon: CheckCircle2,
@@ -426,9 +426,9 @@ function Narrative() {
     {
       icon: XCircle,
       tone: "neutral",
-      title: "Sin trash-talk — solo la cuenta",
+      title: "Sin trash-talk, solo la cuenta",
       body:
-        "Autodesk Forma Build es un producto sólido y muchas empresas grandes lo justifican. Para el caso operacional de Habita — 6 proyectos, 50 stakeholders, consultores externos con sus propias licencias — los números son los que se muestran arriba.",
+        "Autodesk Forma Build es un producto sólido y muchas empresas grandes lo justifican. Para el caso operacional de Habita (6 proyectos, 50 stakeholders, consultores externos con sus propias licencias), los números son los que se muestran arriba.",
     },
   ];
 

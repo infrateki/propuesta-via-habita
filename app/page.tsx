@@ -48,7 +48,7 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3.5 label-spec text-[var(--color-electric)] hover:text-steel-100 border border-[var(--color-electric)]/40 hover:border-[var(--color-electric)] rounded-[var(--radius-spec)] transition-colors"
                 >
-                  Iniciar con depósito — $4,500 →
+                  Iniciar con depósito · $4,500 →
                 </a>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECCIÓN 2 — teaser que dirige a /propuesta */}
+      {/* SECCIÓN 2 (teaser que dirige a /propuesta) */}
       <section className="hairline-t">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-24">
           <div className="flex items-center gap-3 mb-8">
@@ -75,10 +75,10 @@ export default function HomePage() {
             Sin un sistema único, cada proyecto reinventa el control.
           </h2>
           <p className="text-steel-300 mt-6 max-w-2xl text-base leading-relaxed">
-            Seis hallazgos del Diagnóstico BIM 2.0 (oct–dic 2025). El más
-            visible: 1 cuenta PlanGrid compartida para ~100 personas que tocan
-            cada proyecto, y el trazador — quien marca el piso para construir —
-            nunca recibe acceso digital.
+            Seis hallazgos del Diagnóstico BIM 2.0 (oct-dic 2025). El más
+            visible: una sola cuenta de PlanGrid compartida por proyecto, y el
+            trazador, quien marca el piso para construir, nunca recibe acceso
+            digital.
           </p>
           <Link
             href="/propuesta#problema"

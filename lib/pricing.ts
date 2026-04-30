@@ -1,5 +1,5 @@
 /**
- * VIA-HABITA — Pricing engine.
+ * VIA-HABITA pricing engine.
  * Pure, deterministic calculation from a Configuration to a complete
  * PricingBreakdown. Powers the configurator's live receipt, the CBS
  * treemap, and the savings comparison.
@@ -23,7 +23,7 @@ export interface Configuration {
   projects: number;
   /** Nivel de IA por proyecto. */
   aiLevel: AILevel;
-  /** Knowledge Graph base — $5,000 setup + año 1 incluido. */
+  /** Knowledge Graph base: $5,000 setup + año 1 incluido. */
   knowledgeGraph: boolean;
   /** Cloud INFRATEK (gratis) o servidores Habita (+$3,000 setup). */
   hosting: HostingOption;
@@ -48,7 +48,7 @@ export interface AddOn {
   recommended?: boolean;
 }
 
-/** Resultado completo del cálculo — todos los números que el receipt necesita. */
+/** Resultado completo del cálculo (todos los números que el receipt necesita). */
 export interface PricingBreakdown {
   /** Configuration used to compute this breakdown. */
   config: Configuration;
@@ -117,12 +117,12 @@ const GPU_PRICE_BY_OPTION: Record<GpuOption, number> = {
 // Comparison anchor: Autodesk Forma Build per-user pricing
 // ============================================================================
 /** Autodesk Forma Build "Per User" tier at $1,400/user/year × 50 users
- *  (autodesk.com/products/forma-build/buy — April 2026). */
+ *  (autodesk.com/products/forma-build/buy, April 2026). */
 const AUTODESK_PER_USER_ANNUAL = 1_400;
 const AUTODESK_USERS_BENCHMARK = 50;
 
 // ============================================================================
-// calculatePricing — pure, deterministic
+// calculatePricing (pure, deterministic)
 // ============================================================================
 
 export function calculatePricing(config: Configuration): PricingBreakdown {
@@ -133,7 +133,7 @@ export function calculatePricing(config: Configuration): PricingBreakdown {
   const additionalVisits = Math.max(0, Math.floor(config.additionalVisits));
   const visits = additionalVisits * PRICING.visitCost;
 
-  // --- Platform — enterprise discount kicks in at 10+ projects ---
+  // --- Platform (enterprise discount kicks in at 10+ projects) ---
   const projects = Math.max(0, Math.floor(config.projects));
   const enterpriseActive = projects >= PRICING.enterpriseThreshold;
   const platformPerProjectApplied = enterpriseActive
@@ -211,7 +211,7 @@ export function calculatePricing(config: Configuration): PricingBreakdown {
 }
 
 // ============================================================================
-// Default configuration — used to seed the configurator and verification
+// Default configuration (used to seed the configurator and verification)
 // ============================================================================
 export const DEFAULT_CONFIGURATION: Configuration = {
   additionalVisits: 1,

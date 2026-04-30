@@ -28,7 +28,7 @@ const visits: AddOn[] = [
 const services: AddOn[] = [
   {
     id: "hours-sergio",
-    name: "Horas de consultoría — Sergio Villanueva-Meyer",
+    name: "Horas de consultoría · Sergio Villanueva-Meyer",
     description:
       "Consultoría técnica directa: arquitectura de plataforma, decisiones críticas, auditoría de modelos.",
     price: PRICING.rates.sergio,
@@ -61,7 +61,7 @@ const services: AddOn[] = [
 const knowledgeGraph: AddOn[] = [
   {
     id: "kg-setup",
-    name: "Knowledge Graph — Setup + Año 1",
+    name: "Knowledge Graph · Setup + Año 1",
     description:
       "Grafo semántico con entidades de Habita (proyectos, contratos, normativa, modelos). Habilita búsqueda contextual y razonamiento del agente IA.",
     price: PRICING.knowledgeGraphSetup,
@@ -71,7 +71,7 @@ const knowledgeGraph: AddOn[] = [
   },
   {
     id: "kg-renewal",
-    name: "Knowledge Graph — Renovación anual",
+    name: "Knowledge Graph · Renovación anual",
     description:
       "Mantenimiento del grafo, actualización de entidades y nuevas integraciones. Aplica desde año 2.",
     price: PRICING.knowledgeGraphRenewal,
@@ -105,7 +105,7 @@ const infrastructure: AddOn[] = [
   },
   {
     id: "gpu-basica",
-    name: "GPU local — Básica",
+    name: "GPU local · Básica",
     description: "Workstation con 16 GB VRAM. Inferencia ligera y desarrollo.",
     price: PRICING.gpu.basica,
     priceType: "one-time",
@@ -113,7 +113,7 @@ const infrastructure: AddOn[] = [
   },
   {
     id: "gpu-intermedia",
-    name: "GPU local — Intermedia",
+    name: "GPU local · Intermedia",
     description:
       "Servidor con 24 GB VRAM. Inferencia productiva en 1-3 proyectos simultáneos.",
     price: PRICING.gpu.intermedia,
@@ -122,7 +122,7 @@ const infrastructure: AddOn[] = [
   },
   {
     id: "gpu-profesional",
-    name: "GPU local — Profesional",
+    name: "GPU local · Profesional",
     description:
       "Cluster con 80 GB VRAM (A100/H100). Soberanía total para datos sensibles.",
     price: PRICING.gpu.profesional,
@@ -132,7 +132,7 @@ const infrastructure: AddOn[] = [
 ];
 
 // ============================================================================
-// Módulos futuros (informativos — no suman al total hoy)
+// Módulos futuros (informativos, no suman al total hoy)
 // ============================================================================
 const futureModules: AddOn[] = [
   {

@@ -83,7 +83,7 @@ export function ComparisonTable() {
         <ScaleToggle scale={scale} onChange={setScale} />
       </div>
 
-      {/* TABLE — horizontal scroll on mobile, sticky first column */}
+      {/* TABLE (horizontal scroll on mobile, sticky first column) */}
       <div className="hairline rounded-[var(--radius-card)] overflow-hidden">
         <div className="overflow-x-auto">
         <table className="w-full min-w-[640px] text-sm">
@@ -309,7 +309,7 @@ function CostCell({ platform, scale }: { platform: Platform; scale: Scale }) {
             : "text-steel-200"
         )}
       >
-        {cost == null ? "—" : formatUSD(cost, { compact: true })}
+        {cost == null ? "n/d" : formatUSD(cost, { compact: true })}
       </span>
       <span
         tabIndex={0}

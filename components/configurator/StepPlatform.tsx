@@ -34,7 +34,7 @@ export function StepPlatform({ config, update, price }: Props) {
           Plataforma VIA-HABITA
         </h2>
         <p className="text-sm text-steel-400 max-w-xl">
-          Tu propio CDE — sin licencias por usuario, sin vendor lock-in.
+          Tu propio CDE: sin licencias por usuario, sin vendor lock-in.
           A partir de 10 proyectos activa Plan Enterprise con 20% de descuento.
         </p>
       </header>

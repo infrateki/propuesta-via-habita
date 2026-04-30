@@ -31,8 +31,8 @@ const TIERS: TierCard[] = [
   {
     level: "none",
     label: "Sin IA adicional",
-    modelName: "—",
-    speed: "—",
+    modelName: "n/d",
+    speed: "n/d",
     recommendation:
       "Plataforma sin agente Habi. Trazabilidad y reportes estándar incluidos.",
     perProjectMonth: 0,

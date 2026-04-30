@@ -11,7 +11,7 @@ import { GateSection } from "@/components/proposal/GateSection";
 import { VisionSection } from "@/components/proposal/VisionSection";
 
 export const metadata = {
-  title: "Propuesta — VIA-HABITA · INFRATEK × HABITA",
+  title: "Propuesta · VIA-HABITA · INFRATEK × HABITA",
   description:
     "Implementación BIM en 4 meses + plataforma VIA-HABITA. 9 entregables, $12.500 base, usuarios ilimitados.",
 };
@@ -19,7 +19,7 @@ export const metadata = {
 export default function PropuestaPage() {
   return (
     <>
-      {/* HERO — propuesta cover */}
+      {/* HERO (propuesta cover) */}
       <section className="relative">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-24 lg:py-32">
           <div className="flex items-center gap-4 mb-10">

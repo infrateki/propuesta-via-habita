@@ -12,7 +12,7 @@ export function TimelineSection() {
     <SectionShell
       id="cronograma"
       num="05"
-      eyebrow="Cronograma — 4 meses"
+      eyebrow="Cronograma · 4 meses"
       title={
         <>
           Mayo a Agosto 2026.
@@ -22,7 +22,7 @@ export function TimelineSection() {
       }
       lede="Cada mes cierra con un entregable concreto que se aprueba antes del siguiente pago. Cuatro meses, cuatro hitos, cero ambigüedad."
     >
-      {/* DESKTOP — horizontal */}
+      {/* DESKTOP (horizontal) */}
       <div className="hidden lg:block">
         {/* spine */}
         <div className="relative grid grid-cols-4 gap-6">
@@ -93,7 +93,7 @@ export function TimelineSection() {
         </div>
       </div>
 
-      {/* MOBILE / TABLET — vertical */}
+      {/* MOBILE / TABLET (vertical) */}
       <ol className="lg:hidden space-y-5 relative">
         <div
           aria-hidden

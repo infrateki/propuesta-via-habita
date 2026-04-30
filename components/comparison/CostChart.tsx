@@ -171,10 +171,10 @@ export function CostChart() {
         {/* legend */}
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2 hairline-t pt-5">
           <LegendDot tone="us" label="VIA-HABITA" />
-          <LegendDot tone="ok" label="Competidor — costo competitivo" />
+          <LegendDot tone="ok" label="Competidor · costo competitivo" />
           <LegendDot
             tone="warn"
-            label={`Competidor — > ${formatUSD(EXPENSIVE_THRESHOLD, { compact: true })} / año`}
+            label={`Competidor · > ${formatUSD(EXPENSIVE_THRESHOLD, { compact: true })} / año`}
           />
         </div>
       </div>

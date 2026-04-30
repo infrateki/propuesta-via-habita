@@ -1,21 +1,21 @@
 /**
- * VIA-HABITA — Pricing constants and static catalogs.
+ * VIA-HABITA pricing constants and static catalogs.
  * Single source of truth for every USD figure used by the configurator
  * and by the comparison page. All numbers confirmed with the client and
  * mirrored in INFRATEK-HABITA-2026-v11.
  */
 
 // ============================================================================
-// PRICING — every USD figure the calculator references
+// PRICING (every USD figure the calculator references)
 // ============================================================================
 export const PRICING = {
-  // Implementación (Fase 1) — base 100% virtual
+  // Implementación (Fase 1, base 100% virtual)
   implementation: 12_500,
 
   // Visitas presenciales a La Serena (add-on, no incluidas en base)
   visitCost: 2_000,
 
-  // Plataforma VIA-HABITA — por proyecto / por año
+  // Plataforma VIA-HABITA (por proyecto / por año)
   platformPerProject: 2_000,
 
   // Descuento Enterprise: 10+ proyectos → 20% off por proyecto
@@ -23,7 +23,7 @@ export const PRICING = {
   enterpriseDiscount: 0.2, // 20%
   platformPerProjectEnterprise: 1_600, // = 2000 * (1 - 0.2)
 
-  // Inteligencia Artificial — estimado mensual por proyecto, por nivel
+  // Inteligencia Artificial (estimado mensual por proyecto, por nivel)
   ai: {
     basicoMonthly: 55,        // Haiku
     intermedioMonthly: 140,   // Sonnet
@@ -55,7 +55,7 @@ export const PRICING = {
 } as const;
 
 // ============================================================================
-// AI_MODELS — token economics + recommendation per tier
+// AI_MODELS (token economics + recommendation per tier)
 // ============================================================================
 export interface AIModel {
   id: "haiku" | "sonnet" | "opus";
@@ -105,7 +105,7 @@ export const AI_MODELS: AIModel[] = [
 ];
 
 // ============================================================================
-// GPU_OPTIONS — hardware local opcional para inferencia in-house
+// GPU_OPTIONS (hardware local opcional para inferencia in-house)
 // ============================================================================
 export interface GpuOption {
   id: "none" | "basica" | "intermedia" | "profesional";
@@ -150,7 +150,7 @@ export const GPU_OPTIONS: GpuOption[] = [
 ];
 
 // ============================================================================
-// HOSTING_OPTIONS — cloud INFRATEK vs servidores Habita
+// HOSTING_OPTIONS (cloud INFRATEK vs servidores Habita)
 // ============================================================================
 export interface HostingOption {
   id: "cloud" | "selfhosted";
@@ -182,7 +182,7 @@ export const HOSTING_OPTIONS: HostingOption[] = [
 ];
 
 // ============================================================================
-// PHASE_TIMELINE — 4 meses, actividades + hitos
+// PHASE_TIMELINE (4 meses, actividades + hitos)
 // ============================================================================
 export interface PhaseMonth {
   month: 1 | 2 | 3 | 4;

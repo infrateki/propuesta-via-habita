@@ -15,7 +15,7 @@ Valores referenciales: USD $12,500 ≈ CLP $11.750.000 ≈ 310 UF (1 USD ≈ 940
 
 ---
 
-# PARTE I — IMPLEMENTACIÓN BIM
+# PARTE I: IMPLEMENTACIÓN BIM
 
 ## 1. Contexto
 
@@ -23,7 +23,7 @@ El Diagnóstico BIM 2.0 (oct–dic 2025, +50 horas, +20 participantes) dejó cla
 
 La mayoría de las RFIs se pueden prevenir con metodología, no con software nuevo. RSM e Iweise ya trabajan en BIM. El problema es que nadie les pide entregables BIM ni los coordina bajo un estándar común.
 
-El síntoma más visible es de **alcance**: hoy hay 1 cuenta de PlanGrid compartida para ~100 personas que tocan cada proyecto. El trazador — la persona que marca el piso para que se construya — recibe planos impresos que un supervisor leyó por él. Cuando el modelo cambia, el trazador no se entera. La cadena se rompe en el último metro.
+El síntoma más visible es de **alcance**: hoy hay una sola cuenta compartida de PlanGrid por proyecto. El trazador, la persona que marca el piso para que se construya, recibe planos impresos que un supervisor leyó por él. Cuando el modelo cambia, el trazador no se entera. La cadena se rompe en el último metro.
 
 Habita diseña, construye y vende. Esa integración vertical permite cerrar el ciclo de vida del proyecto en una sola plataforma. La Fase 1 deja las fundaciones hechas. Lo que sigue se construye sobre base firme.
 
@@ -97,13 +97,13 @@ Marcela transiciona al rol de coordinadora del proyecto; su reemplazo en oficina
 
 ## 6. Cronograma
 
-**Mes 1 — Mayo 2026 · Setup y kickoff.** Hito verificable: E-01 BEP + E-02 Nomenclatura + plataforma operativa.
+**Mes 1 · Mayo 2026 · Setup y kickoff.** Hito verificable: E-01 BEP + E-02 Nomenclatura + plataforma operativa.
 
-**Mes 2 — Junio 2026 · Primera coordinación.** Hito verificable: E-05 Modelo federado + E-04 Protocolo + Notion migrado.
+**Mes 2 · Junio 2026 · Primera coordinación.** Hito verificable: E-05 Modelo federado + E-04 Protocolo + Notion migrado.
 
-**Mes 3 — Julio 2026 · Capacitación.** Hito verificable: Panel de KPIs activo + equipo de obra capacitado (+10 personas, incluye trazadores).
+**Mes 3 · Julio 2026 · Capacitación.** Hito verificable: Panel de KPIs activo + equipo de obra capacitado (+10 personas, incluye trazadores).
 
-**Mes 4 — Agosto 2026 · Cierre.** Hito verificable: Habita autónoma + Gate Go/No-Go documentado.
+**Mes 4 · Agosto 2026 · Cierre.** Hito verificable: Habita autónoma + Gate Go/No-Go documentado.
 
 ## 7. Métricas
 
@@ -130,7 +130,7 @@ Seis criterios objetivos. Si no se cumplen, se documenta y se ajusta antes de co
 
 ---
 
-# PARTE II — PLATAFORMA VIA-HABITA
+# PARTE II: PLATAFORMA VIA-HABITA
 
 VIA = **V**isualización · **I**ntegración · **A**utomatización (metodología VDC, Stanford 2025).
 
@@ -159,7 +159,7 @@ VIA-HABITA reemplaza PlanGrid, Notion y la coordinación informal por WhatsApp /
 
 ---
 
-# PARTE III — INVERSIÓN
+# PARTE III: INVERSIÓN
 
 Valores referenciales: 1 USD ≈ 940 CLP, 1 UF ≈ 38.000 CLP (abril 2026). Facturación en USD.
 
@@ -184,30 +184,30 @@ Cada pago se libera después de que Pablo y / o Marcela aprueban el entregable (
 
 | Hito | Entregable | Plazo | USD | CLP aprox. | UF |
 |---|---|---|---|---|---|
-| H0 — Anticipo | Firma del acuerdo | Antes de iniciar | $4,500 | $4.230.000 | ~112 |
-| H1 — Setup | E-01 BEP + E-02 + plataforma | Fin Mes 1 | $3,000 | $2.820.000 | ~74 |
-| H2 — Modelos | E-05 Federado + E-04 Protocolo | Fin Mes 2 | $2,500 | $2.350.000 | ~62 |
-| H3 — Cierre | E-08 Manual + E-09 KPIs | Fin Mes 4 | $2,500 | $2.350.000 | ~62 |
+| H0: Anticipo | Firma del acuerdo | Antes de iniciar | $4,500 | $4.230.000 | ~112 |
+| H1: Setup | E-01 BEP + E-02 + plataforma | Fin Mes 1 | $3,000 | $2.820.000 | ~74 |
+| H2: Modelos | E-05 Federado + E-04 Protocolo | Fin Mes 2 | $2,500 | $2.350.000 | ~62 |
+| H3: Cierre | E-08 Manual + E-09 KPIs | Fin Mes 4 | $2,500 | $2.350.000 | ~62 |
 | | | **TOTAL** | **$12,500** | **$11.750.000** | **~310** |
 
-## 12. Suscripción VIA-HABITA — desde el Mes 6
+## 12. Suscripción VIA-HABITA, desde el Mes 6
 
 Durante los Meses 1 a 5, INFRATEK diseña y configura la plataforma. La suscripción arranca en el Mes 6.
 
 | Concepto | Detalle |
 |---|---|
 | Precio | $2,000 / proyecto / año (≈ CLP $1.880.000 ≈ 50 UF) |
-| Usuarios | **Ilimitados** — internos, externos, consultores, subcontratistas |
+| Usuarios | **Ilimitados**: internos, externos, consultores, subcontratistas |
 | Almacenamiento | Ilimitado |
 | Agente Habi | Incluido (acceso Admin) |
 | Soporte | 24 / 7 críticos, respuesta < 4 h |
 | Enterprise | 10+ proyectos = $1,600 / proyecto (20 % desc.) |
 
-## 13. Comparativo — tres escenarios
+## 13. Comparativo: tres escenarios
 
 El comparativo a 50 usuarios fue útil para encuadrar el orden de magnitud, pero el escenario real de Habita son **~100 personas** que tocan los proyectos cuando se cuenta obra + externos + calidad + gerencia.
 
-### 13.1 Hoy — 10 usuarios
+### 13.1 Hoy: 10 usuarios
 
 | | VIA-HABITA | Autodesk Forma Build |
 |---|---|---|
@@ -221,13 +221,13 @@ A 10 usuarios, **Autodesk resulta $2,000 más económico.** La pregunta natural 
 
 - 90 % del personal de obra trabaja con planos impresos. La plataforma, por más que exista, no llega al lugar donde se construye.
 - Caso real registrado: 6 meses sin actividad en PlanGrid en proyectos activos.
-- El trazador — el último eslabón — no recibe acceso. Cuando el modelo cambia, no se entera.
+- El trazador, el último eslabón, no recibe acceso. Cuando el modelo cambia, no se entera.
 - Cuentas compartidas significan sin trazabilidad individual: un RFI registra al titular de la cuenta aunque haya pasado por varias manos.
 - Autodesk está aplicando restricciones progresivas a cuentas compartidas. Mantener este modelo expone a la operación a interrupciones de acceso.
 
-Mantener 10 usuarios significa mantener el modelo actual con una herramienta diferente — el problema de alcance no se resuelve cambiando de proveedor sin cambiar el número de personas con acceso.
+Mantener 10 usuarios significa mantener el modelo actual con una herramienta diferente. El problema de alcance no se resuelve cambiando de proveedor sin cambiar el número de personas con acceso.
 
-### 13.3 Real — 100 usuarios
+### 13.3 Real: 100 usuarios
 
 Equipo real de Habita, contado por área:
 
@@ -248,9 +248,9 @@ Costo a escala real:
 | Costo por usuario | **$120** | $1,400 |
 | Usuarios ilimitados | **SÍ** | NO |
 
-A escala real, **VIA-HABITA cuesta el 10 % de Autodesk Forma Build** (~$128,000 / año de diferencia, ≈ CLP $120 millones). Con usuarios ilimitados, todo el equipo — incluido el trazador — recibe el modelo BIM directamente.
+A escala real, **VIA-HABITA cuesta el 10 % de Autodesk Forma Build** (~$128,000 / año de diferencia, ≈ CLP $120 millones). Con usuarios ilimitados, todo el equipo, incluido el trazador, recibe el modelo BIM directamente.
 
-### 13.4 Otras plataformas — referencia a 50 usuarios, 6 proyectos
+### 13.4 Otras plataformas: referencia a 50 usuarios, 6 proyectos
 
 | Plataforma | Modelo | USD / año | Ilimitados |
 |---|---|---|---|
@@ -267,7 +267,7 @@ PlanGrid fue discontinuado; Autodesk empuja la migración a Forma Build.
 
 ## 14. Horizonte estratégico
 
-Esto no es alcance contratado de Fase 1 — es la dirección que justifica construir la base bien.
+Esto no es alcance contratado de Fase 1. Es la dirección que justifica construir la base bien.
 
 | Horizonte | Qué implica |
 |---|---|
@@ -276,7 +276,7 @@ Esto no es alcance contratado de Fase 1 — es la dirección que justifica const
 | Postventa digital | Digital twin del departamento entregado para cliente y administración. |
 | Entregas oficiales | Recepción municipal (DOM), bomberos, traspaso a la administración de la comunidad. |
 
-**Tesis de la plataforma:** todos los planos de construcción, todos los planos de cliente — una sola fuente de verdad a lo largo del ciclo de vida del proyecto.
+**Tesis de la plataforma:** todos los planos de construcción, todos los planos de cliente. Una sola fuente de verdad a lo largo del ciclo de vida del proyecto.
 
 ## 15. Hoja de ruta
 

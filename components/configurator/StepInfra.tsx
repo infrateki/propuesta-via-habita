@@ -32,7 +32,7 @@ export function StepInfra({ config, update }: Props) {
         </h2>
         <p className="text-sm text-steel-400 max-w-xl">
           Empieza en cloud INFRATEK sin costo extra. Migra a servidores propios
-          cuando lo decidas — sin vendor lock-in, sin reescribir nada.
+          cuando lo decidas, sin vendor lock-in, sin reescribir nada.
         </p>
       </header>
 
@@ -114,7 +114,7 @@ export function StepInfra({ config, update }: Props) {
                 <div className="hairline-t pt-3 flex items-end justify-between gap-3">
                   <QualityBars level={QUALITY[g.id]} />
                   <span className="text-spec-price text-steel-100 tabular-nums">
-                    {g.price === 0 ? "—" : formatCurrency(g.price)}
+                    {g.price === 0 ? "incluido" : formatCurrency(g.price)}
                   </span>
                 </div>
               </button>

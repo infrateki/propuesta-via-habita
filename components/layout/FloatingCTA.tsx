@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 export function FloatingCTA() {
   const pathname = usePathname();
   // Configurator has its own sticky price summary + action buttons that
-  // cover the bottom edge on mobile — the floating CTA would overlap.
+  // cover the bottom edge on mobile (the floating CTA would overlap).
   if (pathname === "/configurador") return null;
 
   return (

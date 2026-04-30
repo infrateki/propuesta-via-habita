@@ -56,7 +56,7 @@ export default function ComparativoPage() {
         </div>
       </section>
 
-      {/* TABS — sticky below navbar */}
+      {/* TABS (sticky below navbar) */}
       <div
         role="tablist"
         aria-label="Vista comparativa"
@@ -134,7 +134,7 @@ export default function ComparativoPage() {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Tab 1 — Análisis (Pablo's 5-section narrative)                              */
+/* Tab 1: Análisis (Pablo's 5-section narrative)                               */
 /* -------------------------------------------------------------------------- */
 
 function AnalisisPanel() {
@@ -148,7 +148,7 @@ function AnalisisPanel() {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Tab 2 — Precios (full multi-platform table at 50-user benchmark)            */
+/* Tab 2: Precios (full multi-platform table at 50-user benchmark)             */
 /* -------------------------------------------------------------------------- */
 
 function PreciosPanel() {
@@ -204,7 +204,7 @@ function PreciosPanel() {
             Notas metodológicas: precios extraídos de pricing público o cotización
             directa al vendor (abril 2026). Modelos &quot;por valor de proyecto&quot;
             asumen cartera de 6 proyectos activos. La columna &quot;5 usuarios&quot;
-            modela escenarios de equipo reducido — los modelos por proyecto no
+            modela escenarios de equipo reducido; los modelos por proyecto no
             varían con el número de usuarios.
           </p>
         </div>
@@ -214,7 +214,7 @@ function PreciosPanel() {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Tab 3 — Costos Autodesk (full AEC catalog + Habita scenario)                */
+/* Tab 3: Costos Autodesk (full AEC catalog + Habita scenario)                 */
 /* -------------------------------------------------------------------------- */
 
 function AutodeskPanel() {
@@ -228,7 +228,7 @@ function AutodeskPanel() {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Tab 4 — Funcionalidades (156-feature matrix)                                */
+/* Tab 4: Funcionalidades (156-feature matrix)                                 */
 /* -------------------------------------------------------------------------- */
 
 function FuncionalidadesPanel() {

@@ -20,7 +20,7 @@ export function GateSection() {
           <span className="text-steel-300">con criterios objetivos.</span>
         </>
       }
-      lede="No con opinión ni intención. Si los criterios no se cumplen, el informe documenta las causas y proponemos ajustes — sin cobrar la Fase 2."
+      lede="No con opinión ni intención. Si los criterios no se cumplen, el informe documenta las causas y proponemos ajustes, sin cobrar la Fase 2."
     >
       <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--color-hairline)] hairline rounded-[var(--radius-card)] overflow-hidden">
         {GATE_CRITERIA.map((g, i) => (
@@ -85,7 +85,7 @@ export function GateSection() {
           </p>
           <p className="text-sm text-steel-400 leading-relaxed">
             INFRATEK absorbe el costo de ajuste. La decisión de continuar es
-            libre — no es dependencia, es decisión informada de Habita.
+            libre, no es dependencia. Es decisión informada de Habita.
           </p>
         </div>
       </motion.aside>

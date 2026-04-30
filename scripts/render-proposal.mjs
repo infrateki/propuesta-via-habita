@@ -46,7 +46,7 @@ const md = await readFile(SOURCE, "utf8");
 marked.setOptions({ gfm: true, breaks: false });
 const body = marked.parse(md);
 
-const docTitle = `Propuesta Integrada — INFRATEK × HABITA · ${basename(SOURCE, ".md").replace("PROPOSAL-", "")}`;
+const docTitle = `Propuesta Integrada · INFRATEK × HABITA · ${basename(SOURCE, ".md").replace("PROPOSAL-", "")}`;
 
 // Embed the INFRATEK logo as a base64 data URL so the PDF is self-contained
 // (Chrome --print-to-pdf does not always follow file:// references for images
@@ -198,7 +198,7 @@ const html = `<!doctype html>
   tbody tr:nth-child(even) td {
     background: #fcfbf8;
   }
-  /* Cover/header block (the doc's metadata block — block of bold paragraphs near the top) */
+  /* Cover/header block (the doc's metadata block, block of bold paragraphs near the top) */
   .doc > p:first-of-type strong:first-child { color: var(--copper); }
 
   /* Specific class hooks */

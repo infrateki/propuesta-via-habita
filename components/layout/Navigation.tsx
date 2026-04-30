@@ -24,7 +24,7 @@ export function Navigation() {
           <Link
             href="/"
             className="flex items-center gap-3 group min-h-11"
-            aria-label="VIA-HABITA — inicio"
+            aria-label="VIA-HABITA · inicio"
             onClick={() => setOpen(false)}
           >
             <span className="label-spec text-steel-200">VIA·HABITA</span>
@@ -81,7 +81,7 @@ export function Navigation() {
               Configurar →
             </Link>
 
-            {/* Hamburger — mobile only */}
+            {/* Hamburger (mobile only) */}
             <button
               type="button"
               onClick={() => setOpen((v) => !v)}

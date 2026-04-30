@@ -75,7 +75,7 @@ export default async function GraciasPage({
             </span>
           </div>
           <p className="text-steel-200 text-sm font-spec leading-relaxed">
-            El depósito se procesa a través de Stripe — tarjeta o transferencia.
+            El depósito se procesa a través de Stripe (tarjeta o transferencia).
             Recibirás el comprobante por email automáticamente.
           </p>
           <a
@@ -84,7 +84,7 @@ export default async function GraciasPage({
             rel="noopener noreferrer"
             className="material-glass-strong chrome-edge w-full px-6 py-4 flex items-center justify-center gap-3 label-spec text-steel-100 hover:text-[var(--color-electric)] transition-colors"
           >
-            Pagar anticipo — USD $4,500 →
+            Pagar anticipo · USD $4,500 →
           </a>
         </section>
       )}
@@ -102,13 +102,13 @@ export default async function GraciasPage({
               <dd className="text-steel-100 mt-1">
                 {summary.amountTotal != null
                   ? formatUSD(summary.amountTotal / 100)
-                  : "—"}
+                  : "n/d"}
               </dd>
             </div>
             <div>
               <dt className="text-steel-400 label-spec">Estado</dt>
               <dd className="text-steel-100 mt-1 uppercase">
-                {summary.status ?? "—"}
+                {summary.status ?? "n/d"}
               </dd>
             </div>
             {summary.email && (

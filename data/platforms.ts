@@ -1,5 +1,5 @@
 /**
- * Comparativo de plataformas BIM/CDE — investigación 2026.
+ * Comparativo de plataformas BIM/CDE. Investigación 2026.
  * Costos en USD anuales. Benchmark: 50 usuarios, 6 proyectos.
  * Sorted ascending por cost50Users (sin nulls). VIA-HABITA con highlight.
  */
@@ -130,7 +130,7 @@ export const PLATFORMS: Platform[] = [
     pricingModel: "per-project",
     cost1User: 2_000,    // 1 proyecto, usuarios ilimitados
     cost5Users: 12_000,  // 6 proyectos benchmark
-    cost50Users: 12_000, // mismos 6 proyectos × $2,000 — usuarios ilimitados
+    cost50Users: 12_000, // mismos 6 proyectos × $2,000, usuarios ilimitados
     unlimitedUsers: true,
     externalsFree: true,
     features: F({
@@ -147,7 +147,7 @@ export const PLATFORMS: Platform[] = [
     }),
     sourceUrl: "/propuesta",
     notes:
-      "Plataforma propia — sin vendor lock-in. Usuarios y externos ilimitados. UI 100% en español. Agente IA integrado. Código fuente entregado al cliente.",
+      "Plataforma propia, sin vendor lock-in. Usuarios y externos ilimitados. UI 100% en español. Agente IA integrado. Código fuente entregado al cliente.",
     highlight: true,
   },
   // ----------------------------------------------------------------
@@ -296,7 +296,7 @@ export const PLATFORMS: Platform[] = [
     }),
     sourceUrl: "https://www.autodesk.com/products/forma-build/buy",
     notes:
-      "Ex-PlanGrid, ex-BIM 360, ex-ACC. Requiere licencias separadas de Revit/AutoCAD para diseño. Costo per-seat lineal — penaliza equipos grandes y externos.",
+      "Ex-PlanGrid, ex-BIM 360, ex-ACC. Requiere licencias separadas de Revit/AutoCAD para diseño. Costo per-seat lineal: penaliza equipos grandes y externos.",
   },
   {
     id: "oracle-aconex",
@@ -317,12 +317,12 @@ export const PLATFORMS: Platform[] = [
     }),
     sourceUrl: "https://www.oracle.com/industries/construction-engineering/aconex/",
     notes:
-      "Enterprise puro — usuarios ilimitados en tier Unlimited. Implementación cara y proceso de venta largo. Soberanía de datos compleja.",
+      "Enterprise puro: usuarios ilimitados en tier Unlimited. Implementación cara y proceso de venta largo. Soberanía de datos compleja.",
   },
 ];
 
 // ============================================================================
-// Sorted ascending by cost50Users — display order in /comparativo
+// Sorted ascending by cost50Users (display order in /comparativo)
 // ============================================================================
 export const PLATFORMS_SORTED: Platform[] = [...PLATFORMS].sort(
   (a, b) => a.cost50Users - b.cost50Users

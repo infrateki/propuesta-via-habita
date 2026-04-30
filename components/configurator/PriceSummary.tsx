@@ -187,7 +187,7 @@ function SummaryCard({
           rel="noopener noreferrer"
           className="material-glass-strong chrome-edge w-full min-h-11 px-5 py-3 flex items-center justify-between label-spec text-steel-100 hover:text-[var(--color-electric)] transition-colors duration-[var(--duration-fast)]"
         >
-          Iniciar — USD $4,500
+          Iniciar · USD $4,500
           <ArrowRight size={14} />
         </a>
         <a
