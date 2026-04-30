@@ -4,7 +4,7 @@ import { DownloadProposal } from "@/components/contact/DownloadProposal";
 export const metadata: Metadata = {
   title: "Documento — VIA-HABITA · INFRATEK × HABITA",
   description:
-    "Propuesta Integrada v9.0 — visualización en línea del PDF original con marca INFRATEK·HABITA.",
+    "Propuesta Integrada v10.0 — visualización en línea del PDF original con marca INFRATEK·HABITA.",
 };
 
 export default function DocumentoPage() {
@@ -20,9 +20,9 @@ export default function DocumentoPage() {
             <span className="hairline-l h-3 shrink-0 hidden sm:block" />
             <h1 className="label-spec text-steel-200 truncate">
               <span className="hidden md:inline">
-                Propuesta Integrada — INFRATEK × HABITA v9.0
+                Propuesta Integrada — INFRATEK × HABITA v10.0
               </span>
-              <span className="md:hidden">Propuesta v9.0</span>
+              <span className="md:hidden">Propuesta v10.0</span>
             </h1>
           </div>
           <DownloadProposal label="Descargar PDF" />
@@ -32,7 +32,7 @@ export default function DocumentoPage() {
       {/* PDF embed */}
       <iframe
         src="/proposal.pdf#view=FitH"
-        title="Propuesta Integrada — INFRATEK × HABITA v9.0"
+        title="Propuesta Integrada — INFRATEK × HABITA v10.0"
         className="flex-1 w-full border-0 bg-[var(--color-steel-900)]"
       />
     </div>
