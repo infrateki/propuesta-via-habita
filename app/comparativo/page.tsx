@@ -1,29 +1,25 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import {
   motion,
   AnimatePresence,
   useReducedMotion,
 } from "framer-motion";
-import { ArrowUpRight, DollarSign, ListChecks, Building2 } from "lucide-react";
-import { ComparisonTable } from "@/components/comparison/ComparisonTable";
-import { CostChart } from "@/components/comparison/CostChart";
+import { ListChecks, Layers } from "lucide-react";
+import { ComparativoNarrative } from "@/components/comparison/ComparativoNarrative";
 import { FeatureMatrix } from "@/components/comparison/FeatureMatrix";
-import { AutodeskCosts } from "@/components/comparison/AutodeskCosts";
 import { cn } from "@/lib/utils";
 
-type TabId = "precios" | "funcionalidades" | "autodesk";
+type TabId = "comparativo" | "funcionalidades";
 
-const TABS: { id: TabId; label: string; icon: typeof DollarSign }[] = [
-  { id: "precios", label: "Precios", icon: DollarSign },
+const TABS: { id: TabId; label: string; icon: typeof Layers }[] = [
+  { id: "comparativo", label: "Comparativo", icon: Layers },
   { id: "funcionalidades", label: "Funcionalidades", icon: ListChecks },
-  { id: "autodesk", label: "Costos Autodesk", icon: Building2 },
 ];
 
 export default function ComparativoPage() {
-  const [active, setActive] = useState<TabId>("precios");
+  const [active, setActive] = useState<TabId>("comparativo");
   const reduce = useReducedMotion();
 
   return (
@@ -34,17 +30,18 @@ export default function ComparativoPage() {
           <div className="flex items-center gap-3 mb-8">
             <span className="label-spec text-[var(--color-copper)]">§CMP</span>
             <span className="hairline-l h-3" />
-            <span className="label-spec">Comparativo de plataformas</span>
+            <span className="label-spec">Comparativo · 3 escenarios</span>
           </div>
           <h1 className="text-display-lg text-steel-100 font-display max-w-3xl">
-            Precios y funcionalidades ·
+            Del diagnóstico al escenario real ·
             <br />
-            <span className="text-steel-300">decisión informada para Habita.</span>
+            <span className="text-steel-300">por qué el costo cambia con la escala.</span>
           </h1>
           <p className="text-steel-300 mt-6 max-w-2xl text-base leading-relaxed">
-            Dos vistas paralelas: cuánto cuesta cada plataforma para 50
-            stakeholders, y qué funcionalidades ofrece. Datos extraídos de
-            pricing público y documentación técnica de cada vendor.
+            Cinco secciones que arman el argumento: el diagnóstico, el escenario
+            de hoy (10 usuarios — donde Autodesk es más barato), por qué eso es
+            repetir el fracaso de PlanGrid, el escenario real (100 usuarios) y
+            las ventajas que sólo VIA-HABITA ofrece.
           </p>
         </div>
       </section>
@@ -76,7 +73,7 @@ export default function ComparativoPage() {
                   "focus:outline-none focus-visible:bg-[var(--color-steel-700)]/40",
                   isActive
                     ? "text-[#0071E3]"
-                    : "text-steel-400 hover:text-steel-100"
+                    : "text-steel-400 hover:text-steel-100",
                 )}
               >
                 <Icon className="size-4" strokeWidth={1.75} />
@@ -111,12 +108,10 @@ export default function ComparativoPage() {
           exit={reduce ? undefined : { opacity: 0, y: -8 }}
           transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
         >
-          {active === "precios" ? (
-            <PreciosPanel />
-          ) : active === "funcionalidades" ? (
-            <FuncionalidadesPanel />
+          {active === "comparativo" ? (
+            <ComparativoPanel />
           ) : (
-            <AutodeskPanel />
+            <FuncionalidadesPanel />
           )}
         </motion.div>
       </AnimatePresence>
@@ -125,73 +120,21 @@ export default function ComparativoPage() {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Tab 1 — Precios                                                             */
+/* Tab 1 — Comparativo (5-section narrative, primary view)                     */
 /* -------------------------------------------------------------------------- */
 
-function PreciosPanel() {
+function ComparativoPanel() {
   return (
-    <>
-      <section>
-        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 lg:py-20">
-          <ComparisonTable />
-        </div>
-      </section>
-
-      <section className="hairline-t">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 lg:py-24">
-          <CostChart />
-        </div>
-      </section>
-
-      <section className="hairline-t">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-20 lg:py-28">
-          <div className="material-glass-strong chrome-edge p-8 lg:p-14 grid lg:grid-cols-12 gap-8 items-end">
-            <div className="lg:col-span-8 space-y-5">
-              <p className="label-spec text-[var(--color-copper)]">
-                Resumen ejecutivo · 50 stakeholders
-              </p>
-              <p className="font-display text-steel-100 leading-tight text-display-lg">
-                VIA-HABITA es{" "}
-                <span className="text-[#0071E3] text-spec-price">5.8×</span>{" "}
-                más económico que Autodesk Forma Build.
-              </p>
-              <p className="text-steel-300 max-w-2xl leading-relaxed">
-                $12.000 vs $70.000 anuales para el mismo alcance funcional, con
-                usuarios ilimitados incluidos y propiedad total del código.
-                Sobre 3 años, la diferencia equivale a varias veces el costo
-                completo de la Fase 1.
-              </p>
-            </div>
-
-            <div className="lg:col-span-4 flex lg:justify-end">
-              <Link
-                href="/configurador"
-                className="inline-flex items-center gap-3 material-glass-strong chrome-edge px-7 py-4 label-spec text-steel-100 hover:text-[var(--color-copper)] transition-colors group"
-              >
-                <span>Configura tu plan</span>
-                <ArrowUpRight
-                  className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                  strokeWidth={1.5}
-                />
-              </Link>
-            </div>
-          </div>
-
-          <p className="text-xs text-steel-500 font-spec mt-6 max-w-3xl leading-relaxed">
-            Notas metodológicas: precios extraídos de pricing público o cotización
-            directa al vendor (abril 2026). Modelos &quot;por valor de proyecto&quot;
-            asumen cartera de 6 proyectos activos. La columna &quot;5 usuarios&quot;
-            modela escenarios de equipo reducido — los modelos por proyecto no
-            varían con el número de usuarios.
-          </p>
-        </div>
-      </section>
-    </>
+    <section>
+      <div className="py-14 lg:py-20">
+        <ComparativoNarrative />
+      </div>
+    </section>
   );
 }
 
 /* -------------------------------------------------------------------------- */
-/* Tab 2 — Funcionalidades                                                     */
+/* Tab 2 — Funcionalidades (full 156-feature matrix, secondary view)           */
 /* -------------------------------------------------------------------------- */
 
 function FuncionalidadesPanel() {
@@ -199,20 +142,6 @@ function FuncionalidadesPanel() {
     <section>
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 lg:py-20">
         <FeatureMatrix />
-      </div>
-    </section>
-  );
-}
-
-/* -------------------------------------------------------------------------- */
-/* Tab 3 — Costos Autodesk                                                     */
-/* -------------------------------------------------------------------------- */
-
-function AutodeskPanel() {
-  return (
-    <section>
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 py-16 lg:py-20">
-        <AutodeskCosts />
       </div>
     </section>
   );

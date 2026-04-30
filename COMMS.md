@@ -1,7 +1,7 @@
 # COMMS.md — Terminal Orchestration Board
 ## VIA-HABITA Proposal Site · via-habita-propuesta
 
-**Last updated:** 2026-04-28 · v5.0 cut: PROPOSAL-v5.md (consolidates today's tone polish + Forma Build pricing refresh) + regenerated PDF/DOCX deliverables + render scripts. Site version label bumped to v5.0 · 28 ABR 2026 across hero, propuesta, documento, footer.
+**Last updated:** 2026-04-29 · /comparativo restructured per Pablo's post-v5 feedback. New 5-section narrative replaces the 50-user table + Costos Autodesk tab. Argument arc: diagnóstico → 10 usuarios (ADSK is cheaper) → por qué 10 falla → 100 usuarios reales (VIA at 10% of ADSK) → ventajas exclusivas. Funcionalidades matrix tab retained as secondary.
 **Status:** 🟢 DEPLOYED
 
 **Production URLs:**
@@ -679,6 +679,7 @@ The proposal content in PROPOSAL-v4.md is the single source of truth. Key confir
 | Apr 27 | PDF CTA in nav + propuesta hero | Serge | "Easy to see always" — persistent download |
 | Apr 28 | Autodesk pricing updated: Forma Build $1,400/user, 5.8× ratio, new Costos Autodesk tab added | Serge | data/platforms.ts ($70K @ 50 users), data/features.ts (rebrand to "Autodesk Forma Build"), lib/pricing.ts ($1,400 anchor), data/autodesk-costs.ts (NEW — full AEC catalog), components/comparison/AutodeskCosts.tsx (NEW — third tab in /comparativo). Source: autodesk.com/products/forma-build/buy (April 2026) |
 | Apr 28 | v5.0 cut for Pablo's next review meeting | Serge | NEW: `PROPOSAL-v5.md` (changelog block at top notes Forma Build pricing + tone revisions); `public/proposal.md` synced to v5; `public/proposal.pdf` regenerated; `INFRATEK_Propuesta_VIA-HABITA_2026_v5.pdf` + `INFRATEK_Propuesta_VIA-HABITA_2026_v5.docx` at repo root for emailing. Render pipeline: `scripts/render-proposal.mjs` (markdown→styled HTML→Chrome-headless print-to-PDF) + `scripts/render-proposal-docx.mjs` (HTML→DOCX via html-to-docx). npm scripts `proposal:render`, `proposal:docx`, `proposal:all`. Site version labels bumped (app/page.tsx, app/propuesta/page.tsx, app/documento/page.tsx, components/layout/Footer.tsx). PROPOSAL-v4.md retained as historical record. |
+| Apr 29 | /comparativo restructured to 3-scenario narrative per Pablo's feedback | Serge | The 50-user list comparison stopped representing reality — Habita's actual scale is ~100 stakeholders when you count obra + externals + quality + management. NEW: `data/comparison-scenarios.ts` (scenario data + team breakdown + exclusive features), `components/comparison/ComparativoNarrative.tsx` (5-section narrative: diagnóstico → 10 usuarios where ADSK wins by $2K → why 10 fails → 100 usuarios real where VIA = 10% of ADSK → ventajas exclusivas), with framer-motion animated counters in the cost cards. `app/comparativo/page.tsx` rewritten: 2-tab structure (Comparativo default, Funcionalidades secondary) — dropped the Precios + Costos Autodesk tabs. ⚠ ORPHANED (left in place for now, no longer imported anywhere): `components/comparison/{ComparisonTable,CostChart,AutodeskCosts}.tsx` + `data/autodesk-costs.ts`. Safe to delete in a future cleanup. |
 
 ---
 

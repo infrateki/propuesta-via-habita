@@ -45,7 +45,9 @@
       "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application/**)",
       "Bash(npm ls *)",
       "Bash(node scripts/render-proposal.mjs)",
-      "Bash(node scripts/render-proposal-docx.mjs)"
+      "Bash(node scripts/render-proposal-docx.mjs)",
+      "mcp__claude_ai_Vercel__deploy_to_vercel",
+      "Bash(vercel deploy *)"
     ]
   }
 }
