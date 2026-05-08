@@ -316,8 +316,8 @@ function ScenarioCalculator({ reduce }: { reduce: boolean }) {
             <div className="md:col-span-5">
               <p className="text-xs text-steel-400 leading-relaxed">
                 Reemplaza la capa de gestión de construcción (Forma Build) y
-                añade IA + UI en español. Los consultores externos (RSM,
-                Iweise) siguen usando sus propias licencias Revit.
+                añade IA + UI en español. Los proyectistas externos siguen
+                usando sus propias licencias Revit.
               </p>
             </div>
             <div className="md:col-span-3 space-y-2">
@@ -407,7 +407,7 @@ function Narrative() {
       tone: "ok",
       title: "Las licencias de diseño no son un gasto nuevo",
       body:
-        "Los consultores de Habita (RSM, Iweise) ya operan con sus propias licencias Revit/AutoCAD. Habita no necesita comprar herramientas de diseño; necesita la capa de coordinación.",
+        "Los proyectistas externos de Habita ya operan con sus propias licencias Revit/AutoCAD. Habita no necesita comprar herramientas de diseño; necesita la capa de coordinación.",
     },
     {
       icon: CheckCircle2,

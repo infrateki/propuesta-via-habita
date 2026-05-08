@@ -2,7 +2,7 @@
  * VIA-HABITA pricing constants and static catalogs.
  * Single source of truth for every USD figure used by the configurator
  * and by the comparison page. All numbers confirmed with the client and
- * mirrored in INFRATEK-HABITA-2026-v11.
+ * mirrored in INFRATEK-HABITA-2026-v12.
  */
 
 // ============================================================================

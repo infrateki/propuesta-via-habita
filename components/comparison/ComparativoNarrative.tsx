@@ -21,7 +21,8 @@ import {
 } from "lucide-react";
 import {
   HABITA_TEAM_BREAKDOWN,
-  HABITA_TEAM_TOTAL,
+  HABITA_TEAM_TOTAL_DISPLAY,
+  HABITA_TEAM_TOTAL_MAX,
   SCENARIO_CURRENT,
   SCENARIO_DIAGNOSTIC,
   SCENARIO_REAL,
@@ -221,7 +222,7 @@ function RealScenarioSection() {
           <span className="label-spec text-steel-400">El equipo real</span>
           <span className="hairline-l h-3" />
           <span className="label-spec text-steel-500">
-            {HABITA_TEAM_TOTAL} personas que tocan los proyectos
+            {HABITA_TEAM_TOTAL_DISPLAY} personas que tocan los proyectos
           </span>
         </header>
 
@@ -248,7 +249,7 @@ function RealScenarioSection() {
                   ) : null}
                 </div>
                 <p className="font-spec text-spec-price text-steel-100 text-xl tabular-nums">
-                  {row.people}
+                  {row.peopleDisplay ?? row.people}
                 </p>
               </motion.li>
             ))}
@@ -256,7 +257,7 @@ function RealScenarioSection() {
               <span className="label-spec text-steel-300 w-8">Σ</span>
               <p className="label-spec text-steel-200">Total usuarios reales</p>
               <p className="font-display text-[var(--color-electric)] text-spec-price text-2xl tabular-nums">
-                ~{HABITA_TEAM_TOTAL}
+                {HABITA_TEAM_TOTAL_DISPLAY}
               </p>
             </li>
           </ul>
@@ -292,15 +293,16 @@ function RealScenarioSection() {
                 Conclusión
               </p>
               <p className="font-display text-steel-100 text-xl lg:text-2xl leading-snug">
-                A escala real, VIA-HABITA cuesta el{" "}
+                A escala real, VIA-HABITA cuesta{" "}
                 <span className="text-[var(--color-electric)] text-spec-price">
-                  10%
+                  menos del 5 %
                 </span>{" "}
                 de Autodesk Forma Build,{" "}
                 <span className="text-[var(--color-electric)] text-spec-price">
                   {r.toFixed(1)}×
                 </span>{" "}
-                más económico, con usuarios ilimitados.
+                más económico, con usuarios ilimitados que cubren al trazador
+                y a los subcontratistas.
               </p>
               <p className="text-steel-400 text-sm leading-relaxed">
                 La diferencia anual financia la totalidad de la Fase 1{" "}

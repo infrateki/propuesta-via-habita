@@ -49,7 +49,7 @@ export const SCENARIO_DIAGNOSTIC = {
   ],
   body: [
     "Entre octubre y diciembre de 2025 corrimos un diagnóstico BIM 2.0 con el equipo de Habita: +50 horas de entrevistas, +20 participantes, todas las áreas representadas.",
-    "El hallazgo central no fue de software. Fue de procesos: la mayoría de los RFIs son prevenibles con metodología, no con una herramienta nueva. Los consultores externos (RSM, Iweise) ya trabajan en BIM. Lo que falta es coordinación bajo un estándar común.",
+    "El hallazgo central no fue de software. Fue de procesos: la mayoría de los RFIs son prevenibles con metodología, no con una herramienta nueva. Los proyectistas externos ya trabajan en BIM. Lo que falta es coordinación bajo un estándar común.",
     "El síntoma más visible: PlanGrid existe pero está roto. 1 cuenta compartida. 90% del personal de obra trabaja con planos impresos. Nadie abrió la plataforma en proyectos activos durante los últimos 6 meses.",
   ],
 };
@@ -120,18 +120,18 @@ export const SCENARIO_WHY_10_FAILS = {
 };
 
 // ============================================================================
-// Scenario 4: real scale (100 users); VIA-HABITA wins decisively
+// Scenario 4: real scale (120 to 200 users); VIA-HABITA wins decisively
 // ============================================================================
-export const HABITA_TEAM_BREAKDOWN: { area: string; people: number; detail?: string }[] = [
+export const HABITA_TEAM_BREAKDOWN: {
+  area: string;
+  people: number;
+  peopleDisplay?: string;
+  detail?: string;
+}[] = [
   {
     area: "Desarrollo",
     people: 17,
-    detail: "Arquitectos, dibujantes, coordinadores",
-  },
-  {
-    area: "Proyectistas externos",
-    people: 10,
-    detail: "RSM, Iweise y otras consultoras especializadas",
+    detail: "Arquitectos, dibujantes, coordinador, proyectistas int. y ext.",
   },
   {
     area: "Calidad",
@@ -148,8 +148,20 @@ export const HABITA_TEAM_BREAKDOWN: { area: string; people: number; detail?: str
     people: 60,
     detail: "Por jobsite: admin, jefe terreno, oficina técnica, 4 trazadores, supervisores ≈ 10",
   },
+  {
+    area: "Subcontratistas (×6 proyectos)",
+    people: 116,
+    peopleDisplay: "36 a 116",
+    detail: "~6 a 20 personas por proyecto, según especialidad",
+  },
 ];
 
+/** Min / max del rango total. Subcontratistas extiende el extremo inferior a 36. */
+export const HABITA_TEAM_TOTAL_MIN = 120;
+export const HABITA_TEAM_TOTAL_MAX = 200;
+export const HABITA_TEAM_TOTAL_DISPLAY = "120 a 200";
+
+/** Legacy single-number total (apunta al MAX). Mantener para compatibilidad. */
 export const HABITA_TEAM_TOTAL = HABITA_TEAM_BREAKDOWN.reduce(
   (sum, row) => sum + row.people,
   0,
@@ -157,20 +169,20 @@ export const HABITA_TEAM_TOTAL = HABITA_TEAM_BREAKDOWN.reduce(
 
 export const SCENARIO_REAL: ScenarioCard = {
   number: "04",
-  eyebrow: "Escenario real · 100 usuarios",
+  eyebrow: "Escenario real · 120 a 200 usuarios",
   title: "Cuando la plataforma llega a quien construye, los números cambian.",
   winner: "via-habita",
   costs: [
     {
       label: "Costo anual",
       viaHabita: 12_000,
-      autodesk: 140_000,
+      autodesk: 280_000,
       viaHabitaDetail: "6 proyectos × $2.000, usuarios ilimitados incluidos",
-      autodeskDetail: "100 usuarios × $1.400/usuario/año",
+      autodeskDetail: "200 usuarios × $1.400/usuario/año (extremo alto del rango)",
     },
     {
       label: "Costo por usuario",
-      viaHabita: 120,
+      viaHabita: 60,
       autodesk: 1_400,
     },
   ],

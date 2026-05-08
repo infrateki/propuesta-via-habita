@@ -42,7 +42,7 @@ export const AUTODESK_PRODUCTS: AutodeskProduct[] = [
     description: "CAD 2D/3D estándar para dibujo técnico y documentación.",
     relevantToHabita: false,
     habitaNote:
-      "Los consultores externos (RSM, Iweise) ya tienen sus propias licencias. Habita no necesita comprar.",
+      "Los proyectistas externos ya tienen sus propias licencias. Habita no necesita comprar.",
   },
   {
     id: "autocad-lt",
@@ -65,7 +65,7 @@ export const AUTODESK_PRODUCTS: AutodeskProduct[] = [
     description: "Modelado BIM paramétrico, estándar de mercado en arquitectura y estructura.",
     relevantToHabita: false,
     habitaNote:
-      "RSM e Iweise ya operan en Revit con sus propias licencias. Habita coordina, no modela.",
+      "Los proyectistas externos ya operan en Revit con sus propias licencias. Habita coordina, no modela.",
   },
   {
     id: "revit-lt",
@@ -194,7 +194,7 @@ export const HABITA_AUTODESK_SCENARIO: ScenarioLine[] = [
     id: "design-team",
     label: "Equipo de diseño (5 personas)",
     detail:
-      "AEC Collection × 5: escenario hipotético si Habita armara equipo de diseño interno (hoy se externaliza a RSM/Iweise).",
+      "AEC Collection × 5: escenario hipotético si Habita armara equipo de diseño interno (hoy se externaliza a proyectistas externos).",
     productId: "aec-collection",
     unitPrice: productPrice("aec-collection"),
     quantity: 5,

@@ -1,7 +1,7 @@
 /**
  * data/proposal.ts
  * Canonical content for /propuesta, extracted from
- * INFRATEK-HABITA-2026-v11 (PROPOSAL-v11.md).
+ * INFRATEK-HABITA-2026-v12 (PROPOSAL-v12.md).
  * All copy in Spanish.
  */
 
@@ -180,7 +180,7 @@ export type Deliverable = {
 };
 
 export const DELIVERABLES: Deliverable[] = [
-  { code: "E-01", name: "BIM Execution Plan (BEP) v1.0", format: "PDF + Word editable", approver: "Pablo Otero" },
+  { code: "E-01", name: "Plan de Ejecución BIM (PEB) v1.0", format: "PDF + Word editable", approver: "Pablo Otero" },
   { code: "E-02", name: "Manual de nomenclatura y estructura de carpetas", format: "PDF", approver: "Pablo Otero" },
   { code: "E-03", name: "Criterios de Modelado BIM: Arquitectura y Estructura", format: "PDF", approver: "Macarena Andrade" },
   { code: "E-04", name: "Protocolo de coordinación semanal", format: "PDF", approver: "Pablo Otero" },
@@ -255,10 +255,10 @@ export const TIMELINE: TimelineMonth[] = [
     activities: [
       "Kickoff con equipo piloto",
       "Auditoría de planos, carpetas y modelos existentes",
-      "BIM Execution Plan v1.0",
+      "Plan de Ejecución BIM v1.0",
       "Configuración inicial VIA-HABITA",
     ],
-    milestone: "E-01 BEP + E-02 Nomenclatura + plataforma operativa",
+    milestone: "E-01 PEB + E-02 Nomenclatura + plataforma operativa",
   },
   {
     id: "m2",
@@ -267,7 +267,7 @@ export const TIMELINE: TimelineMonth[] = [
     year: 2026,
     title: "Primera coordinación",
     activities: [
-      "Solicitud formal de modelos a RSM + Iweise",
+      "Solicitud formal de modelos a proyectistas externos",
       "Primera sesión de coordinación conjunta",
       "Protocolo de coordinación semanal documentado",
       "Migración de Notion a VIA-HABITA",
@@ -392,7 +392,7 @@ export const INVESTMENT = {
   totalDeliveredValue: 21_000,
   paymentSchedule: [
     { code: "H0", label: "Anticipo: firma de acuerdo", when: "Antes de iniciar", amount: 4_500 },
-    { code: "H1", label: "Setup: BEP + plataforma operativa", when: "Fin Mes 1", amount: 3_000 },
+    { code: "H1", label: "Setup: PEB + plataforma operativa", when: "Fin Mes 1", amount: 3_000 },
     { code: "H2", label: "Modelos: federado v1 + protocolo + Notion migrado", when: "Fin Mes 2", amount: 2_500 },
     { code: "H3", label: "Cierre: manual + KPIs + hand-off", when: "Fin Mes 4", amount: 2_500 },
   ],
