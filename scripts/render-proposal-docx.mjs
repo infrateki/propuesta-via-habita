@@ -19,7 +19,7 @@ const ROOT = resolve(import.meta.dirname, "..");
 const HTML_IN = resolve(ROOT, "public", "proposal.html");
 const DOCX_OUT = resolve(
   ROOT,
-  process.argv[2] ?? "INFRATEK_Propuesta_VIA-HABITA_2026_v11.docx",
+  process.argv[2] ?? "INFRATEK_Propuesta_VIA-HABITA_2026_v12.docx",
 );
 
 const html = await readFile(HTML_IN, "utf8");
@@ -38,7 +38,7 @@ const buffer = await HTMLtoDOCX(html, null, {
     gutter: 0,
   },
   pageNumber: true,
-  title: "Propuesta Integrada — INFRATEK × HABITA · v11.0",
+  title: "Propuesta Integrada · INFRATEK × HABITA · v12.0",
   creator: "INFRATEK LLC",
   subject: "Implementación BIM + Plataforma VIA-HABITA",
 });

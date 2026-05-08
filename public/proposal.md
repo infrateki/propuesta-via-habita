@@ -2,11 +2,11 @@
 
 ## Implementación BIM + Plataforma VIA-HABITA
 
-**Documento** INFRATEK-HABITA-2026-v11
-**Versión** v11.0
+**Documento** INFRATEK-HABITA-2026-v12
+**Versión** v12.0
 **Para** Grupo Inmobiliario Habita
 **De** Sergio Villanueva-Meyer · Principal Consultant · INFRATEK LLC
-**Fecha** 30 de abril de 2026
+**Fecha** 8 de mayo de 2026
 **Validez** 31 de mayo de 2026
 
 Implementación BIM de 4 meses + codesarrollo de plataforma VIA-HABITA. 9 entregables con marca Habita, plataforma CDE con usuarios ilimitados. **USD $12,500** (100 % virtual). Visitas opcionales. Suscripción desde el Mes 6.
@@ -21,7 +21,7 @@ Valores referenciales: USD $12,500 ≈ CLP $11.750.000 ≈ 310 UF (1 USD ≈ 940
 
 El Diagnóstico BIM 2.0 (oct–dic 2025, +50 horas, +20 participantes) dejó claro lo siguiente: **Habita no tiene un problema de BIM. Tiene un problema de procesos.**
 
-La mayoría de las RFIs se pueden prevenir con metodología, no con software nuevo. RSM e Iweise ya trabajan en BIM. El problema es que nadie les pide entregables BIM ni los coordina bajo un estándar común.
+La mayoría de las RFIs se pueden prevenir con metodología, no con software nuevo. Los proyectistas externos ya trabajan en BIM. El problema es que nadie les pide entregables BIM ni los coordina bajo un estándar común.
 
 El síntoma más visible es de **alcance**: hoy hay una sola cuenta compartida de PlanGrid por proyecto. El trazador, la persona que marca el piso para que se construya, recibe planos impresos que un supervisor leyó por él. Cuando el modelo cambia, el trazador no se entera. La cadena se rompe en el último metro.
 
@@ -31,7 +31,7 @@ Habita diseña, construye y vende. Esa integración vertical permite cerrar el c
 
 | Dimensión | Hoy | Mes 4 |
 |---|---|---|
-| Estándares BIM | No existen | BEP v1.0 firmado |
+| Estándares BIM | No existen | PEB v1.0 firmado |
 | Plataforma | PlanGrid (1 cuenta) + Notion | VIA-HABITA operativa |
 | Modelos 3D | Consultores entregan en 2D | Modelo federado del piloto |
 | Coordinación | Sin protocolo | Protocolo semanal documentado |
@@ -46,9 +46,9 @@ Habita diseña, construye y vende. Esa integración vertical permite cerrar el c
 | # | Módulo | Descripción |
 |---|---|---|
 | A | Estándares BIM | Nomenclatura, estructura de carpetas, criterios de modelado, protocolo de coordinación. Alineado a ISO 19650. |
-| B | BEP v1.0 | Documento oficial de Habita que define cómo se trabaja en BIM. |
+| B | Plan de Ejecución BIM (PEB) v1.0 | Documento oficial de Habita que define cómo se trabaja en BIM. |
 | C | Proyecto piloto | Modelo federado (Arq + Estructura + Sanitario). Interferencias detectadas antes de obra. Proyecto por confirmar. |
-| D | Activación de consultores | RSM e Iweise coordinados bajo el nuevo estándar. |
+| D | Activación de consultores | Proyectistas externos coordinados bajo el nuevo estándar. |
 | E | Capacitación | **+10 personas del equipo de obra** (incluye trazadores) navegando modelos BIM en terreno. |
 | F | Plataforma VIA-HABITA | CDE operativo: visores 2D/3D, RFIs, panel de proyectistas, Gantt, control de versiones. |
 | G | Manual de replicación | Instrucciones para aplicar el proceso en proyectos siguientes sin depender de INFRATEK. |
@@ -69,7 +69,7 @@ Todos con logo de Habita. Son propiedad de Habita.
 
 | # | Entregable | Formato | Aprueba |
 |---|---|---|---|
-| E-01 | BIM Execution Plan v1.0 | PDF + Word | Pablo Otero |
+| E-01 | Plan de Ejecución BIM v1.0 | PDF + Word | Pablo Otero |
 | E-02 | Manual nomenclatura y estructura | PDF | Pablo Otero |
 | E-03 | Criterios de Modelado BIM | PDF | Macarena Andrade |
 | E-04 | Protocolo de coordinación semanal | PDF | Pablo Otero |
@@ -97,7 +97,7 @@ Marcela transiciona al rol de coordinadora del proyecto; su reemplazo en oficina
 
 ## 6. Cronograma
 
-**Mes 1 · Mayo 2026 · Setup y kickoff.** Hito verificable: E-01 BEP + E-02 Nomenclatura + plataforma operativa.
+**Mes 1 · Mayo 2026 · Setup y kickoff.** Hito verificable: E-01 PEB + E-02 Nomenclatura + plataforma operativa.
 
 **Mes 2 · Junio 2026 · Primera coordinación.** Hito verificable: E-05 Modelo federado + E-04 Protocolo + Notion migrado.
 
@@ -171,7 +171,7 @@ Valores referenciales: 1 USD ≈ 940 CLP, 1 UF ≈ 38.000 CLP (abril 2026). Fact
 | Diseño y configuración VIA-HABITA | $5,000 | ✓ Incluido |
 | Migración Notion + PlanGrid | $1,500 | ✓ Incluido |
 | Desarrollo agente Habi | $3,000 | ✓ Incluido |
-| Estándares ISO 19650 + templates + BEP + entregables | Incluido | ✓ |
+| Estándares ISO 19650 + templates + PEB + entregables | Incluido | ✓ |
 | **VALOR TOTAL ENTREGADO** | **$21,000+** | |
 
 **Inversión Fase 1: USD $12,500 ≈ CLP $11.750.000 ≈ 310 UF.**
@@ -185,7 +185,7 @@ Cada pago se libera después de que Pablo y / o Marcela aprueban el entregable (
 | Hito | Entregable | Plazo | USD | CLP aprox. | UF |
 |---|---|---|---|---|---|
 | H0: Anticipo | Firma del acuerdo | Antes de iniciar | $4,500 | $4.230.000 | ~112 |
-| H1: Setup | E-01 BEP + E-02 + plataforma | Fin Mes 1 | $3,000 | $2.820.000 | ~74 |
+| H1: Setup | E-01 PEB + E-02 + plataforma | Fin Mes 1 | $3,000 | $2.820.000 | ~74 |
 | H2: Modelos | E-05 Federado + E-04 Protocolo | Fin Mes 2 | $2,500 | $2.350.000 | ~62 |
 | H3: Cierre | E-08 Manual + E-09 KPIs | Fin Mes 4 | $2,500 | $2.350.000 | ~62 |
 | | | **TOTAL** | **$12,500** | **$11.750.000** | **~310** |
@@ -205,7 +205,7 @@ Durante los Meses 1 a 5, INFRATEK diseña y configura la plataforma. La suscripc
 
 ## 13. Comparativo: tres escenarios
 
-El comparativo a 50 usuarios fue útil para encuadrar el orden de magnitud, pero el escenario real de Habita son **~100 personas** que tocan los proyectos cuando se cuenta obra + externos + calidad + gerencia.
+El comparativo a 50 usuarios fue útil para encuadrar el orden de magnitud, pero el escenario real de Habita es de **120 a 200 personas** que tocan los proyectos cuando se cuenta obra, subcontratistas, externos, calidad y gerencia.
 
 ### 13.1 Hoy: 10 usuarios
 
@@ -227,28 +227,30 @@ A 10 usuarios, **Autodesk resulta $2,000 más económico.** La pregunta natural 
 
 Mantener 10 usuarios significa mantener el modelo actual con una herramienta diferente. El problema de alcance no se resuelve cambiando de proveedor sin cambiar el número de personas con acceso.
 
-### 13.3 Real: 100 usuarios
+### 13.3 Real: 120 a 200 usuarios
 
 Equipo real de Habita, contado por área:
 
 | Área | Personas |
 |---|---|
-| Desarrollo (arquitectos, dibujantes, coordinador) | 17 |
-| Proyectistas externos | 10 |
+| Desarrollo (arquitectos, dibujantes, coordinador, proyectistas int. y ext.) | 17 |
 | Calidad | 4 |
 | Gerencia | 3 |
 | Obra (×6 proyectos, ~10 c/u) | 60 |
-| **TOTAL** | **~94** |
+| Subcontratistas (×6 proyectos, ~6 a 20 c/u) | 36 a 116 |
+| **TOTAL** | **120 a 200** |
+
+**Nota:** el cuadro anterior no incluía a los subcontratistas que físicamente construyen la obra. Hoy el sistema no los considera. Incluirlos lleva el universo real a entre 120 y 200 personas con necesidad de acceso al modelo BIM.
 
 Costo a escala real:
 
 | | VIA-HABITA | Autodesk Forma Build |
 |---|---|---|
-| Costo anual | **$12,000** | $140,000 |
-| Costo por usuario | **$120** | $1,400 |
+| Costo anual | **$12,000** | $280,000 |
+| Costo por usuario | **$60** | $1,400 |
 | Usuarios ilimitados | **SÍ** | NO |
 
-A escala real, **VIA-HABITA cuesta el 10 % de Autodesk Forma Build** (~$128,000 / año de diferencia, ≈ CLP $120 millones). Con usuarios ilimitados, todo el equipo, incluido el trazador, recibe el modelo BIM directamente.
+A escala real, **VIA-HABITA cuesta menos del 5 % de Autodesk Forma Build** (~$268,000 / año de diferencia, ≈ CLP $252M). Con usuarios ilimitados, todo el equipo, incluido el trazador y los subcontratistas, recibe el modelo BIM directamente.
 
 ### 13.4 Otras plataformas: referencia a 50 usuarios, 6 proyectos
 
@@ -320,5 +322,5 @@ sergio@infratek.ai · +1 551 430 9185
 
 ---
 
-*Documento confidencial · Propiedad de INFRATEK LLC · v11.0 · 30 de abril de 2026*
+*Documento confidencial · Propiedad de INFRATEK LLC · v12.0 · 8 de mayo de 2026*
 *Precios válidos hasta el 31 de mayo de 2026. Facturación en USD.*

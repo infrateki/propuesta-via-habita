@@ -56,7 +56,7 @@ export function Navigation() {
           <div className="flex items-center gap-2">
             <a
               href="/proposal.pdf"
-              download="INFRATEK_Propuesta_VIA-HABITA_2026_v11.pdf"
+              download="INFRATEK_Propuesta_VIA-HABITA_2026_v12.pdf"
               className={cn(
                 "label-spec px-3 py-2 text-steel-200 min-h-11 inline-flex items-center gap-2",
                 "hover:text-[var(--color-copper)]",
@@ -130,7 +130,7 @@ export function Navigation() {
               <li>
                 <a
                   href="/proposal.pdf"
-                  download="INFRATEK_Propuesta_VIA-HABITA_2026_v11.pdf"
+                  download="INFRATEK_Propuesta_VIA-HABITA_2026_v12.pdf"
                   onClick={() => setOpen(false)}
                   className="label-spec flex items-center justify-between min-h-12 px-4 my-2 text-steel-100 border border-[var(--color-hairline-strong)] hover:border-[var(--color-copper)] hover:text-[var(--color-copper)] transition-colors rounded-[var(--radius-spec)]"
                 >
