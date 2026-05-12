@@ -55,7 +55,18 @@
       "Bash(node scripts/render-proposal.mjs PROPOSAL-v10.md)",
       "Bash(node scripts/render-proposal-docx.mjs INFRATEK_Propuesta_VIA-HABITA_2026_v10.docx)",
       "Bash(node scripts/render-proposal.mjs PROPOSAL-v11.md)",
-      "Bash(node scripts/render-proposal-docx.mjs INFRATEK_Propuesta_VIA-HABITA_2026_v11.docx)"
+      "Bash(node scripts/render-proposal-docx.mjs INFRATEK_Propuesta_VIA-HABITA_2026_v11.docx)",
+      "Bash(node scripts/render-proposal.mjs PROPOSAL-v12.md)",
+      "Bash(node scripts/render-proposal-docx.mjs INFRATEK_Propuesta_VIA-HABITA_2026_v12.docx)",
+      "Bash(git rev-list *)",
+      "Bash(git checkout *)",
+      "Bash(git merge *)",
+      "mcp__claude_ai_Vercel__list_deployments",
+      "WebFetch(domain:viahabita.infratek.ai)",
+      "WebFetch(domain:propuesta-via-habita.vercel.app)",
+      "Bash(cp scripts/extract-v8.mjs /tmp/extract-v12.1.mjs)",
+      "Bash(sed -i 's|INFRATEK_Propuesta_VIA-HABITA_2026_v8\\\\.pdf|INFRATEK_VIA-HABITA_Propuesta_v12.1.pdf|' scripts/extract-v8.mjs)",
+      "Bash(grep -rEn \"14\\\\.5K|14,500|\\\\\\\\\\\\$14500|Inversión base\" --include=\"*.tsx\" --include=\"*.ts\" .)"
     ]
   }
 }

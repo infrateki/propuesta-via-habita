@@ -1,7 +1,7 @@
 # COMMS.md — Terminal Orchestration Board
 ## VIA-HABITA Proposal Site · via-habita-propuesta
 
-**Last updated:** 2026-04-30 · v11 production-ready. Shared with client. PlanGrid corrected to "1 cuenta por proyecto" (was "para 100 personas"); DeliverablesSection title fixed; em dashes purged from data/, components/, app/, lib/, PROPOSAL-v11.md, public/proposal.md, render script template; "56%" → "+50%" or "más de la mitad"; "ecosistema" softened to "productos/catálogo"; changelog blocks removed from proposal markdowns; final 7-pattern audit clean.
+**Last updated:** 2026-05-12 · v12.1 sync (branch `v12.1-sync`, preview only — NOT merged to main). Surgical updates to align site with externally-generated v12.1 PDF: home Stat $14.5K → $12.5K (label "Inversión base" → "Inversión Fase 1"); v12.0 → v12.1 site labels + "8 MAY/mayo 2026" → "12 MAY/mayo 2026"; subscription start month "Mes 5 +" → "Mes 6 +" in InvestmentSection; diagnostic stats "47+ horas, 38 participantes" → "+50 horas, +20 participantes" in ProblemSection; pilot project locked to "Hacienda Ceres 1" in data/proposal.ts (Macarena role) + PROPOSAL-v12.md §3.1 module C; AnimatedNumber simplified to SSR-render final value (was showing $0 on first paint before CountUp fired); public/proposal.pdf replaced with externally-supplied v12.1 PDF; download filenames migrated to new pattern `INFRATEK_VIA-HABITA_Propuesta_v12.1.pdf` (×5 occurrences).
 **Status:** 🟢 DEPLOYED
 
 **Production URLs:**

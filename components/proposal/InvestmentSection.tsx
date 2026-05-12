@@ -109,7 +109,7 @@ export function InvestmentSection() {
           }}
           className="lg:col-span-5 bg-[var(--color-steel-800)] p-8 lg:p-12 flex flex-col gap-6"
         >
-          <span className="label-spec">Suscripción · Mes 5 +</span>
+          <span className="label-spec">Suscripción · Mes 6 +</span>
 
           <div className="space-y-2">
             <p className="font-display text-steel-100 text-spec-price text-display-md leading-none">

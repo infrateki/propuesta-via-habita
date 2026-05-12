@@ -47,7 +47,7 @@ Habita diseña, construye y vende. Esa integración vertical permite cerrar el c
 |---|---|---|
 | A | Estándares BIM | Nomenclatura, estructura de carpetas, criterios de modelado, protocolo de coordinación. Alineado a ISO 19650. |
 | B | Plan de Ejecución BIM (PEB) v1.0 | Documento oficial de Habita que define cómo se trabaja en BIM. |
-| C | Proyecto piloto | Modelo federado (Arq + Estructura + Sanitario). Interferencias detectadas antes de obra. Proyecto por confirmar. |
+| C | Proyecto piloto: Hacienda Ceres 1 | Modelo federado (Arq + Estructura + Sanitario). Interferencias detectadas antes de obra. Diseño al 100%, confirmado 7 mayo 2026. |
 | D | Activación de consultores | Proyectistas externos coordinados bajo el nuevo estándar. |
 | E | Capacitación | **+10 personas del equipo de obra** (incluye trazadores) navegando modelos BIM en terreno. |
 | F | Plataforma VIA-HABITA | CDE operativo: visores 2D/3D, RFIs, panel de proyectistas, Gantt, control de versiones. |
@@ -88,7 +88,7 @@ Sujeto al organigrama definitivo del proyecto, que Pablo compartirá antes del k
 | Persona | Rol | Dedicación |
 |---|---|---|
 | Marcela Leyton | BIM Champion · transiciona a coordinadora del proyecto | Full-time, líder operacional |
-| Macarena Andrade | Arquitecta Piloto | Capacitación y coordinación |
+| Macarena Andrade | Arquitecta Piloto · Hacienda Ceres 1 | Capacitación y coordinación |
 | Pablo Otero | Sponsor | Aprobación de hitos |
 | Sergio Villanueva-Meyer | Consultant INFRATEK | Liderazgo técnico, sesiones semanales |
 | Equipo INFRATEK (3) | Soporte técnico | Codesarrollo, soporte remoto |

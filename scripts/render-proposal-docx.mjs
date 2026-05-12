@@ -38,7 +38,7 @@ const buffer = await HTMLtoDOCX(html, null, {
     gutter: 0,
   },
   pageNumber: true,
-  title: "Propuesta Integrada · INFRATEK × HABITA · v12.0",
+  title: "Propuesta Integrada · INFRATEK × HABITA · v12.1",
   creator: "INFRATEK LLC",
   subject: "Implementación BIM + Plataforma VIA-HABITA",
 });

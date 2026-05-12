@@ -21,7 +21,7 @@ export function ProblemSection() {
           <span className="text-steel-300">cada proyecto reinventa el control.</span>
         </>
       }
-      lede="Seis hallazgos del Diagnóstico BIM 2.0 (47 + horas, 38 participantes, octubre–diciembre 2025) que la Fase 1 elimina."
+      lede="Seis hallazgos del Diagnóstico BIM 2.0 (+50 horas, +20 participantes, octubre–diciembre 2025) que la Fase 1 elimina."
     >
       <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[var(--color-hairline)] hairline rounded-[var(--radius-card)] overflow-hidden">
         {PROBLEMS.map((p, i) => (

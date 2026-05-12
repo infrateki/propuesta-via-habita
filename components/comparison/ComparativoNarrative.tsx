@@ -626,37 +626,18 @@ function CostColumn({
 function AnimatedNumber({
   value,
   format = "currency",
-  duration = 1.0,
 }: {
   value: number;
   format?: "currency" | "integer";
+  /** Kept for backward compatibility; intentionally ignored. The
+   *  CountUp animation was removed because hydration showed $0 on first
+   *  paint before the in-view trigger fired. SSR now renders the final
+   *  number directly. */
   duration?: number;
 }) {
-  const reduce = useReducedMotion();
-  const ref = useRef<HTMLSpanElement | null>(null);
-  const inView = useInView(ref, { once: true, margin: "-10% 0px" });
-  const mv = useMotionValue(reduce ? value : 0);
-  const display = useTransform(mv, (v) =>
-    format === "currency" ? formatUSD(Math.round(v)) : Math.round(v).toLocaleString("en-US"),
-  );
-  const [text, setText] = useState<string>(
-    format === "currency" ? formatUSD(reduce ? value : 0) : String(reduce ? value : 0),
-  );
-
-  useEffect(() => {
-    const unsub = display.on("change", (v) => setText(v));
-    return () => unsub();
-  }, [display]);
-
-  useEffect(() => {
-    if (reduce) return;
-    if (!inView) return;
-    const controls = animate(mv, value, {
-      duration,
-      ease: EASE,
-    });
-    return () => controls.stop();
-  }, [inView, mv, value, duration, reduce]);
-
-  return <span ref={ref}>{text}</span>;
+  const text =
+    format === "currency"
+      ? formatUSD(Math.round(value))
+      : Math.round(value).toLocaleString("en-US");
+  return <span>{text}</span>;
 }

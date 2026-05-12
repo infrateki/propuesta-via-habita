@@ -25,7 +25,7 @@ export default function PropuestaPage() {
           <div className="flex items-center gap-4 mb-10">
             <span className="label-spec">DOC · INFRATEK·HABITA·PROP·2026·FINAL</span>
             <span className="hairline-l h-3" />
-            <span className="label-spec text-steel-400">v12.0 · 8 MAY 2026</span>
+            <span className="label-spec text-steel-400">v12.1 · 12 MAY 2026</span>
           </div>
 
           <h1 className="text-display-xl text-steel-100 font-display max-w-4xl">
@@ -56,7 +56,7 @@ export default function PropuestaPage() {
             </Link>
             <a
               href="/proposal.pdf"
-              download="INFRATEK_Propuesta_VIA-HABITA_2026_v12.pdf"
+              download="INFRATEK_VIA-HABITA_Propuesta_v12.1.pdf"
               className="px-6 py-3.5 label-spec text-[var(--color-copper)] hover:text-steel-100 border border-[var(--color-copper)]/40 hover:border-[var(--color-copper)] rounded-[var(--radius-spec)] transition-colors inline-flex items-center gap-2"
             >
               Descargar PDF

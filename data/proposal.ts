@@ -1,7 +1,7 @@
 /**
  * data/proposal.ts
  * Canonical content for /propuesta, extracted from
- * INFRATEK-HABITA-2026-v12 (PROPOSAL-v12.md).
+ * INFRATEK-HABITA-2026-v12.1 (PROPOSAL-v12.md retained, PDF v12.1 served).
  * All copy in Spanish.
  */
 
@@ -213,7 +213,7 @@ export const TEAM: TeamMember[] = [
     id: "macarena",
     name: "Macarena Andrade",
     initials: "MA",
-    role: "Arquitecta Piloto",
+    role: "Arquitecta Piloto · Hacienda Ceres 1",
     org: "HABITA",
     dedication: "Apoyo en capacitación y coordinación del proyecto piloto.",
   },
