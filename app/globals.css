@@ -53,6 +53,40 @@
   color-scheme: dark;
 }
 
+/* ============================================
+   LIGHT THEME — toggled via next-themes data-theme="light"
+   Approach: invert the steel scale so semantic classes (text-steel-100,
+   bg-steel-800) keep working without component edits. The accents
+   (electric, copper, warning, emerald) stay readable on a light canvas,
+   only nudged in saturation. Hairlines and glass effects flip to dark-on-
+   light alphas.
+   ============================================ */
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Inverted steel scale: 100 = darkest (text), 800 = lightest (canvas) */
+  --color-steel-100: #0B0C0F;   /* was dark canvas; now primary text */
+  --color-steel-200: #2A2D33;
+  --color-steel-300: #44474C;
+  --color-steel-400: #6B6E73;
+  --color-steel-500: #8E9095;
+  --color-steel-600: #C5C8CC;
+  --color-steel-700: #E6E8EB;
+  --color-steel-800: #F4F5F7;   /* was dark canvas; now light canvas */
+
+  /* Accents — slightly darker for contrast on light bg */
+  --color-copper:   #8B6A3A;
+  --color-electric: #0071E3;
+  --color-warning:  #A8412C;
+  --color-emerald:  #3D6E54;
+
+  --color-background: var(--color-steel-800);
+  --color-foreground: var(--color-steel-100);
+  --color-muted: var(--color-steel-400);
+  --color-hairline: rgba(11, 12, 15, 0.10);
+  --color-hairline-strong: rgba(11, 12, 15, 0.18);
+}
+
 * {
   border-color: var(--color-hairline);
 }
@@ -63,6 +97,7 @@ html, body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 240ms var(--ease-out-expo), color 240ms var(--ease-out-expo);
 }
 
 body {
@@ -71,6 +106,12 @@ body {
     radial-gradient(ellipse at top, rgba(79, 179, 255, 0.04) 0%, transparent 50%),
     radial-gradient(ellipse at bottom, rgba(176, 141, 87, 0.03) 0%, transparent 60%);
   background-attachment: fixed;
+}
+
+[data-theme="light"] body {
+  background-image:
+    radial-gradient(ellipse at top, rgba(0, 113, 227, 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom, rgba(139, 106, 58, 0.04) 0%, transparent 60%);
 }
 
 /* ============================================
@@ -119,6 +160,11 @@ body {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
+[data-theme="light"] .material-glass {
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
 .material-glass-strong {
   background: rgba(11, 12, 15, 0.78);
   backdrop-filter: blur(32px) saturate(160%);
@@ -126,6 +172,11 @@ body {
   border: 1px solid var(--color-hairline-strong);
   border-radius: var(--radius-card);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="light"] .material-glass-strong {
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05);
 }
 
 /* ============================================
@@ -164,6 +215,13 @@ body {
   -webkit-mask-composite: xor;
           mask-composite: exclude;
   pointer-events: none;
+}
+
+[data-theme="light"] .chrome-edge::before {
+  background: linear-gradient(135deg,
+    rgba(11, 12, 15, 0.14) 0%,
+    rgba(11, 12, 15, 0.03) 50%,
+    rgba(11, 12, 15, 0.14) 100%);
 }
 
 /* ============================================

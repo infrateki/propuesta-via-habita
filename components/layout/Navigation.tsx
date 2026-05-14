@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, FileDown } from "lucide-react";
+import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
@@ -53,7 +54,8 @@ export function Navigation() {
             ))}
           </ul>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 sm:gap-2">
+            <ThemeToggle />
             <a
               href="/proposal.pdf"
               download="INFRATEK_VIA-HABITA_Propuesta_v12.1.pdf"

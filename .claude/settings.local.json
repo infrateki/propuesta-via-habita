@@ -66,7 +66,10 @@
       "WebFetch(domain:propuesta-via-habita.vercel.app)",
       "Bash(cp scripts/extract-v8.mjs /tmp/extract-v12.1.mjs)",
       "Bash(sed -i 's|INFRATEK_Propuesta_VIA-HABITA_2026_v8\\\\.pdf|INFRATEK_VIA-HABITA_Propuesta_v12.1.pdf|' scripts/extract-v8.mjs)",
-      "Bash(grep -rEn \"14\\\\.5K|14,500|\\\\\\\\\\\\$14500|Inversión base\" --include=\"*.tsx\" --include=\"*.ts\" .)"
+      "Bash(grep -rEn \"14\\\\.5K|14,500|\\\\\\\\\\\\$14500|Inversión base\" --include=\"*.tsx\" --include=\"*.ts\" .)",
+      "mcp__claude_ai_Vercel__get_deployment",
+      "Skill(claude-api)",
+      "Bash(git pull *)"
     ]
   }
 }
